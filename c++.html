@@ -1,0 +1,2559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="about.html">
+<link rel="stylesheet" href="homepage.html">
+<link rel="stylesheet" href="contact.html">
+<link rel="stylesheet" href="python.html">
+
+<link rel="stylesheet" href="introduction c++.html">
+
+
+
+<link rel="stylesheet" href="lang.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>C Language Topics</title>
+
+</head>
+<body>
+    <div class="navbar-main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>
+            </li>
+
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+          </li>
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+<!-- NAVIGATION BAR END -->
+
+
+
+<!-- navigation for languages -->
+<div class="navbar-sec">
+<div class="language-nav">
+<nav class="navbar navbar-expand-lg navbar-light badge-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-xl-center" id="navbarNavAltMarkup2">
+    <div class="navbar-nav w-100">
+      <a class="nav-item nav-link text-muted active" id="a" href="c.html">C</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="c++.html"> C++</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="dsa.html">DSA</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="java.html">Java</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="python.html">Python</a>
+    </div>      
+    </div>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+
+<!-- table view -->
+
+<div class="content">
+   
+   
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+        
+          <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+          <a href="#C++ Programming Basics" class="list-group-item list-group-item-action">C++ Programming Basics</a>
+          <a href="#data-types" class="list-group-item list-group-item-action">Data Types</a>
+          <a href="#Decision" class="list-group-item list-group-item-action">Decision Making in C++</a>
+          <a href="#Basic I/O" class="list-group-item list-group-item-action">Basic Input/Output in C++</a>
+          <a href="#Operator" class="list-group-item list-group-item-action">Operators</a>
+          <a href="#arrays" class="list-group-item list-group-item-action">Arrays</a>
+          <a href="#functions" class="list-group-item list-group-item-action">Functions </a>
+          <a href="#pointers" class="list-group-item list-group-item-action">Pointers in C++</a>
+          <a href="#oops" class="list-group-item list-group-item-action">Object Oriented Programming
+          </a>
+          <a href="#file handling" class="list-group-item list-group-item-action">File Handling</a>
+                    
+          <a href="#END" class="list-group-item list-group-item-action">END</a>
+          <a href="#introduction" class="list-group-item list-group-item-action">back to starting</a>
+          <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+          <!-- <a href="#functions" class="list-group-item list-group-item-action">Functions</a> -->
+
+          <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+        
+                <h2 id="introduction">Introduction to <font color="#33b5e5" >C++ </font>Programming 
+                Language</h2>
+<br>
+        <p>C++ is a general-purpose programming language that was developed as an enhancement of the C language to include object-oriented paradigm. It is an imperative and a compiled language.</p>
+        <ul>
+            <li>C++ is a high-level, general-purpose programming language designed for system and application programming. It was developed by Bjarne Stroustrup at Bell Labs in 1983 as an extension of the C programming language. C++ is an object-oriented, multi-paradigm language that supports procedural, functional, and generic programming styles.</li>
+            <li>One of the key features of C++ is its ability to support low-level, system-level programming, making it suitable for developing operating systems, device drivers, and other system software. At the same time, C++ also provides a rich set of libraries and features for high-level application programming, making it a popular choice for developing desktop applications, video games, and other complex applications</li>
+            <li>C++ has a large, active community of developers and users, and a wealth of resources and tools available for learning and using the language. Some of the key features of C++ include:</li>
+            <li>Object-Oriented Programming: C++ supports object-oriented programming, allowing developers to create classes and objects and to define methods and properties for these objects.</li>
+            <li>Templates: C++ templates allow developers to write generic code that can work with any data type, making it easier to write reusable and flexible code.</li>
+            <li>Standard Template Library (STL): The STL provides a wide range of containers and algorithms for working with data, making it easier to write efficient and effective code.</li>
+            <li>Exception Handling: C++ provides robust exception handling capabilities, making it easier to write code that can handle errors and unexpected situations.</li>
+        </ul>
+        <p>Overall, C++ is a powerful and versatile programming language that is widely used for a range of applications and is well-suited for both low-level system programming and high-level application development.</p>
+
+        <div style="background-color: #f2f2f2; padding: 20px;">
+            <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+              <code>
+                #include <iostream>
+  
+                    int main() {
+                        std::cout << "Hello, World!" << std::endl;
+                        return 0;
+                    }
+                }
+              </code>
+            </pre>
+            <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+          </div>
+          <img src="C++/C++.png" id="c1" alt="c language">
+<p>C++ is a middle-level language rendering it the advantage of programming low-level (drivers, kernels) and even higher-level applications (games, GUI, desktop apps etc.). The basic syntax and code structure of both C and C++ are the same. <br><br>
+
+    Some of the <b><i>features & key-points </i></b>to note about the programming language are as follows:</p>
+<br>
+<ul>
+    <li><b>Simple: </b>It is a simple language in the sense that programs can be broken down into logical units and parts, has a rich library support and a variety of data-types.</li>
+    <li><b>Machine Independent but Platform Dependent:</b> A C++ executable is not platform-independent (compiled programs on Linux won’t run on Windows), however they are machine independent.</li>
+    <li><b>Mid-level language:</b> It is a mid-level language as we can do both systems-programming (drivers, kernels, networking etc.) and build large-scale user applications (Media Players, Photoshop, Game Engines etc.)</li>
+    <li><b>Rich library support:</b> Has a rich library support (Both standard ~ built-in data structures, algorithms etc.) as well 3rd party libraries (e.g. Boost libraries) for fast and rapid development</li>
+    <li><b>Speed of execution:</b> C++ programs excel in execution speed. Since, it is a compiled language, and also hugely procedural. Newer languages have extra in-built default features such as garbage-collection, dynamic typing etc. which slow the execution of the program overall. Since there is no additional processing overhead like this in C++, it is blazing fast.</li>
+    <li><b>Pointer and direct Memory-Access:</b> C++ provides pointer support which aids users to directly manipulate storage address. This helps in doing low-level programming (where one might need to have explicit control on the storage of variables).</li>
+    <li><b>Object-Oriented:</b> One of the strongest points of the language which sets it apart from C. Object-Oriented support helps C++ to make maintainable and extensible programs. i.e. Large-scale applications can be built. Procedural code becomes difficult to maintain as code-size grows</li>
+    
+</ul>
+  <br><br><br>
+        <h2 id="C++ Programming Basics">C++ <font color="#33b5e5">Programming </font> Basics</h2>
+        <p>C++ is a general-purpose programming language and is widely used nowadays for competitive programming. It has imperative, object-oriented, and generic programming features. C++ runs on lots of platforms like Windows, Linux, Unix, Mac, etc.
+<br><br>
+
+            Before explaining the basics of C++, we would like to clarify two more ideas: low-level and high-level. To make it easy to understand, let’s consider this scenario – when we go to the Google search engine and search for some queries, Google displays some websites according to our question. Google does this for us at a very high level. We don’t know what’s happening at the low level until we look into Google servers (at a low level) and further to the level where the data is in the form of 0s/1s. The point we want to make here is that a low level means nearest to the hardware, and a high level means farther from the hardware with a lot of layers of abstraction. C ++ is considered a low-level language as it is closer to hardware than most general-purpose programming languages. However to become proficient in any programming language, one Firstly needs to understand the basics of that language.</p>
+            <br><br>
+            <h4>Basics of C++ Programming</h4>
+            <br>
+            <ul>
+                <li><b> Basic Syntax and First Program in C++ </b>
+                <br><br>
+                <p>Learning C++ programming can be simplified into writing your program in a text editor and saving it with the correct extension(.CPP, C, CP), and compiling your program using a compiler or online IDE. The “Hello World” program is the first step toward learning any programming language and is also one of the simplest programs you will learn.
+                </p></li>
+                
+                <li><b>Basic Input and Output in C++</b>
+                    <p>C++ comes with libraries that provide us with many ways for performing input and output. In C++ input and output are performed in the form of a sequence of bytes or more commonly known as streams. The two methods cin and cout are used very often for taking inputs and printing outputs respectively. These two are the most basic methods of taking input and output in C++.</p>
+                </li>
+                <li><b>Comments in C++</b>
+                <p>
+                    A well-documented program is a good practice for a programmer. It makes a program more readable and error finding becomes easier. One important part of good documentation is Comments. In computer programming, a comment is a programmer-readable explanation or annotation in the source code of a computer program. These are statements that are not executed by the compiler and interpreter.
+                </p></li>
+                <li><b>4. Data Types and Modifiers in C++</b>
+                <p>
+                    All variables use data type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data they can store. Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data type with which it is declared. Every data type requires a different amount of memory. We can change this by using data type modifiers.
+                </p></li>
+                <li><b> Variables in C++</b>
+                <p>
+                    A variable is a name given to a memory location. It is the basic unit of storage in a program. The value stored in a variable can be changed during program execution. A variable is only a name given to a memory location, all the operations done on the variable effects that memory location. In C++, all the variables must be declared before use.
+                </p></li>
+                <li><b> Variable Scope in C++</b>
+                <p>
+                    In general, the scope is defined as the extent to which something can be worked with. In programming also the scope of a variable is defined as the extent of the program code within which the variable can be accessed or declared or worked with. There are mainly two types of variable scopes, Local and Global Variables.
+                </p></li>
+                <li><b>Uninitialized Variable in C++</b>
+                <p>
+                    “One of the things that have kept C++ viable is the zero-overhead rule: What you don’t use, you don’t pay for.” -Stroustrup. The overhead of initializing a stack variable is costly as it hampers the speed of execution, therefore these variables can contain indeterminate values. It is considered a best practice to initialize a primitive data type variable before using it in code.
+                </p></li>
+                <li><b>Constants and Literals in C++</b>
+                <p>
+                    As the name suggests the name constants are given to such variables or values in C++ programming language which cannot be modified once they are defined. They are fixed values in a program. There can be any type of constant like integer, float, octal, hexadecimal, character constants, etc. Every constant has some range. The integers that are too big to fit into an int will be taken as long. Now there are various ranges that differ from unsigned to signed bits. Under the signed bit, the range of an int varies from -128 to +127, and under the unsigned bit, the int varies from 0 to 255. Literals are a kind of constant and both terms are used interchangeably in C++.
+                </p></li>
+                <li><b>Operators in C++</b>
+                <p>
+                    Operators are the foundation of any programming language. Thus the functionality of the C/C++ programming language is incomplete without the use of operators. We can define operators as symbols that help us to perform specific mathematical and logical computations on operands. In other words, we can say that an operator operates the operands.
+                </p></li>
+                <li><b> Loops in C++
+                    </b>
+                <p>Loops in programming come into use when we need to repeatedly execute a block of statements. For example: Suppose we want to print “Hello World” 10 times. This can be done in two ways, the Iterative method and using Loops</p></li>
+                <li><b>Decision-Making in C++</b>
+                    There comes situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code. Decision-making statements in programming languages decide the direction of the flow of program execution.</li>
+                <li><b> Classes and Objects in C++</b></li>
+                <p>Classes and Objects are used to provide Object Oriented Programming in C++. A class is a user-defined datatype that is a blueprint of an object that contains data members (attribute) and member methods that works on that data. Objects are the instances of a class that are required to use class methods and data as we cannot use them directly.</p>
+                </ul>
+            
+
+
+
+
+
+
+                <br><br><br>
+
+     <h2 id="data-types"><font color="#33b5e5">Data </font>Types</h2>
+        <p>All variables use data type during declaration to restrict the type of data to be stored. Therefore, we can say that data types are used to tell the variables the type of data they can store. Whenever a variable is defined in C++, the compiler allocates some memory for that variable based on the data type with which it is declared. Every data type requires a different amount of memory. 
+<br><br>
+            C++ supports a wide variety of data types and the programmer can select the data type appropriate to the needs of the application. Data types specify the size and types of values to be stored. However, storage representation and machine instructions to manipulate each data type differ from machine to machine, although C++ instructions are identical on all machines.
+            <br><br>
+        </p>
+       <font size="4px"> <b>C++ supports the following data types:</b></font> 
+       <br>
+        <ol>
+            <li>Primary or Built-in or Fundamental data type</li>
+            <li>Derived data types</li>
+            <li>User-defined data types</li>
+        </ol>
+        <br><br>
+        <br>
+     
+  <img src="C++/data types flowchart.png" alt="flowchart">     
+<br><br>
+
+  <h3>Data Types in C++ are Mainly Divided into 3 Types:</h3>
+        <ol>
+            <li><b> Primitive Data Types: </b><p></p>These data types are built-in or predefined data types and can be used directly by the user to declare variables. example: int, char, float, bool, etc. Primitive data types available in C++ are: 
+            <ul>
+                <li>Integer</li>
+                <li>Character</li>
+                <li>Boolean</li>
+                <li>Floating Point</li>
+                <li>Double Floating Point</li>
+                <li>Valueless or Void</li>
+                <li>Wide Character</li>
+            </ul>
+            
+            </p></li>
+            <li><b>Derived Data Types: </b> <p> Derived data types that are derived from the primitive or built-in datatypes are referred to as Derived Data Types. These can be of four types namely: </p>
+            <ul>
+                <li>Function</li>
+                <li>Array</li>
+                <li>Pointer</li>
+                <li>Reference</li>
+            </ul></li>
+<br>
+            <li><b> Abstract or User-Defined Data Types:  </b><p>
+                Abstract or User-Defined data types are defined by the user itself. Like, defining a class in C++ or a structure. C++ provides the following user-defined datatypes:  
+                <ul>
+                    <li>Class</li>
+                    <li>Structure</li>
+                    <li>Union</li>
+                    <li>Enumeration</li>
+                    <li>Typedef defined Datatype</li>
+                </ul>
+            </p></li>
+        </ol>
+<h4>Primitive Data Types</h4>
+<ul>
+<li><p><b>Integer:</b> The keyword used for integer data types is int. Integers typically require 4 bytes of memory space and range from -2147483648 to 2147483647.              </p></li>
+
+<li><b>Character: </b><p>Character data type is used for storing characters. The keyword used for the character data type is char. Characters typically require 1 byte of memory space and range from -128 to 127 or 0 to 255.               </p></li>
+
+<li><b>Boolean:  </b><p>Boolean data type is used for storing Boolean or logical values. A Boolean variable can store either true or false. The keyword used for the Boolean data type is bool.              </p></li>
+
+<li><b>Floating Point:  </b><p>Floating Point data type is used for storing single-precision floating-point values or decimal values. The keyword used for the floating-point data type is float. Float variables typically require 4 bytes of memory space. 
+                 </p></li>
+<li><b> Double Floating Point:  </b><p> Double Floating Point data type is used for storing double-precision floating-point values or decimal values. The keyword used for the double floating-point data type is double. Double variables typically require 8 bytes of memory space.             </p></li>
+<li><b>void:  </b><p>Void means without any value. void data type represents a valueless entity. A void data type is used for those function which does not return a value. 
+</p></li>
+<li><b>Wide Character:   </b><p>  Wide character data type is also a character data type but this data type has a size greater than the normal 8-bit data type. Represented by wchar_t. It is generally 2 or 4 bytes long.            </p></li>
+
+<li><b>sizeof() operator:  </b><p> sizeof() operator is used to find the number of bytes occupied by a variable/data type in computer memory.             </p></li>
+
+</ul>
+<br><br>
+<h4>Example</h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        
+// C++ Program to Demonstrate the correct size
+// of various data types on your computer.
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    cout << "Size of char : " << sizeof(char) << endl;
+    cout << "Size of int : " << sizeof(int) << endl;
+ 
+    cout << "Size of long : " << sizeof(long) << endl;
+    cout << "Size of float : " << sizeof(float) << endl;
+ 
+    cout << "Size of double : " << sizeof(double) << endl;
+ 
+    return 0;
+}
+      </code>
+    </pre>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+  </div>
+ 
+  <br><br><br>
+
+        <h2 id="Decision">Decision Making <font color="#33b5e5">in </font> C++</h2>
+        <p>There come situations in real life when we need to make some decisions and based on these decisions, we decide what should we do next. Similar situations arise in programming also where we need to make some decisions and based on these decisions we will execute the next block of code.<br> 
+            For example, in C if x occurs then execute y else execute z. There can also be multiple conditions like in C if x occurs then execute p, else if condition y occurs execute q, else execute r. This condition of C else-if is one of the many ways of importing multiple conditions. The Decision Making Statements are used to evaluate the one or more conditions and make the decision whether to execute set of statement or not.</p>
+
+
+
+            <img src="C++/c++ decison.png" alt="image description">
+  
+<br><br><br>
+<p>Decision-making statements in programming languages decide the direction of the flow of program execution. Decision-making statements available in C or C++ are: 
+<ol>
+    <li>if statement</li>
+    <li>if-else statements</li>
+    <li>nested if statements</li>
+    <li>if-else-if ladder</li>
+    <li>switch statements</li>
+    <li>Jump Statements:
+    <ul>
+        <li>break</li>
+        <li>continue</li>
+        <li>goto</li>
+        <li>return</li>
+    </ul>    
+    </li>
+</ol>
+</p>
+<br><br>
+
+    <h3>1. if statement in C/C++</h3>
+    <p>if statement is the most simple decision-making statement. It is used to decide whether a certain statement or block of statements will be executed or not i.e if a certain condition is true then a block of statement is executed otherwise not. </p>
+    <font size="larger" > <b>Syntax: </b></font>
+
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+          
+            if(condition) 
+{
+   // Statements to execute if
+   // condition is true
+}
+          </code>
+        </pre>
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+      </div>
+<br><br>
+<p>Here, the condition after evaluation will be either true or false. C if statement accepts boolean values – if the value is true then it will execute the block of statements below it otherwise not. If we do not provide the curly braces ‘{‘ and ‘}’ after if(condition) then by default if statement will consider the first immediately below statement to be inside its block. </p>
+<font size="4.5em" > <b>Example </b></font><br>
+If Aakash can having 100 CCBits then he can redeem these CCBits and get the CodingClassroom T-shirt 
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        if(condition)
+        statement1;
+        statement2;
+     
+     // Here if the condition is true, if block 
+     // will consider only statement1 to be inside 
+     // its block.
+            }
+        }
+      </code>
+    </pre>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+  </div>
+<br><br>
+<img src="C++/flowchartif.png" alt="image description">
+<br><br>
+
+    
+    <h3>2. if-else in C++ </h3>
+    <p> 
+        The if statement alone tells us that if a condition is true it will execute a block of statements and if the condition is false it won’t. But what if we want to do something else if the condition is false. Here comes the C else statement. We can use the else statement with the if statement to execute a block of code when the condition is false
+    </p>
+    <font size="larger" > <b>Syntax: </b></font>
+    <br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            if (condition)
+            {
+                // Executes this block if
+                // condition is true
+            }
+            else
+            {
+                // Executes this block if
+                // condition is false
+            }
+          </code>
+        </pre>
+      </div>
+      <br><br>
+      <font size="4.5em" > <b>Flowchart: </b></font><br>
+      <img src="C++/c++ flowchart if-else.png" alt=" image description">
+      <br><br>
+      <font size="4.5em" > <b>Example </b></font><br>
+      <p>The person who having correct 50 CC Bits is redeem the gifts otherwise they can’t redeem.</p>
+      <br><br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            // C++ program to illustrate if-else statement
+            #include <iostream>
+            using namespace std;
+             
+            int main()
+            {
+                int i = 20;
+             
+                if (i < 15)
+                    cout << "i is smaller than 15";
+                else
+                    cout << "i is greater than 15";
+             
+                return 0;
+            }
+          </code>
+        </pre>
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+      </div>
+      <br><br>
+    <h3>3. nested-if in C/C++ </h3><p>A nested if in C is an if statement that is the target of another if statement. Nested if statements mean an if statement inside another if statement. Yes, both C and C++ allow us to nested if statements within if statements, i.e, we can place an if statement inside another if statement.  </p>
+    <font size="larger" > <b>Syntax: </b></font>
+    <br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            if (condition1) 
+            {
+               // Executes when condition1 is true
+               if (condition2) 
+               {
+                  // Executes when condition2 is true
+               }
+            }
+
+          </code>
+        </pre>
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+      </div>
+      <br><br>
+      <font size="4.5em" > <b>Flowchart </b></font><br>
+      <img src="C++/c++ nested-ifelse.png" alt="nested if-else flowchart">
+      <br><br>
+      <font size="4.5em" > <b>Example </b></font><br>
+<br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ program to illustrate nested-if statement
+        #include <iostream>
+        using namespace std;
+        
+        int main()
+        {
+            int i = 10;
+        
+            if (i == 10) {
+                // First if statement
+                if (i < 15)
+                    cout << "i is smaller than 15\n";
+        
+                // Nested - if statement
+                // Will only be executed if
+                // statement above is true
+                if (i < 12)
+                    cout << "i is smaller than 12 too\n";
+                else
+                    cout << "i is greater than 15";
+            }
+        
+            return 0;
+        }
+        
+      </code>
+    </pre>
+  </div>
+<br><br>
+
+    <h3>4. if-else-if ladder in C/C++ </h3><p><br>
+        Here, a user can decide among multiple options. The C if statements are executed from the top down. As soon as one of the conditions controlling the if is true, the statement associated with that if is executed, and the rest of the C else-if ladder is bypassed. If none of the conditions is true, then the final else statement will be executed. if-else-if ladder is similar to switch statement.   <br>
+        <font size="larger" > <b>Syntax: </b></font>
+<br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+            <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+              <code>
+                if (condition)
+                statement;
+            else if (condition)
+                statement;
+            .
+            .
+            
+            else
+                statement;
+            
+              </code>
+            </pre>
+            <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+          </div>
+    </p>
+<br>
+
+<font size="4.5em" > <b>Flowchart</b></font><br>
+
+<img src="C++/c++ if else ladder.png" alt="if else ladder image">
+<br><br>
+
+    <h3>5. Jump Statements in C/C++ </h3><p> </p>
+<p>These statements are used in C or C++ for the unconditional flow of control throughout the functions in a program. They support four types of jump statements: </p>
+
+<font size="4em"> <b>A) break </b></font>
+<p>Basically, break statements are used in situations when we are not sure about the actual number of iterations for the loop or we want to terminate the loop based on some condition.  </p>
+<br>
+<font size="4em"> <b>B) Continue </b></font>
+<p>
+    This loop control statement is just like the break statement. The continue statement is opposite to that of the break statement, instead of terminating the loop, it forces to execute the next iteration of the loop. 
+As the name suggests the continue statement forces the loop to continue or execute the next iteration. When the continue statement is executed in the loop, the code inside the loop following the continue statement will be skipped and the next iteration of the loop will begin. 
+</p>
+<br>
+<font size="4em"> <b>C) goto</b></font>
+<p>
+    The goto statement in C/C++ also referred to as the unconditional jump statement can be used to jump from one point to another within a function. 
+</p>
+<br>
+<font size="4em"> <b>D) return</b></font>
+<p>
+    The return in C or C++ returns the flow of the execution to the function from where it is called. This statement does not mandatorily need any conditional statements. As soon as the statement is executed, the flow of the program stops immediately and returns the control from where it was called. The return statement may or may not return anything for a void function, but for a non-void function, a return value must be returned. 
+</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+      return[expression];   
+      </code>
+    </pre>
+  </div>
+  <br>
+  <font size="4em"> <b>Example</b></font>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ code to illustrate return
+        // statement
+        #include <iostream>
+        using namespace std;
+        
+        // non-void return type
+        // function to calculate sum
+        int SUM(int a, int b)
+        {
+            int s1 = a + b;
+            return s1;
+        }
+        
+        // returns void
+        // function to print
+        void Print(int s2)
+        {
+            cout << "The sum is " << s2;
+            return;
+        }
+        
+        int main()
+        {
+            int num1 = 10;
+            int num2 = 10;
+            int sum_of = SUM(num1, num2);
+            Print(sum_of);
+            return 0;
+        }
+        
+      </code>
+    </pre>
+  </div>
+
+<br><br><br>
+
+        <h2 id="Basic I/O"><font color="#33b5e5">Basic</font> Input/Output in C++</h2>
+        <br>
+        C++ comes with libraries that provide us with many ways for performing input and output. In C++ input and output are performed in the form of a sequence of bytes or more commonly known as streams.
+        <br><br>
+        <h3>I/O Redirection in C++</h3>
+        <p>In C, we could use the function freopen() to redirect an existing FILE pointer to another stream. The prototype for freopen() is given as </p>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+            <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+              <code>
+                FILE * freopen ( const char * filename, const char * mode, FILE * stream );
+              </code>
+            </pre>
+          </div>
+  <p>While this method is still supported in C++, this article discusses another way to redirect I/O <br>
+    C++ being an object-oriented programming language, gives us the ability to not only define our own streams but also redirect standard streams. Thus, in C++, a stream is an object whose behavior is defined by a class. Thus, anything that behaves like a stream is also a stream. <br><br>
+    <b>Streams Objects in C++ are mainly of three types : </b></p><br>
+    <ul>
+        <li><b>istream : </b> Stream object of this type can only perform input operations from the stream
+        </li>
+        <li><b>ostream : </b> These objects can only be used for output operations.</li>
+        <li><b>iostream : </b> Can be used for both input and output operations</li>
+    </ul>
+<br><br>
+<p>All these classes, as well as file stream classes, derived from the classes: ios and streambuf. Thus, filestream and IO stream objects behave similarly.<br>
+    All stream objects also have an associated data member of class streambuf. Simply put, streambuf object is the buffer for the stream. When we read data from a stream, we don’t read it directly from the source, but instead, we read it from the buffer which is linked to the source. Similarly, output operations are first performed on the buffer, and then the buffer is flushed (written to the physical device) when needed. <br>
+    C++ allows us to set the stream buffer for any stream, So the task of redirecting the stream simply reduces to changing the stream buffer associated with the stream. Thus, to redirect a Stream A to Stream B we need to do:- <br><br>
+     
+    <ul>
+    <li>Get the stream buffer of A and store it somewhere</li>
+    <li>Set the stream buffer of A to the stream buffer of B</li>
+    <li>If needed to reset the stream buffer of A to its previous stream buffer</li></p>
+
+</ul>
+<br><br>
+<h3>Basic I/O in c++</h3>
+<p><br><br>
+    <b>Header files available in C++ for Input/Output operations are: </b>
+<br><br>
+<ol>
+<li><b>iostream:</b> iostream stands for standard input-output stream. This header file contains definitions of objects like cin, cout, cerr, etc.</li>
+
+<li><b>iomanip:</b> iomanip stands for input-output manipulators. The methods declared in these files are used for manipulating streams. This file contains definitions of setw, setprecision, etc.</li>
+
+<li><b>ifstream:</b> This header file mainly describes the file stream. This header file is used to handle the data being read from a file as input or data being written into the file as output.</li>
+
+<li><b>bits/stdc++:</b> This header file includes every standard library. In programming contests, using this file is a good idea, when you want to reduce the time wasted in doing chores; especially when your rank is time sensitive. To know more about this header file refer this article.</li>
+</ol>
+<br>
+In C++ after the header files, we often use ‘using namespace std;‘. The reason behind it is that all of the standard library definitions are inside the namespace std. As the library functions are not defined at global scope, so in order to use them we use namespace std. So, that we don’t need to write STD:: at every line (eg. STD::cout etc.). To know more refer this article.
+
+The two instances cout in C++ and cin in C++ of iostream class are used very often for printing outputs and taking inputs respectively. These two are the most basic methods of taking input and printing output in C++. To use cin and cout in C++ one must include the header file iostream in the program.
+
+This article mainly discusses the objects defined in the header file iostream like the cin and cout.  <br>
+<ul><li>
+<b>Standard output stream (cout):</b> Usually the standard output device is the display screen. The C++ cout statement is the instance of the ostream class. It is used to produce output on the standard output device which is usually the display screen. The data needed to be displayed on the screen is inserted in the standard output stream (cout) using the insertion operator(<<).
+</p></li></ul>
+<br><br><br>
+<h3>Clearing The Input Buffer In C/C++</h3>
+<br>
+<h5>What is a buffer?</h5>
+<br>
+<p>A temporary storage area is called a buffer. All standard input and output devices contain an input and output buffer. In standard C/C++, streams are buffered. For example, in the case of standard input, when we press the key on the keyboard, it isn’t sent to your program, instead of that, it is sent to the buffer by the operating system, till the time is allotted to that program.</p>
+<br>
+<h5>How does it affect Programming?</h5>
+<br>
+<p>On various occasions, you may need to clear the unwanted buffer so as to get the next input in the desired container and not in the buffer of the previous variable. For example, in the case of C after encountering “scanf()”, if we need to input a character array or character, and in the case of C++, after encountering the “cin” statement, we require to input a character array or a string, we require to clear the input buffer or else the desired input is occupied by a buffer of the previous variable, not by the desired container. On pressing “Enter” (carriage return) on the output screen after the first input, as the buffer of the previous variable was the space for a new container(as we didn’t clear it), the program skips the following input of the container.</p>
+<br><br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ Code to explain why
+        // not clearing the input
+        // buffer causes undesired
+        // outputs
+        #include<iostream>
+        #include<vector>
+        using namespace std;
+        
+        int main()
+        {
+            int a;
+            char ch[80];
+            
+            // Enter input from user
+            // - 4 for example
+            cin >> a;
+            
+            // Get input from user -
+            // "GeeksforGeeks" for example
+            cin.getline(ch,80);
+            
+            // Prints 4
+            cout << a << endl;
+            
+            // Printing string : This does
+            // not print string
+            cout << ch << endl;
+            
+            return 0;
+        }
+        
+      </code>
+    </pre>
+  </div>
+<br><br><br>
+<h2 id="Operator">Operators in <font color="#33b5e5">C/C++</font></h2>
+<br><br>
+<p>C++/C Operators are symbols that represent operations to be performed on one or more operands. C/C++ provides a wide range of operators, which can be classified into different categories based on their functionality. Operators are used for performing operations on variables and values.</p>
+<h5>What are Operators in C/C++?</h5>
+<p>
+    Operators can be defined as the symbols that help us to perform specific mathematical, relational, bitwise, conditional, or logical computations on operands. In other words, we can say that an operator operates the operands. For example, ‘+’ is an operator used for addition, as shown <br>
+    <br>
+
+c = a + b;
+<br><br>
+
+Here, ‘+’ is the operator known as the addition operator, and ‘a’ and ‘b’ are operands. The addition operator tells the compiler to add both of the operands ‘a’ and ‘b’. The functionality of the C programming language is incomplete without the use of operators.
+</p>
+<br><br>
+<h5>
+    Types of Operators in C/C++
+</h5>
+<br>
+C has many built-in operators and can be classified into 6 types:
+<br><br>
+<ol>
+<li>Arithmetic Operators</li>
+<li>Relational Operators</li>
+<li>Logical Operators</li>
+<li>Bitwise Operators</li>
+<li>Assignment Operators</li>
+<li>Other Operators</li>
+</ol>
+<br><br>
+<img src="C++/c++ operators.png" alt="operators image description">
+<br><br><br>
+<h3>1. Arithmetic Operations in C</h3> <br>
+These operators are used to perform arithmetic/mathematical operations on operands. Examples: (+, -, *, /, %,++,–). Arithmetic operators are of two types:  <br><br> 
+
+<h5>a) Unary Operators: </h5><br>
+Operators that operate or work with a single operand are unary operators. For example: Increment(++) and Decrement(–) Operators  <br><br>
+
+int val = 5;
+cout<<++val;  // 6
+
+<br>
+<h5>  b) Binary Operators:</h5><br>
+Operators that operate or work with two operands are binary operators. For example: Addition(+), Subtraction(-), multiplication(*), Division(/) operators
+<br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        int val = 5;
+        cout<<++val;  // 
+      </code>
+    </pre>
+  </div>
+<br> <br>
+
+<h5>2. Relational Operators in C</h5>
+These are used for the comparison of the values of two operands. For example, checking if one operand is equal to the other operand or not, whether an operand is greater than the other operand or not, etc. Some of the relational operators are (==, >= , <= )(See this article for more reference).
+<br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        int a = 3;
+        int b = 5;
+        cout<<(a < b);
+        // operator to check if a is smaller than b
+      </code>
+    </pre>
+  </div>
+<br><br>
+
+<h5>3. Logical Operator in C/C++</h5><br>
+Logical Operators are used to combining two or more conditions/constraints or to complement the evaluation of the original condition in consideration. The result of the operation of a logical operator is a Boolean value either true or false. 
+<br>
+For example, the logical AND represented as the ‘&&’ operator in C returns true when both the conditions under consideration are satisfied. Otherwise, it returns false. Therefore, a && b returns true when both a and b are true (i.e. non-zero)(See this article for more reference).
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        cout<<((4 != 5) && (4 < 5));     // true
+      </code>
+    </pre>
+  </div>
+<br><br>
+<h5>4. Bitwise Operators in C </h5>
+The Bitwise operators are used to perform bit-level operations on the operands. The operators are first converted to bit-level and then the calculation is performed on the operands. Mathematical operations such as addition, subtraction, multiplication, etc. can be performed at the bit level for faster processing. For example, the bitwise AND operator represented as ‘&’ in C takes two numbers as operands and does AND on every bit of two numbers. The result of AND is 1 only if both bits are 1(True). 
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        int a = 5, b = 9;   // a = 5(00000101), b = 9(00001001)
+        cout << (a ^ b);   //  00001100
+        cout <<(~a);       // 11111010
+        
+        
+      </code>
+    </pre>
+  </div>
+<br><br>
+
+<h5>5. Assignment Operators in C</h5>
+Assignment operators are used to assign value to a variable. The left side operand of the assignment operator is a variable and the right side operand of the assignment operator is a value. The value on the right side must be of the same data type as the variable on the left side otherwise the compiler will raise an error. 
+<br>
+Different types of assignment operators are shown below: 
+<br>
+<h5>a) “=”</h5><br>
+This is the simplest assignment operator. This operator is used to assign the value on the right to the variable on the left. <br>
+Example: <br><br>
+
+a = 10;
+b = 20;
+ch = 'y';
+<br><br>
+<h5>b) “+=”</h5>
+This operator is the combination of the ‘+’ and ‘=’ operators. This operator first adds the current value of the variable on left to the value on the right and then assigns the result to the variable on the left. <br>
+Example:  <br> <br>
+
+(a += b) can be written as (a = a + b)
+If initially value stored in a is 5. Then (a += 6) = 11.
+<br><br>
+<h5>c) “-=” </h5>
+<br>
+This operator is a combination of ‘-‘ and ‘=’ operators. This operator first subtracts the value on the right from the current value of the variable on left and then assigns the result to the variable on the left. <br>
+Example: <br> <br>
+
+(a -= b) can be written as (a = a - b) <br>
+If initially value stored in a is 8. Then (a -= 6) = 2. <br><br>
+<h5>d) “*=” </h5><br>
+This operator is a combination of the ‘*’ and ‘=’ operators. This operator first multiplies the current value of the variable on left to the value on the right and then assigns the result to the variable on the left. <br>
+Example: <br><br>
+
+(a *= b) can be written as (a = a * b)
+If initially, the value stored in a is 5. Then (a *= 6) = 30. <br><br>
+<h5>e) “/=”</h5> <br>
+This operator is a combination of the ‘/’ and ‘=’ operators. This operator first divides the current value of the variable on left by the value on the right and then assigns the result to the variable on the left. <br>
+Example: <br><br>
+
+(a /= b) can be written as (a = a / b) <br>
+If initially, the value stored in a is 6. Then (a /= 2) = 3. <br><br>
+  
+
+
+
+
+<h3>Unary operators in C/C++</h3>
+<br><br>
+<p>
+   <b> Unary operators: </b>are operators that act upon a single operand to produce a new value.
+<br>
+Types of unary operators:
+<ol>
+<li>unary minus(-)</li>
+<li>increment(++)</li>
+<li>decrement(- -)</li>
+<li>NOT(!)</li>
+<li>Addressof operator(&)</li>
+<li>sizeof()</li>
+</ol>
+<br>
+Time complexity of any unary operator is O(1).
+<br>
+Auxiliary Space of any unary operator is O(1).
+<br>
+<b>1. unary minus:</b> The minus operator changes the sign of its argument. A positive number becomes negative, and a negative number becomes positive. <br><br>
+
+ int a = 10;
+ int b = -a;  // b = -10
+ <br><br>
+unary minus is different from the subtraction operator, as subtraction requires two operands.
+Below is the implementation of unary minus <b>(-)</b> operator:
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ program to demonstrate the use of 'unary minus'
+        // operator
+        
+        #include <iostream>
+        using namespace std;
+        
+        int main()
+        {
+            int positiveInteger = 100;
+            int negativeInteger = -positiveInteger;
+        
+            cout << "Positive Integer: " << positiveInteger << endl;
+            cout << "Negative Integer: " << negativeInteger << endl;
+        
+            return 0;
+        }
+        
+        <!-- // This code is contributed by Aakash18112002 -->
+    </code>
+</pre>
+</div>
+</p>
+        <br><br>
+        <h5>2. increment: </h5>It is used to increment the value of the variable by 1. The increment can be done in two ways: <br><br>
+
+ <h5> prefix increment: </h5>In this method, the operator precedes the operand (e.g., ++a). The value of the operand will be altered before it is used.
+<br><br>
+  int a = 1;
+  int b = ++a;  // b = 2
+  <br><br>
+<h5>  2.2 postfix increment:</h5> In this method, the operator follows the operand (e.g., a++). The value operand will be altered after it is used.
+<br><br>
+ int a = 1;
+ int b = a++;   // b = 1
+ int c = a;     // c = 2
+ <br><br>
+<h5>  3. decrement: </h5>It is used to decrement the value of the variable by 1. The decrement can be done in two ways:  <br>
+<h5> 3.1 prefix decrement:</h5> In this method, the operator precedes the operand (e.g., – -a). The value of the operand will be altered before it is used.
+<br><br>
+  int a = 1;
+  int b = --a;  // b = 0 <br><br>
+<h5>3.2 postfix decrement:</h5> In this method, the operator follows the operand (e.g., a- -). The value of the operand will be altered after it is used.
+<br><br>
+ int a = 1;
+ int b = a--;   // b = 1
+ int c = a;     // c = 0
+ <br><br>
+<h5>4. NOT(!): </h5>It is used to reverse the logical state of its operand. If a condition is true, then the Logical NOT operator will make it false.
+<br><br>
+   If x is true, then !x is false
+   If x is false, then !x is true
+Below is the implementation of the NOT (!) operator:
+    <br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            // C++ program to demonstrate the use of '!(NOT) operator'
+
+            #include <iostream>
+            using namespace std;
+            
+            int main()
+            {
+            
+                int a = 10;
+                int b = 5;
+            
+                if (!(a > b))
+                    cout << "b is greater than a" << endl;
+                else
+                    cout << "a is greater than b" << endl;
+            
+                return 0;
+            }
+            
+            // This code is contributed by sarajadhav12052009
+            
+          </code>
+        </pre>
+      </div>    
+<br><br>
+
+<h5>5. Addressof operator(&): </h5>It gives an address of a variable. It is used to return the memory address of a variable. These addresses returned by the address-of operator are known as pointers because they “point” to the variable in memory.
+<br><br>
+& gives an address on variable n
+<br><br>
+int a;<br>
+int *ptr;<br>   
+ptr = &a; // address of a is copied to the location ptr. 
+<br>
+Below is the implementation of<b> Addressof operator(&)</b>:
+<br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ program to demonstrate the use of 'address-of(&)'
+        // operator
+        
+        #include <iostream>
+        using namespace std;
+        
+        int main()
+        {
+        
+            int a;
+            int* ptr;
+        
+            ptr = &a;
+        
+            cout << ptr;
+        
+            return 0;
+        }
+        
+        // This code is contributed by ASHISH da        
+      </code>
+    </pre>
+  </div>
+<br><br><br>
+<h3>  <font color="#33b5e5">Pre-increment</font>  (or pre-decrement) With Reference to L-value in C++</h3>
+<p>
+  In C++, pre-increment (or pre-decrement) can be used as l-value, but post-increment (or post-decrement) can not be used as l-value.  
+For example, following program prints a = 20 (++a is used as l-value) <br>
+
+l-value is simply nothing but the memory location, which has an address.
+</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // CPP program to illustrate
+      // Pre-increment (or pre-decrement)
+      #include <cstdio>
+      
+      int main()
+      {
+        int a = 10;
+      
+        ++a = 20; // works
+        printf("a = %d", a);
+        printf("\n");
+        --a = 10;
+        printf("a = %d", a);
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<h5>Time Complexity: O(1)</h5>
+<p>The above program works whereas the following program fails in compilation with error “non-lvalue in assignment” (a++ is used as l-value) </p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // CPP program to illustrate
+      // Post-increment (or post-decrement)
+      #include <cstdio>
+      
+      int main()
+      {
+        int a = 10;
+        a++ = 20; // error
+        printf("a = %d", a);
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<h4><center>How ++a is <font color="#33b5e5">Different</font> From a++ as lvalue ?</center></h4>
+<p>It is because ++a returns an lvalue, which is basically a reference to the variable to which we can further assign — just like an ordinary variable. It could also be assigned to a reference as follows: <br></p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int &ref = ++a; // valid
+      int &ref = a++; // invalid
+    </code>
+  </pre>
+</div>
+<br>
+<p>Whereas if you recall how a++ works, it doesn’t immediately increment the value it holds. For clarity, you can think of it as getting incremented in the next statement. So what basically happens is that, a++ returns an rvalue, which is basically just a value like the value of an expression that is not stored. You can think of a++ = 20; as follows after being processed: <br></p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int a = 10;
+
+      // On compilation, a++ is replaced by the value of a which is an rvalue:
+      10 = 20; // Invalid
+      
+      // Value of a is incremented
+      a = a + 1;
+    </code>
+  </pre>
+</div>
+<br>
+<p>That should help to understand why a++ = 20; won’t work. Please write comments if you find anything incorrect, or you want to share more information about the topic discussed above.
+
+</p>
+<br>
+
+<br><br>
+
+
+
+        <h2 id="arrays">C/C++<font color="#33b5e5">    Arrays</font></h2><br>
+      <p>  <b>Array in C/C++ </b>is one of the most used data structures in C programming. It is a simple and fast way of storing multiple values under a single name. In this article, we will study the different aspects of array in C language such as array declaration, definition, initialization, types of arrays, array syntax, advantages and disadvantages, and many more.  <br><br>
+        </p>
+  <h4>What is an <font color="#33b5e5">    Array </font>C/C++ </h4>
+<p>An array in C is a fixed-size collection of similar data items stored in contiguous memory locations. It can be used to store the collection of primitive data types such as int, char, float, etc., and also derived and user-defined data types such as pointers, structures, etc.</p>
+<br>
+<img src="C++/ArraysC++.png" alt="">
+<br>
+<h4>C Array <font color="#33b5e5">Declaration</font></h4>
+<br>
+<p>In C, we have to declare the array like any other variable before using it. We can declare an array by specifying its name, the type of its elements, and the size of its dimensions. When we declare an array in C, the compiler allocates the memory block of the specified size to the array name.</p>
+<br>
+<h5><font color="#33b5e5">Syntax</font> of Array Declaration</h5>
+<br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type array_name [size];
+      or
+data_type array_name [size1] [size2]...[sizeN];
+    </code>
+  </pre>
+</div>
+<br>
+<h5><font color="#33b5e5">Example</font> of Array Declaration</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C Program to illustrate the array declaration
+      #include <stdio.h>
+      
+      int main()
+      {
+      
+        // declaring array of integers
+        int arr_int[5];
+        // declaring array of characters
+        char arr_char[5];
+      
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<br>
+<h3>C Array <font color="#33b5e5">Initialization</font></h3>
+<p>Initialization in C is the process to assign some initial value to the variable. When the array is declared or allocated memory, the elements of the array contain some garbage value. So, we need to initialize the array to some meaningful value. There are multiple ways in which we can initialize an array in C.</p>
+<br><br>
+<h4>1. Array Initialization with <font color="#33b5e5">Declaration</font></h4>
+<br>
+<p>In this method, we initialize the array along with its declaration. We use an initializer list to initialize multiple elements of the array. An initializer list is the list of values enclosed within braces { } separated b a comma.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type array_name [size] = {value1, value2, ... valueN};
+    </code>
+  </pre>
+</div>
+<br>
+<h4>2. Array Initialization with Declaration <font color="#33b5e5">without</font> Size</h4><br> 
+<p>If we initialize an array using an initializer list, we can skip declaring the size of the array as the compiler can automatically deduce the size of the array in these cases. The size of the array in these cases is equal to the number of elements present in the initializer list as the compiler can automatically deduce the size of the array.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type array_name[] = {1,2,3,4,5};
+    </code>
+  </pre>
+</div>
+<p>The size of the above arrays is 5 which is automatically deduced by the compiler.</p>
+<br><br>
+<h4>3. Array <font color="#33b5e5">Initialization</font> after Declaration (Using Loops)</h4>
+<br>
+<p>We initialize the array after the declaration by assigning the initial value to each element individually. We can use for loop, while loop, or do-while loop to assign the value to each element of the array.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      for (int i = 0; i < N; i++) {
+        array_name[i] = valuei;
+    }
+    </code>
+  </pre>
+</div>
+
+<br>
+<h5><font color="#33b5e5">Example</font> of Array Initialization in C</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C++ Program to demonstrate array initialization
+      #include <stdio.h>
+      
+      int main()
+      {
+      
+        // array initialization using initialier list
+        int arr[5] = { 10, 20, 30, 40, 50 };
+      
+        // array initialization using initializer list without
+        // specifying size
+        int arr1[] = { 1, 2, 3, 4, 5 };
+      
+        // array initialization using for loop
+        float arr2[5];
+        for (int i = 0; i < 5; i++) {
+          arr2[i] = (float)i * 2.1;
+        }
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<h3>Access Array <font color="#33b5e5">Elements</font></h3>
+<br>
+<p>We can access any element of an array in C using the array subscript operator [ ]  and the index value i of the element.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      array_name [index];
+    </code>
+  </pre>
+</div>
+<br>
+<p>One thing to note is that the indexing in the array always starts with 0, i.e., the first element is at index 0 and the last element is at N – 1 where N is the number of elements in the array.</p>
+
+<br><br>
+<h4>Update <font color="#33b5e5">Array</font> Element</h4>
+<p>We can update the value of an element at the given index i in a similar way to accessing an element by using the array subscript operator [ ] and assignment operator =.</p>
+<br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      array_name[i] = new_value;
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>C/C++ Array <font color="#33b5e5">Traversal</font></h4>
+<br>
+<p>
+  Traversal is the process in which we visit every element of the data structure. For C array traversal, we use loops to iterate through each element of the array.
+</p>
+<br>
+<h5>Array Traversal using <font color="#33b5e5">for</font> Loop</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      for (int i = 0; i < N; i++) {
+        array_name[i];
+    }
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>How to use <font color="#33b5e5">Array</font> in C?</h4>
+<br>
+<p>
+  The following program demonstrates how to use an array in the C programming language:
+</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C Program to demonstrate the use of array
+      #include <stdio.h>
+      
+      int main()
+      {
+        // array declaration and initialization
+        int arr[5] = { 10, 20, 30, 40, 50 };
+      
+        // modifying element at index 2
+        arr[2] = 100;
+      
+        // traversing array using for loop
+      printf("Elements in Array: ");
+        for (int i = 0; i < 5; i++) {
+          printf("%d ", arr[i]);
+        }
+      
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<br>
+<h4>Passing an Array to a <font color="#33b5e5">Function</font> in C</h4>
+<br>
+<p>
+  An array is always passed as pointers to a function in C. Whenever we try to pass an array to a function, it decays to the pointer and then passed as a pointer to the first element of an array.
+<br>
+We can verify this using the following C Program:
+</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      <font color="#33b5e5"> // C++ Program to pass an array to a function</font>
+      #include <stdio.h>
+      
+      void printArray(int arr[])
+      {
+        printf("Size of Array in Functions: %d\n", sizeof(arr));
+        printf("Array Elements: ");
+        for (int i = 0; i < 5; i++) {
+          printf("%d ",arr[i]);
+        }
+      }
+      
+      <font color="#33b5e5">// driver code</font>
+      int main()
+      {
+      
+        int arr[5] = { 10, 20, 30, 40, 50 };
+      
+        printf("Size of Array in main(): %d\n", sizeof(arr));
+        printArray(arr);
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4><font color="#33b5e5">Return</font> an Array from a Function in C/C++</h4>
+<br>
+<p>In C, we can only return a single value from a function. To return multiple values or elements, we have to use pointers. We can return an array from a function using a pointer to the first element of that array.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C Program to return array from a function
+      #include <stdio.h>
+      
+      // function
+      int* func()
+      {
+        static int arr[5] = { 1, 2, 3, 4, 5 };
+      
+        return arr;
+      }
+      
+      // driver code
+      int main()
+      {
+      
+        int* ptr = func();
+      
+        printf("Array Elements: ");
+        for (int i = 0; i < 5; i++) {
+          printf("%d ", *ptr++);
+        }
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br><br>
+<br>
+<br><br>
+
+
+        <h2 id="functions"><font color="#33b5e5">Functions</font> in C/C++ </h2><br><br>
+        <p>A function is a set of statements that take inputs, do some specific computation, and produce output. The idea is to put some commonly or repeatedly done tasks together and make a function so that instead of writing the same code again and again for different inputs, we can call the function.
+          In simple terms, a function is a block of code that only runs when it is called.</p>
+
+<h5>For <font color="#33b5e5">Example</font> </h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C++ Program to demonstrate working of a function
+      #include <iostream>
+      using namespace std; 
+      
+      // Following function that takes two parameters 'x' and 'y'
+      // as input and returns max of two input numbers
+      int max(int x, int y)
+      {
+        if (x > y)
+          return x;
+        else
+          return y;
+      }
+      
+      // main function that doesn't receive any parameter and
+      // returns integer
+      int main()
+      {
+        int a = 10, b = 20;
+      
+        // Calling above function to find max of 'a' and 'b'
+        int m = max(a, b);
+      
+        cout << "m is " << m;
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<br>
+<h3><font color="#33b5e5">Why</font> Do We Need Functions?</h3>
+<br>
+<ul>
+  <li>Functions help us in <b>reducing code redundancy.</b> If functionality is performed at multiple places in software, then rather than writing the same code, again and again, we create a function and call it everywhere. This also helps in maintenance as we have to change at one place if we make future changes to the functionality.</li>
+  <li>Functions make code modular. Consider a big file having many lines of code. It becomes really simple to read and use the code if the code is divided into functions.</li>
+  <li>Functions provide abstraction. For example, we can use library functions without worrying about their internal work.</li>
+</ul>
+<br><br>
+<h3>Function <font color="#33b5e5">Declaration</font></h3>
+<br>
+<p>A function declaration tells the compiler about the number of parameters function takes data-types of parameters, and returns the type of function. Putting parameter names in the function declaration is optional in the function declaration, but it is necessary to put them in the definition. Below are an example of function declarations. (parameter names are not there in the below declarations) </p>
+<br><br>
+<h5>Example</h5>
+<br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C++ Program to show function that takes
+      // two integers as parameters and returns
+      // an integer
+      int max(int, int);
+      
+      // A function that takes an int
+      // pointer and an int variable
+      // as parameters and returns
+      // a pointer of type int
+      int* swap(int*, int);
+      
+      // A function that takes
+      // a char as parameter and
+      // returns a reference variable
+      char* call(char b);
+      
+      // A function that takes a
+      // char and an int as parameters
+      // and returns an integer
+      int fun(char, int);
+      
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>Types of <font color="#33b5e5">Functions</font></h4>
+<br>
+<img src="C++/function types.png" alt="Image description">
+<br><br><br>
+<h4><font color="#33b5e5">User-Defined</font>  Functions</h4>
+<br>
+<p>
+  User Defined functions are user/customer-defined blocks of code specially customized to reduce the complexity of big programs. They are also commonly known as <b><i>“tailor-made functions” </i></b>which are built only to satisfy the condition in which the user is facing issues meanwhile reducing the complexity of the whole program.
+</p>
+<br>
+<h5><font color="#33b5e5">Library</font> Functions</h5>
+<br>
+<p>Library functions are also called “builtin Functions“. These functions are a part of a compiler package that is already defined and consists of a special function with special and different meanings. Builtin Function gives us an edge as we can directly use them without defining them whereas in the user-defined function we have to declare and define a function before using them. </p>
+<br>
+<h5>Example</h5><p>For Example: sqrt(), setw(), strcat(), etc.</p>
+<br><br>
+<h4>Parameter <font color="#33b5e5">Passing </font>to Functions</h4>
+<br>
+<p>
+  The parameters passed to function are called actual parameters. For example, in the program below, 5 and 10 are actual parameters. <br>
+The parameters received by the function are called formal parameters. For example, in the above program x and y are formal parameters. <br>
+</p>
+<h5>There are two most <font color="#33b5e5">popular ways</font> to pass parameters:</h5>
+<br>
+<h5>1. Pass by Value: </h5><p>
+  In this parameter passing method, values of actual parameters are copied to the function’s formal parameters and the two types of parameters are stored in different memory locations. So any changes made inside functions are not reflected in the actual parameters of the caller.
+</p>
+<br>
+<h5>2. Pass by Reference: </h5> <p>Both actual and formal parameters refer to the same locations, so any changes made inside the function are actually reflected in the actual parameters of the caller.</p>
+<br>
+
+<h4>Function <font color="#33b5e5">Definition</font></h4>
+<br>
+ 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C++ Program to demonstrate function definition
+      #include <iostream>
+      using namespace std;
+      
+      void fun(int x)
+      {
+        // definition of
+        // function
+        x = 30;
+      }
+      
+      int main()
+      {
+        int x = 20;
+        fun(x);
+        cout << "x = " << x;
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>Functions Using <font color="#33b5e5"> Pointers</font></h4>
+<br>
+<p>The function fun() expects a pointer ptr to an integer (or an address of an integer). It modifies the value at the address ptr. The dereference operator * is used to access the value at an address. In the statement ‘*ptr = 30’, the value at address ptr is changed to 30. The address operator & is used to get the address of a variable of any data type. In the function call statement ‘fun(&x)’, the address of x is passed so that x can be modified using its address. </p>
+<br><br>
+ 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C++ Program to demonstrate working of
+      // function using pointers
+      #include <iostream>
+      using namespace std;
+      
+      void fun(int* ptr) { *ptr = 30; }
+      
+      int main()
+      {
+        int x = 20;
+        fun(&x);
+        cout << "x = " << x;
+      
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Main </font>Function </h3>
+<br>
+<p>The main function is a special function. Every C++ program must contain a function named main. It serves as the entry point for the program. The computer will start running the code from the beginning of the main function. </p>
+<br>
+<h5>
+  Types of Main <font color="#33b5e5">Functions</font>
+</h5>
+<br>
+<h5>1. <font color="#33b5e5">Without</font> parameters: </h5>
+<br>
+ 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // Without Parameters
+      int main() { ... return 0; }
+      
+    </code>
+  </pre>
+</div>
+
+<br>
+<h5>1. <font color="#33b5e5">With</font> parameters: </h5>
+<br>
+ 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // With Parameters
+      int main(int argc, char* const argv[]) { ... return 0; }
+    
+    </code>
+  </pre>
+</div>
+<br>
+<p>The reason for having the parameter option for the main function is to allow input from the command line. When you use the main function with parameters, it saves every group of characters (separated by a space) after the program name as elements in an array named argv.  <br>
+  Since the main function has the return type of int, the programmer must always have a return statement in the code. The number that is returned is used to inform the calling program what the result of the program’s execution was. Returning 0 signals that there were no problems.</p>
+<br><br>
+<h3>C++ <font color="#33b5e5"> Recursion</font></h3>
+<br>
+<p>When function is called within the sameh function, it is known as recursion in C++. The function which calls the same function, is known as recursive function.
+  A function that calls itself, and doesn’t perform any task after function call, is known as tail recursion. In tail recursion, we generally call the same function with return statement.</p>
+  <br>
+  <br>
+  <h5>Syntax</h5>
+  <br>
+   
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        recursionfunction()
+        {
+          recursionfunction(); // calling self function
+        }
+        
+      </code>
+    </pre>
+  </div>
+<br>
+
+<h3>C++<font color="#33b5e5"> Overloading </font>(Function)</h3>
+<p>
+  If we create two or more members having the same name but different in number or type of parameter, it is known as C++ overloading. In C++, we can overload:
+  <ul>
+    <li>methods,</li>
+    <li>constructors and</li>
+    <li>indexed properties</li>
+  </ul>
+</p>
+<br>
+<p>It is because these members have parameters only.</p>
+<br>
+<h5><font color="#33b5e5">Types </font>of overloading in C++ are:</h5>
+<br>
+<ul>
+  <li>Function overloading</li>
+  <li>Operator overloading</li>
+</ul>
+<br>
+<h4>C++ <font color="#33b5e5"> Function</font> Overloading</h4>
+<p>
+  Function Overloading is defined as the process of having two or more function with the same name, but different in parameters is known as function overloading in C++. In function overloading, the function is redefined by using either different types of arguments or a different number of arguments. It is only through these differences compiler can differentiate between the functions.
+The advantage of Function overloading is that it increases the readability of the program because you don’t need to use different names for the same action. <br> <br>
+<b>Example: changing number of arguments of add() method</b> <br>
+ 
+</p>
+<br> 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // program of function overloading when number of arguments
+      // vary
+      #include <iostream>
+      using namespace std;
+      class Cal {
+      public:
+        static int add(int a, int b) { return a + b; }
+        static int add(int a, int b, int c)
+        {
+          return a + b + c;
+        }
+      };
+      int main(void)
+      {
+        Cal C; // class object declaration.
+        cout << C.add(10, 20) << endl;
+        cout << C.add(12, 20, 23);
+        return 0;
+      }
+      
+      // Code Submitted By Aakash
+      
+    </code>
+  </pre>
+</div>
+<br>
+
+<br><br><br> <br>
+
+<h2 id="pointers">C/C++ <font color="#33b5e5">Pointers</font></h2>
+<br>
+<p>
+  Pointers in C/C++ are used to store the address of variables or a memory location. This variable can be of any data type i.e, int, char, function, array, or any other pointer. Pointers are one of the core concepts of C programming language that provides low-level memory access and facilitates dynamic memory allocation.
+</p>
+
+<h4>What is a Pointer <font color="#33b5e5">in C++?</h4></font>
+<p>
+  A pointer is a derived data type in C that can store the address of other variables or a memory. We can access and manipulate the data stored in that memory location using pointers.
+</p>
+<br>
+<h4><font color="#33b5e5">Syntax </font>of C Pointers</h4>
+<br>
+ 
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      datatype * pointer_name;
+    </code>
+  </pre>
+</div>
+<br>
+<p>The above syntax is the generic syntax of C pointers. The actual syntax depends on the type of data the pointer is pointing to.</p>
+<br>
+<h3>How to <font color="#33b5e5">Use</font> Pointers?</h3>
+<p>To use pointers in C, we must understand below two operators:</p>
+<br>
+<h4>1. <font color="#33b5e5">Addressof </font>Operator</h4>
+<br>
+<p>he addressof operator ( & ) is a unary operator that returns the address of its operand. Its operand can be a variable, function, array, structure, etc.
+</p>
+<h5> <font color="#33b5e5">Syntax </font> of Address of Operator</h5>
+ <br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+ &variable_name;
+    </code>
+  </pre>
+</div>
+<br>
+
+<h4>2. <font color="#33b5e5">Dereferencing </font>Operator</h4>
+<p>The dereference operator ( * ), also known as the indirection operator is a unary operator. It is used in pointer declaration and dereferencing.</p>
+<br>
+<h3>C Pointer <font color="#33b5e5">Declaration</h3></font>
+<br>
+<p>In pointer declaration, we only declare the pointer but do not initialize it. To declare a pointer, we use the * dereference operator before its name.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type * pointer_name;
+    </code>
+  </pre>
+</div>
+<br>
+<p>
+  The pointer declared here will point to some random memory address as it is not initialized. Such pointers are also called wild pointers that we will study later in this article.
+</p>
+<br>
+<h4>C Pointer <font color="#33b5e5">Initialization</h4></font> <br>
+<p>When we assign some value to the pointer, it is called Pointer Initialization in C. There are two ways in which we can initialize a pointer in C of which the first one is:
+<br></p>
+  <h5>Method 1: C++ Pointer <font color="#33b5e5">Definition</h5></font>
+
+
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          datatype * pointer_name = address;
+        </code>
+      </pre>
+    </div>
+<br>
+<p>
+  The above method is called Pointer Definition as the pointer is declared and initialized at the same time.
+</p>
+<h5>Method 2: Initialization After <font color="#33b5e5">Declaration</h5></font>
+<p>The second method of pointer initialization in C the assigning some address after the declaration</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      datatype * pointer_name;
+      pointer_name = addresss;
+    </code>
+  </pre>
+</div>
+<br>
+<h4><font color="#33b5e5">Dereferencing </font>a C++ Pointer</h4>
+<p>Dereferencing is the process of accessing the value stored in the memory address specified in the pointer. We use dereferencing operator for that purpose.
+<br>
+</p>
+<h5>Example: C++ Program to<font color="#33b5e5"> demonstrate </font>how to use pointers in C++.</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C program to illustrate Pointers
+      #include <stdio.h>
+      
+      void geeks()
+      {
+        int var = 20;
+      
+        // declare pointer variable
+        int* ptr;
+      
+        // note that data type of ptr and var must be same
+        ptr = &var;
+      
+        // assign the address of a variable to a pointer
+        printf("Value at ptr = %p \n", ptr);
+        printf("Value at var = %d \n", var);
+        printf("Value at *ptr = %d \n", *ptr);
+      }
+      
+      // Driver program
+      int main()
+      {
+        geeks();
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<h3><font color="#33b5e5">Types</font> of Pointers</h3>
+<br>
+<p>Pointers can be classified into many different types based on the parameter on which we are defining their types. If we consider the type of variable stored in the memory location pointed by the pointer, then the pointers can be classified into the following types: <br></p>
+<br>
+<h4>1. <font color="#33b5e5">Integer </font>Pointers</h4>
+<p>As the name suggests, these are the pointers that point to the integer values.</p>
+<br>
+<h5>Syntax of <font color="#33b5e5">Integer </font>Pointers</h5>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int *pointer_name;
+    </code>
+  </pre>
+</div>
+<br>
+These pointers are pronounced as Pointer to Integer.
+<br>
+Similarly, a pointer can point to any primitive data type. The syntax will change accordingly. It can point also point to derived data types such as arrays and user-defined data types such as structures.
+<br>
+<br>
+<h4>2. Array<font color="#33b5e5"> Pointer</font></h4>
+<br>
+<p>Pointers and Array are closely related to each other. Even the array name is the pointer to its first element. They are also known as Pointer to Arrays. We can create a pointer to an array using the given syntax.</p>
+<br>
+<h5>Syntax of Array <font color="#33b5e5">Pointers</h5></font>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      char *pointer_name = &array_name;
+    </code>
+  </pre>
+</div>
+<br>
+<p>Pointer to Arrays exhibits some interesting properties which we discussed later in this article.</p> <br>
+
+<h4>3.<font color="#33b5e5"> Structure </font>Pointer</h4>
+<p>The pointer pointing to the structure type is called Structure Pointer or Pointer to Structure. It can be declared in the same way as we declare the other primitive data types.</p>
+<br>
+<h5>Syntax of Structure Pointer</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      struct struct_name *pointer_name;
+    </code>
+  </pre>
+</div>
+<br>
+<h4>4. <font color="#33b5e5">Function</font> Pointers</h4><br>
+<p>Function pointers point to the functions. They are different from the rest of the pointers in the sense that instead of pointing to the data, they point to the code. Let’s consider a function prototype – int func (int, char), the function pointer for this function will be</p>
+<br>
+<h5><font color="#33b5e5">Syntax </font>of Function Pointer</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int (*pointer_name)(int, int);
+    </code>
+  </pre>
+</div>
+<br>
+<p>Keep in mind that the syntax of the function pointers changes according to the function prototype.</p>
+<br><br>
+<h4>5. <font color="#33b5e5">Double </font>Pointers</h4><br>
+<p>In C language, we can define a pointer that stores the memory address of another pointer. Such pointers are called double-pointers or pointers-to-pointer. Instead of pointing to a data value, they point to another pointer.</p>
+<br>
+<h5>Syntax of <font color="#33b5e5">Double Pointer</font> in C</h5>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      datatype ** pointer_name;
+    </code>
+  </pre>
+</div>
+<br>
+<h4>6. <font color="#33b5e5">NULL </font>Pointer</h4>
+<br>
+<p>The Null Pointers are those pointers that do not point to any memory location. They can be created by assigning a NULL value to the pointer. A pointer of any type can be assigned the NULL value.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type *pointer_name = NULL;
+      or
+pointer_name = NULL
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>7. Void <font color="#33b5e5">Pointer</font></h4>
+<br>
+<p>The Void pointers in C are the pointers of type void. It means that they do not have any associated data type. They are also called generic pointers as they can point to any type and can be typecasted to any type.</p>
+<br>
+<h5>Syntax of Void Pointer</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      void * pointer_name;
+    </code>
+  </pre>
+</div>
+<p>One of the main properties of void pointers is that they cannot be dereferenced.</p>
+<br>
+<br>
+<h4>8. Wild <font color="#33b5e5"> Pointers</font></h4>
+<br>
+<p>
+  The Wild Pointers are pointers that have not been initialized with something yet. These types of C-pointers can cause problems in our programs and can eventually cause them to crash.
+</p>
+<br>
+
+<h5><font color="#33b5e5">Example </font>of Wild Pointers</h5><br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int *ptr;
+      char *str;
+    </code>
+  </pre>
+</div>
+
+<br><br>
+<h4>9. Constant<font color="#33b5e5"> Pointers</font></h4>
+<br>
+<p>In constant pointers, the memory address stored inside the pointer is constant and cannot be modified once it is defined. It will always point to the same memory address.
+<br>
+  </p>
+  <h5>Syntax of <font color="#33b5e5">Constant</font> Pointer</h5>
+<br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      const data_type * pointer_name;
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4>10. Pointer to <font color="#33b5e5">Constant</font></h4>
+<br>
+<p>
+  The pointers pointing to a constant value that cannot be modified are called pointers to a constant. Here we can only access the data pointed by the pointer, but cannot modify it. Although, we can change the address stored in the pointer to constant.
+</p>
+<br>
+<h5>Syntax to <font color="#33b5e5">Pointer</font> to Constant</h5>
+<br>
+<br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      data_type * const pointer_name;
+    </code>
+  </pre>
+</div>
+
+<br><br>
+<h4>Other <font color="#33b5e5">Types </font>of Pointers in C:</h4>
+<br>
+<p>There are also the following types of pointers available to use in C apart from those specified above:</p>
+<br>
+<ul>
+  <li><h5>Far pointer:  </h5> <p>A far pointer is typically 32-bit that can access memory outside the current segment.   </p> 
+  </li>
+
+  <li><h5>Dangling pointer: </h5> <p>A pointer pointing to a memory location that has been deleted (or freed) is called a dangling pointer.   </p> </li>
+
+  <li><h5>Huge pointer:  </h5> <p>A huge pointer is 32-bit long containing segment address and offset address.   </p> </li>
+  <li><h5>Complex pointer:  </h5> <p>Pointers with multiple levels of indirection.   </p> </li>
+  <li><h5>Near pointer:  </h5> <p>Near pointer is used to store 16-bit addresses means within the current segment on a 16-bit machine.   </p> </li>
+  <li><h5> Normalized pointer: </h5> <p> It is a 32-bit pointer, which has as much of its value in the segment register as possible.  </p> </li>
+  <li><h5>File Pointer:  </h5> <p>The pointer to a FILE data type is called a stream pointer or a file pointer.
+  </p> </li>
+</ul>
+<br>
+<br>
+<h3><font color="#33b5e5">Size of</font> Pointers in C/C++</h3>
+<br><br>
+  <p>The size of the pointers in C is equal for every pointer type. The size of the pointer does not depend on the type it is pointing to. It only depends on the operating system and CPU architecture. The size of pointers in C is 
+<br>
+<ul>
+  <li>
+    8 bytes for a 64-bit System</li>
+  <li>  4 bytes for a 32-bit System</p></li>
+  </ul>
+<br>
+<p>The reason for the same size is that the pointers store the memory addresses, no matter what type they are. As the space required to store the addresses of the different memory locations is the same, the memory required by one pointer type will be equal to the memory required by other pointer types.</p>
+<br>
+<h5>How to <font color="#33b5e5">find the </font>size of pointers in C/C++?</h5>
+<br>
+<p>We can find the size of pointers using the sizeof operator as shown in the following program:</p><br>
+
+<h5>Example: C Program to find the size of different pointer types</h5><br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      // C Program to find the size of different pointers types
+      #include <stdio.h>
+      
+      // dummy structure
+      struct str {
+      };
+      
+      // dummy function
+      void func(int a, int b){};
+      
+      int main()
+      {
+        // dummy variables definitions
+        int a = 10;
+        char c = 'G';
+        struct str x;
+      
+        // pointer definitions of different types
+        int* ptr_int = &a;
+        char* ptr_char = &c;
+        struct str* ptr_str = &x;
+        void (*ptr_func)(int, int) = &func;
+        void* ptr_vn = NULL;
+      
+        // printing sizes
+        printf("Size of Integer Pointer \t:\t%d bytes\n",
+          sizeof(ptr_int));
+        printf("Size of Character Pointer\t:\t%d bytes\n",
+          sizeof(ptr_char));
+        printf("Size of Structure Pointer\t:\t%d bytes\n",
+          sizeof(ptr_str));
+        printf("Size of Function Pointer\t:\t%d bytes\n",
+          sizeof(ptr_func));
+        printf("Size of NULL Void Pointer\t:\t%d bytes",
+          sizeof(ptr_vn));
+      
+        return 0;
+      }
+      
+    </code>
+  </pre>
+</div>
+<br>
+<br><br>
+<br>
+<h2 id="oops"><font color="#33b5e5">Object Oriented </font>Programming in C++</h2>
+<br>
+<p>Object-oriented programming – As the name suggests uses objects in programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding, polymorphism, etc. in programming. The main aim of OOP is to bind together the data and the functions that operate on them so that no other part of the code can access this data except that function.
+<br>
+  There are some basic concepts that act as the building blocks of OOPs i.e.</p>
+<br>
+<ol>
+  <li>Class</li>
+  <li>Object     </li>
+  <li>Encapsulation</li>
+  <li>Abstraction</li>
+  <li>Polymorphism</li>
+  <li>Inheritance</li>
+  <li>Dynamic Binding</li>
+  <li>Message Passing</li>
+</ol>
+
+<br>
+<h3>Characteristics of an <font color="#33b5e5">Object-Oriented</font> Programming Language</h3>
+<br>
+<center><img src="C++/c++ oops.png" alt="image description"></center>
+<br>
+<br>
+<h4>Enca<font color="#33b5e5">psu</font>lation</h4><br>
+<p>In normal terms, Encapsulation is defined as wrapping up data and information under a single unit. In Object-Oriented Programming, Encapsulation is defined as binding together the data and the functions that manipulate them. Consider a real-life example of encapsulation, in a company, there are different sections like the accounts section, finance section, sales section, etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales. Now there may arise a situation when for some reason an official from the finance section needs all the data about sales in a particular month. In this case, he is not allowed to directly access the data of the sales section. He will first have to contact some other officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of the sales section and the employees that can manipulate them are wrapped under a single name “sales section”.</p>
+<br>
+<h4>Abstraction</h4><br>
+<br>
+<p>Data abstraction is one of the most essential and important features of object-oriented programming in C++. Abstraction means displaying only essential information and hiding the details. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. Consider a real-life example of a man driving a car. The man only knows that pressing the accelerator will increase the speed of the car or applying brakes will stop the car but he does not know how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of an accelerator, brakes, etc. in the car. This is what abstraction is.</p>
+<br>
+<ul>
+<li><h5><font color="#33b5e5">Abstraction</font> using Classes: </h5><p> We can implement Abstraction in C++ using classes. The class helps us to group data members and member functions using available access specifiers. A Class can decide which data member will be visible to the outside world and which is not.</p></li>
+<li><h5>Abstraction in <font color="#33b5e5">Header</font> files:</h5><p>
+  One more type of abstraction in C++ can be header files. For example, consider the pow() method present in math.h header file. Whenever we need to calculate the power of a number, we simply call the function pow() present in the math.h header file and pass the numbers as arguments without knowing the underlying algorithm according to which the function is actually calculating the power of numbers.
+</p></li></ul>
+<br>
+<h4>Polymorphism</h4><br>
+<p>
+  The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A person at the same time can have different characteristics. A man at the same time is a father, a husband, and an employee. So the same person possesses different behavior in different situations. This is called polymorphism. An operation may exhibit different behaviors in different instances. The behavior depends upon the types of data used in the operation. C++ supports operator overloading and function overloading.
+</p>
+<br>
+<h4>Inheritance</h4>
+<br>
+<p>The capability of a class to derive properties and characteristics from another class is called Inheritance. Inheritance is one of the most important features of Object-Oriented Programming.</p>
+<br>
+<ul>
+  <li><h5>Sub<font color="#33b5e5"> Class:</font></h5><p>The class that inherits properties from another class is called Sub class or Derived Class.</p>
+  </li>
+<li><h5><font color="#33b5e5">Super</font>  Class</h5>
+<p>
+  The class whose properties are inherited by a sub-class is called Base Class or Superclass.
+</p></li>
+<li><h5>Reusability: </h5><p>
+  Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class. <br>
+</p></li>
+</ul>
+<h5>Example:</h5><p> Dog, Cat, Cow can be Derived Class of Animal Base Class. </p>
+<br><br>
+<h3>Dynamic <font color="#33b5e5">Binding</font></h3>
+<br>
+<p>
+  In dynamic binding, the code to be executed in response to the function call is decided at runtime. C++ has virtual functions to support this. Because dynamic binding is flexible, it avoids the drawbacks of static binding, which connected the function call and definition at build time.
+</p>
+<br>
+<br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              // C++ Program to Demonstrate the Concept of Dynamic binding
+              // with the help of virtual function
+              #include <iostream>
+              using namespace std;
+              
+              class GFG {
+              public:
+                void call_Function() // function that call print
+                {
+                  print();
+                }
+                void print() // the display function
+                {
+                  cout << "Printing the Base class Content" << endl;
+                }
+              };
+              class GFG2 : public GFG // GFG2 inherit a publicly
+              {
+              public:
+                void print() // GFG2's display
+                {
+                  cout << "Printing the Derived class Content"
+                    << endl;
+                }
+              };
+              int main()
+              {
+                GFG geeksforgeeks; // Creating GFG's pbject
+                geeksforgeeks.call_Function(); // Calling call_Function
+                GFG2 geeksforgeeks2; // creating GFG2 object
+                geeksforgeeks2.call_Function(); // calling call_Function
+                                // for GFG2 object
+                return 0;
+              }
+              
+            </code>
+          </pre>
+        </div>
+    <br>    <br>
+<h3><font color="#33b5e5">Message </font>Passing</h3>
+<br>
+<p>Objects communicate with one another by sending and receiving information. A message for an object is a request for the execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function, and the information to be sent.</p>
+<br>
+
+<br>
+<h3>C++ <font color="#33b5e5">Classes and</font> Objects</h3>
+<br>
+<p>Class in C++ is the building block that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object. For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc. So here, Car is the class, and wheels, speed limits, and mileage are their properties.
+
+</p>
+
+<ul>
+  <li>A Class is a user-defined data type that has data members and member functions.</li>
+  <li>Data members are the data variables and member functions are the functions used to manipulate these variables together, these data members and member functions define the properties and behavior of the objects in a Class.</li>
+  <li>
+    In the above example of class Car, the data member will be speed limit, mileage, etc, and member functions can be applying brakes, increasing speed, etc.
+  </li>
+</ul>
+<br>
+<br>
+<p>An Object is an instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an object is created) memory is allocated.</p>
+
+<br>
+<h4><font color="#33b5e5">Defining Class</font> and Declaring Objects</h4>
+<br>
+<p>A class is defined in C++ using the keyword class followed by the name of the class. The body of the class is defined inside the curly brackets and terminated by a semicolon at the end.</p>
+<br>
+<h3>Declaring <font color="#33b5e5">Objects</h3></font>
+<br>
+<p>When a class is defined, only the specification for the object is defined; no memory or storage is allocated. To use the data and access functions defined in the class, you need to create objects.</p>
+<br>
+<h4><font color="#33b5e5">Accessing </font>Data Members</h4>
+<br>
+<p>The public data members are also accessed in the same way given however the private data members are not allowed to be accessed directly by the object. Accessing a data member depends solely on the access control of that data member. This access control is given by Access modifiers in C++. There are three access modifiers: public, private, and protected.</p>
+<br>
+<br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              // C++ program to demonstrate accessing of data members
+              #include <bits/stdc++.h>
+              using namespace std;
+              class Geeks {
+                // Access specifier
+              public:
+                // Data Members
+                string geekname;
+                // Member Functions()
+                void printname() { cout << "Geekname is:" << geekname; }
+              };
+              int main()
+              {
+                // Declare an object of class geeks
+                Geeks obj1;
+                // accessing data member
+                obj1.geekname = "Abhi";
+                // accessing member function
+                obj1.printname();
+                return 0;
+              }
+              
+            </code>
+          </pre>
+          <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+        </div>
+        <br>
+<br>
+<h3>Member <font color="#33b5e5">Functions </font>in Classes</h3>
+<br>
+<p><b>There are 2 ways to define a member function:</b></p>
+<br>
+<ul>
+  <li>Inside class definition</li>
+  <li>Outside class definition</li>
+</ul>
+<br>
+<p>
+  To define a member function outside the class definition we have to use the <b>scope resolution:: operator</b> along with the class name and function name. 
+</p>
+
+  <br>
+<br>
+<h3>Constructors</h3>
+<br>
+<p>Constructors are special class members which are called by the compiler every time an object of that class is instantiated. Constructors have the same name as the class and may be defined inside or outside the class definition. There are 3 types of constructors:</p>
+<br>
+<ul>
+  <li>Default Constructors</li>
+  <li>Parameterized Constructors</li>
+  <li>Copy Constructors</li>
+</ul>
+<br>
+<br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              // C++ program to demonstrate constructors
+              #include <bits/stdc++.h>
+              using namespace std;
+              class Geeks
+              {
+                public:
+                int id;
+                
+                //Default Constructor
+                Geeks()
+                {
+                  cout << "Default Constructor called" << endl;
+                  id=-1;
+                }
+                
+                //Parameterized Constructor
+                Geeks(int x)
+                {
+                  cout <<"Parameterized Constructor called "<< endl;
+                  id=x;
+                }
+              };
+              int main() {
+                
+                // obj1 will call Default Constructor
+                Geeks obj1;
+                cout <<"Geek id is: ";
+                            return 0;
+              }
+              
+            </code>
+          </pre>
+        </div>
+        <br><br>  
+<h3>Destructors</h3>
+    <br>
+    <p>Destructor is another special member function that is called by the compiler when the scope of the object ends. </p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // C++ program to explain destructors
+        #include <bits/stdc++.h>
+        using namespace std;
+        class Geeks
+        {
+          public:
+          int id;
+          
+          //Definition for Destructor
+          ~Geeks()
+          {
+            cout << "Destructor called for id: " << id ;
+          }
+        };
+        
+        int main()
+        {
+          Geeks obj1;
+          obj1.id=7;
+          int i = 0;
+          while ( i < 5 )
+          {
+            Geeks obj2;
+            obj2.id=i;
+            i++;		
+          } // Scope for obj2 ends here
+        
+          return 0;
+        } // Scope for obj1 ends here
+        
+      </code>
+    </pre>
+  </div>
+  <br>
+<h2 id="file handling">File <font color="#33b5e5">Handling  </font> through <font color="#33b5e5">C++ </font>Classes </h2>
+<br>
+<p>File handling is used to store data permanently in a computer. Using file handling we can store our data in secondary memory (Hard disk). <br>
+  How to achieve the File Handling <br>
+  For achieving file handling we need to follow the following steps:- <br>
+   STEP 1-Naming a file <br>
+   STEP 2-Opening a file <br>
+   STEP 3-Writing data into the file <br>
+   STEP 4-Reading data from the file <br>
+   STEP 5-Closing a file.</p> <br>
+<br>
+<h4><font color="#33b5e5">Streams </font>in C++ :-</h4>
+<br>
+<p>We give input to the executing program and the execution program gives back the output. The sequence of bytes given as input to the executing program and the sequence of bytes that comes as output from the executing program are called stream. In other words, streams are nothing but the flow of data in a sequence. <br>
+<br>
+  The input and output operation between the executing program and the devices like keyboard and monitor are known as “console I/O operation”. The input and output operation between the executing program and files are known as “disk I/O operation”.</p>
+<br>
+<h5><font color="#33b5e5"> Classes </font >for File stream operations :-</h5>
+<br>
+<p>
+  The I/O system of C++ contains a set of classes which define the file handling methods. These include ifstream, ofstream and fstream classes. These classes are derived from fstream and from the corresponding iostream class. These classes, designed to manage the disk files, are declared in fstream and therefore we must include this file in any program that uses files.
+</p>
+<br>
+<h6>1. ios:-</h6>
+<ul><li> ios stands for input output stream.</li>
+<li> This class is the base class for other classes in this class hierarchy.</li>
+<li> This class contains the necessary facilities that are used by all the other derived classes for input and output operations.</li>
+
+</ul>
+<br>
+<h6>2. istream:-</h6>
+<ul>
+ <li> istream stands for input stream.</li>
+ <li> This class is derived from the class ‘ios’.</li>
+ <li> This class handle input stream.</li>
+ <li> The extraction operator(>>) is overloaded in this class to handle input streams from files to the program execution.</li>
+ <li> This class declares input functions such as get(), getline() and read().</li>
+<br>
+</ul>
+<br>
+<h6>3. ostream:-</h6>
+<ul>
+<li> ostream stands for output stream.</li>
+<li> This class is derived from the class ‘ios’.</li>
+<li> This class handle output stream.</li>
+<li> The insertion operator(<<) is overloaded in this class to handle output streams to files from the program execution.</li>
+<li> This class declares output functions such as put() and write().</li>
+</ul>
+<br>
+<h6>4. streambuf:-</h6>
+<ul>
+<li>This class contains a pointer which points to the buffer which is used to manage the input and output streams.</li>
+</ul>
+<br>
+<h6>5. fstreambase:-</h6>
+<ul>
+ <li> This class provides operations common to the file streams. Serves as a base for fstream, ifstream and ofstream class. </li>
+ <li> This class contains open() and close() function.</li>
+</ul>
+<br>
+<h6>6. ifstream:-</h6>
+<br>
+<ul>
+<li>   This class provides input operations.</li>
+<li> It contains open() function with default input mode. </li>
+<li> Inherits the functions get(), getline(), read(), seekg() and tellg() functions from the istream.</li>
+</ul>
+<br>
+<h6>7. ofstream:-</h6>
+<br>
+<ul>
+<li> This class provides output operations.</li>
+<li> It contains open() function with default output mode. </li>
+<li> Inherits the functions put(),  write(), seekp() and tellp() functions from the ostream.</li>
+</ul>
+<br>
+<h6>8. fstream:-</h6>
+<ul>
+<li>   This class provides support for simultaneous input and output operations.</li>
+<li> Inherits all the functions from istream and ostream classes through iostream.</li>
+</ul>
+<br>
+
+<h6>9. filebuf:-</h6>
+<ul>
+<li> Its purpose is to set the file buffers to read and write.</li>
+<li> We can also use file buffer member function to determine the length of the file.</li>
+</ul>
+<br>
+<h5>Problem<font color="#33b5e5"> Statement </font>:  </h5>
+<p>To read and write a File in C++.</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        /* File Handling with C++ using ifstream & ofstream class object*/
+        /* To write the Content in File*/
+        /* Then to read the content of file*/
+        #include <iostream>
+        
+        /* fstream header file for ifstream, ofstream,
+        fstream classes */
+        #include <fstream>
+        
+        using namespace std;
+        
+        // Driver Code
+        int main()
+        {
+          // Creation of ofstream class object
+          ofstream fout;
+        
+          string line;
+        
+          // by default ios::out mode, automatically deletes
+          // the content of file. To append the content, open in ios:app
+          // fout.open("sample.txt", ios::app)
+          fout.open("sample.txt");
+        
+          // Execute a loop If file successfully opened
+          while (fout) {
+        
+            // Read a Line from standard input
+            getline(cin, line);
+        
+            // Press -1 to exit
+            if (line == "-1")
+              break;
+        
+            // Write line in file
+            fout << line << endl;
+          }
+        
+          // Close the File
+          fout.close();
+        
+          // Creation of ifstream class object to read the file
+          ifstream fin;
+        
+          // by default open mode = ios::in mode
+          fin.open("sample.txt");
+        
+          // Execute a loop until EOF (End of File)
+          while (getline(fin, line)) {
+          
+            // Print line (read from file) in Console
+            cout << line << endl;
+          }
+        
+          // Close the file
+          fin.close();
+        
+          return 0;
+        }
+        
+      </code>
+    </pre>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+  </div>
+  <br>
+<h5>Example</h5>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        Q: write a single file handling program in c++ to reading and writing data on a file.
+
+        #include<iostream>
+        #include<fstream>
+        
+        using namespace std;
+        main()
+        {
+          int rno,fee;
+          char name[50];
+        
+          cout<<"Enter the Roll Number:";
+          cin>>rno;
+          
+          cout<<"\nEnter the Name:";
+          cin>>name;
+          
+          cout<<"\nEnter the Fee:";
+          cin>>fee;
+        
+          ofstream fout("d:/student.doc");
+        
+          
+        
+          fout.close();
+        
+          ifstream fin("d:/student.doc");
+        
+          fin>>rno>>name>>fee; //read data from the file student
+        
+          fin.close();
+        
+          
+        
+          return 0;
+        }
+        
+      </code>
+    </pre>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+  </div>
+  <br>
+
+<br><br><br>
+  <h3 id="END">Congratulations on <font color="#33b5e5">completing </font>C++ course!</h3>
+  <p>Thank you for choosing our website to learn C++. We hope you found the course informative and useful. With your new C++ skills, you are now ready to tackle exciting programming challenges. Keep practicing and never stop learning!</p>
+  <p>Best regards,</p>
+  <p>The team at Coding Classroom</p>
+
+
+<!-- .....................END............................END..............................
+  
+  
+  
+  ...  -->
+
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+
+
+<script>
+  a=document.querySelector(".navbar-nav").querySelectorAll("a");
+  a.forEach(element=>{
+  element.addEventListener("click",function(){
+  a.forEach(nav=>nav.classList.remove("active"))
+  this.classList.add("active")
+  })
+  })
+  
+  </script>
+</body>

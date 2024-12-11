@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="about.html">
+<link rel="stylesheet" href="homepage.html">
+<link rel="stylesheet" href="contact.html">
+<link rel="stylesheet" href="sign_up.html">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>homepage</title>
+<style>
+    .navbar-nav > 
+    li{
+        padding-left:40px;
+        padding-right:40px;
+      }
+
+
+
+  /*  FOR heading and img */
+		.container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 20px;
+      /* padding-top: 500px; */
+		}
+		
+		.heading {
+			font-size: 36px;
+			font-weight: bold;
+		}
+		
+		.i {
+			width: 450px;
+			height: auto;
+		}
+    .lang {
+  color: #17a2b8;
+}
+#changingText {
+ 
+  overflow: hidden;
+   border-right: 0.15em solid #000;
+  animation: typing 5s steps(20, end),blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+   to {
+      width: 100%;
+   }
+}
+
+@keyframes blink-caret {
+   from,
+   to {
+      border-color: transparent;
+   }
+   50% {
+      border-color: #000;
+   }
+}
+#a{
+    padding-left: 120px;
+    padding-right:100px;
+    font-weight: bold;
+}   
+
+.language-nav{
+  background-color: #f5f5f5;
+}
+.navbar-nav .nav-link {
+  position: relative;
+}
+
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: grey;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav .nav-link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar-nav .nav-link:hover {
+  font-size: 110%;
+}
+.homeicon{
+  /* margin-left: -10 px; */
+  color: wheat;
+}
+.lang-icon{
+  
+font-weight:bolder;
+}
+.navbar-lang a i {
+  font-weight: bolder;
+}
+.navbar-lang .nav-link i {
+  font-weight: bold;
+}
+
+
+	</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+    
+    
+        
+    
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+
+<!-- NAVIGATION BAR END -->
+
+
+
+<!-- navigation for languages -->
+<div class="language-nav">
+<nav class="navbar navbar-expand-lg navbar-light badge-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-xl-center" id="navbarNavAltMarkup2">
+    <div class="navbar-nav w-100">
+      <a class="nav-item active nav-link text-muted active" id="a" href="c.html">C</a>
+      <a class="nav-item  active nav-link text-muted active" id="a" href="c++.html"> C++</a>
+      <a class="nav-item  active nav-link text-muted active" id="a" href="dsa.html">DSA</a>
+      <a class="nav-item  active nav-link text-muted active" id="a" href="java.html">Java</a>
+      <a class="nav-item  active nav-link text-muted active" id="a" href="python.html">Python</a>
+    </div>      
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+      <header>
+		<div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+			<h1 class="heading">Welcome to <span class ="text-info">Coding Classroom</span></h1>
+			<!-- <img class="logo" src="logo.png" alt="Logo"> -->
+
+  <h2>
+    Learn
+    <span id="changingText" class="text-info">C++</span>
+  </h2>
+  <p class="text-muted">Confused on which course to take? I have got you covered. Browse courses and find out the best course for you. Its free! Coding Classroom is our attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+  </div>
+  <div class="col-md-6 text-right">
+    <img class="i" src="homepageimg.jpeg" alt="Image description" class="img-fluid">
+  </div>
+</div>
+</div>
+  <script>
+    const languages = ["C++", "C ","Java","Python","DSA"];
+  
+    let currentIndex = 0;
+  
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % languages.length;
+      ind = 0;
+      lan = languages[currentIndex];
+      lastIndex = lan.length;
+      sample = "";
+      document.getElementById("changingText").textContent = sample;
+      while(lastIndex>ind){
+      sample = sample + lan[ind];
+      setTimeout(()=>{
+        document.getElementById("changingText").textContent = sample;
+      },1000);
+      ind++;
+    }
+
+    }, 2000);
+  </script>
+
+
+
+</body>
+</html>

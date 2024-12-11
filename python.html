@@ -1,0 +1,3716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="lang.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>Python Language Topics</title>
+    <Style>
+      table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th:first-child, td:first-child {
+      border-right: 1px solid #ddd;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    </Style>
+
+</head>
+<body>
+    <div class="navbar-main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+<!-- NAVIGATION BAR END -->
+
+
+
+<!-- navigation for languages -->
+<div class="navbar-sec">
+<div class="language-nav">
+<nav class="navbar navbar-expand-lg navbar-light badge-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-xl-center" id="navbarNavAltMarkup2">
+    <div class="navbar-nav w-100">
+      <a class="nav-item nav-link text-muted active" id="a" href="c.html">C</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="c++.html"> C++</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="dsa.html">DSA</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="java.html">Java</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="python.html">Python</a>
+    </div>      
+    </div>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+
+<!-- table view -->
+
+<div class="content">
+   
+   
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+        
+           <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+          <a href="#pp" class="list-group-item list-group-item-action">Python print() Function</a>
+          <a href="#python features" class="list-group-item list-group-item-action">Python Features</a>
+          <a href="#history" class="list-group-item list-group-item-action">Python History</a>
+          <a href="#install" class="list-group-item list-group-item-action">Python Install</a>
+          <a href="#program" class="list-group-item list-group-item-action">First Python Program</a>
+          <a href="#variables" class="list-group-item list-group-item-action">Python Variables</a>
+          <a href="#datatypes" class="list-group-item list-group-item-action">Data Types </a>
+         
+         
+         
+         
+          <a href="#keywords" class="list-group-item list-group-item-action">Python Keywords</a>
+          <a href="#operator" class="list-group-item list-group-item-action">Python Operators
+          </a>
+          <a href="#ifelse" class="list-group-item list-group-item-action">if-else Statements</a>
+                    
+          <a href="#loop" class="list-group-item list-group-item-action">Python Loops</a>
+          <a href="#string" class="list-group-item list-group-item-action">Python String</a>
+          <a href="#function" class="list-group-item list-group-item-action">Python Functions</a>
+          <a href="#file" class="list-group-item list-group-item-action">Python File Handling</a>
+          <a href="#END" class="list-group-item list-group-item-action">END</a>
+          <a href="#" class="list-group-item list-group-item-action"></a>
+        </div>
+      </div>
+      <div class="col-md-9">
+    
+
+    <h2 id="introduction">What is <font color="#33b5e5">Python</font></h2>
+
+    <p>
+        Python is a general purpose, dynamic, high-level, and interpreted programming language. It supports Object Oriented programming approach to develop applications. It is simple and easy to learn and provides lots of high-level data structures.
+<br><br>
+Python is easy to learn yet powerful and versatile scripting language, which makes it attractive for Application Development.
+<br><br>
+Python's syntax and dynamic typing with its interpreted nature make it an ideal language for scripting and rapid application development.
+<br><br>
+Python supports multiple programming pattern, including object-oriented, imperative, and functional or procedural programming styles.
+<br><br>
+Python is not intended to work in a particular area, such as web programming. That is why it is known as multipurpose programming language because it can be used with web, enterprise, 3D CAD, etc.
+<br><br>
+We don't need to use data types to declare variable because it is dynamically typed so we can write a=10 to assign an integer value in an integer variable.
+<br><br>
+Python makes the development and debugging fast because there is no compilation step included in Python development, and edit-test-debug cycle is very fast.
+<br><br>
+
+    </p>
+
+<h3><font color="#33b5e5">Java vs Python</font> Program</h3>
+
+<p>Unlike the other programming languages, Python provides the facility to execute the code using few lines. For example - Suppose we want to print the "Hello World" program in Java; it will take three lines to print it. <br><br></p>
+
+<h5><font color="#33b5e5">Java Program
+</font></h5>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        public class HelloWorld {  
+            public static void main(String[] args){  
+           // Prints "Hello, World" to the terminal window.  
+             System.out.println("Hello World");  
+            }  
+            }  
+      </code>
+    </pre>
+  </div><br><br>
+
+
+<h5><font color="#33b5e5">Python Program
+</font></h5>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print("Hello World")
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+  <h3>Python Basic <font color="#33b5e5">Syntax</font></h3>
+<p>
+    There is no use of curly braces or semicolon in Python programming language. It is English-like language. But Python uses the indentation to define a block of code. Indentation is nothing but adding whitespace before the statement when it is needed. <b>For example -</b>
+<br><br></p>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        def func():  
+        statement 1  
+        statement 2  
+        …………………  
+        …………………  
+          statement N  
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p>
+    In the above example, the statements that are same level to right belong to the function. Generally, we can use four whitespaces to define indentation. <br><br>
+  </p>
+
+<h3>Why <font color="#33b5e5">learn</font> Python?</h3>
+<p>Python provides many useful features to the programmer. These features make it most popular and widely used language. We have listed below few-essential feature of Python <br><br></p>
+<p>
+    <ul>
+<li> Data Science</li><br>
+<li> Date Mining</li><br>
+<li> Desktop Applications</li><br>
+<li> Console-based Applications</li><br>
+<li> Mobile Applications</li><br>
+<li> Software Development</li><br>
+<li> Artificial Intelligence</li><br>
+<li> Web Applications</li><br>
+<li> Enterprise Applications</li><br>
+<li> 3D CAD Applications</li><br>
+<li> Machine Learning</li><br>
+<li> Computer Vision or Image Processing Applications.</li><br>
+<li> Speech Recognitions</li><br>
+    </ul>
+</p>
+
+<h3>Python Popular <font color="#33b5e5">Frameworks and Libraries</font></h3>
+<p>
+    Python has wide range of libraries and frameworks widely used in various fields such as machine learning, artificial intelligence, web applications, etc. We define some popular frameworks and libraries of Python as follows. <br><br>
+    <ul>
+<li> <b>Web development (Server-side) -</b> Django Flask, Pyramid, CherryPy</li><br>
+<li> <b>GUIs based applications -</b> Tk, PyGTK, PyQt, PyJs, etc.</li><br>
+<li> <b>Machine Learning -</b> TensorFlow, PyTorch, Scikit-learn, Matplotlib, Scipy, etc.</li><br>
+<li><b>Mathematics - </b> Numpy, Pandas, etc.</li><br>
+    </ul>
+</p>
+
+
+
+<h2 id="pp">Python <font color="#33b5e5">print()</font> Function</h2>
+<p>
+    The print() function displays the given object to the standard output device (screen) or to the text stream file.
+<br><br>
+Unlike the other programming languages, Python print() function is most unique and versatile function.
+<br><br>
+The syntax of print() function is given below. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)  
+      </code>
+    </pre>
+  </div><br><br>
+<p>Let's explain its parameters one by one. <br><br></p>
+<p>
+    <ul>
+<li> objects - An object is nothing but a statement that to be printed. The * sign represents that there can be multiple statements.</li><br>
+<li> sep - The sep parameter separates the print values. Default values is ' '.</li><br>
+<li> end - The end is printed at last in the statement.</li><br>
+<li> file - It must be an object with a write(string) method.</li><br>
+<li> flush - The stream or file is forcibly flushed if it is true. By default, its value is false.</li><br>
+    </ul>
+</p>
+<p>
+    <b>Let's understand the following example.</b> <br><br>
+
+</p>
+
+<h4>Example - 1: <font color="#33b5e5">Return a value</font></h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print("Welcome to javaTpoint.")  
+  
+        a = 10  
+        # Two objects are passed in print() function  
+        print("a =", a)  
+          
+        b = a  
+        # Three objects are passed in print function  
+        print('a =', a, '= b') 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p>
+    As we can see in the above output, the multiple objects can be printed in the single print() statement. We just need to use comma (,) to separate with each other. <br><br>
+  </p>
+
+  <h4>Example - 2: <font color="#33b5e5">Using sep and end argument</font>
+</h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 10  
+        print("a =", a, sep='dddd', end='\n\n\n')  
+        print("a =", a, sep='0', end='$$$$$')  
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<p>In the first print() statement, we use the sep and end arguments. The given object is printed just after the sep values. The value of end parameter printed at the last of given object. As we can see that, the second print() function printed the result after the three black lines. <br><br></p>
+
+
+<h3><font color="#33b5e5">Taking Input</font> to the User</h3>
+<p>
+    Python provides the input() function which is used to take input from the user. Let's understand the following example. <br><br>
+</p>
+<p><b>Example - <br><br></b></p>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        name = input("Enter a name of student:")  
+        print("The student name is: ", name)  
+      </code>
+    </pre>
+  </div><br><br>
+
+<p>
+    By default, the input() function takes the string input but what if we want to take other data types as an input.
+<br><br>
+If we want to take input as an integer number, we need to typecast the input() function into an integer. <br><br>
+<b>Example - <br><br></b>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a  = int(input("Enter first number: "))  
+        b = int(input("Enter second number: "))  
+          
+        print(a+b)  
+
+
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p>We can take any type of values using <b> input()</b> function.</p>
+
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print(type(L1))    
+        print(type(L2)) 
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+
+ <h3><font color="#33b5e5">Dictionaries</font> </h3>
+<p>
+    Python Dictionary is a most efficient data structure and used to store the large amount of data. It stores the data in the key-value pair format. Each value is stored corresponding to its key.
+<br><br>
+Keys must be a unique and value can be any type such as integer, list, tuple, etc.
+<br><br>
+It is a mutable type; we can reassign after its creation. Below is the example of creating dictionary in Python.
+</p><br><br>
+
+<b>Example - <br><br></b>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        employee = {"Name": "John", "Age": 29, "salary":250000,"Company":"GOOGLE"}      
+        print(type(employee))      
+        print("printing Employee data .... ")      
+        print(employee) 
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+ 
+  <h3>Python<font color="#33b5e5"> Sets</font></h3>
+<p>
+    A Python set is a collection of unordered elements. Each element in set must be unique and immutable. Sets are mutable which means we can modify anytime throughout the program. Let's understand the example of creating set in Python. <br><br>
+
+</p>
+
+<b>Example - <br><br></b>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Creating Set  
+        Month = {"January", "February", "March", "April", "May", "June", "July"}  
+        print(Month)  
+        print(type(Month)) 
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+  
+
+<h2 id="python features">Python <font color="#33b5e5">Features</font></h2>.
+
+<p>
+    Python provides many useful features which make it popular and valuable from the other programming languages. It supports object-oriented programming, procedural programming approaches and provides dynamic memory allocation. We have listed below a few essential features. <br><br>
+</p>
+
+<h4>1. <font color="#33b5e5">Easy to Learn and Use</font></h4>
+<p>
+    Python is easy to learn as compared to other programming languages. Its syntax is straightforward and much the same as the English language. There is no use of the semicolon or curly-bracket, the indentation defines the code block. It is the recommended programming language for beginners.
+<br><br>
+</p>
+<h4>2. <font color="#33b5e5">Expressive Language</font>
+</h4><p>Python can perform complex tasks using a few lines of code. A simple example, the hello world program you simply type print("Hello World"). It will take only one line to execute, while Java or C takes multiple lines.
+</p>
+<h4>3. <font color="#33b5e5">Interpreted Language</font>
+</h4><p>
+    Python is an interpreted language; it means the Python program is executed one line at a time. The advantage of being interpreted language, it makes debugging easy and portable.
+</p><br><br>
+
+<h4>4. <font color="#33b5e5">Cross-platform Language</font></h4>
+<p>
+    Python can run equally on different platforms such as Windows, Linux, UNIX, and Macintosh, etc. So, we can say that Python is a portable language. It enables programmers to develop the software for several competing platforms by writing a program only once.
+<br><br>
+</p>
+<h4>5. <font color="#33b5e5">Free and Open Source</font></h4>
+<p>Python is freely available for everyone. It is freely available on its official website www.python.org. It has a large community across the world that is dedicatedly working towards make new python modules and functions. Anyone can contribute to the Python community. The open-source means, "Anyone can download its source code without paying any penny."
+ <br><br></p>
+<h4>6. <font color="#33b5e5">Object-Oriented Language</font></h4>
+<p>
+    Python supports object-oriented language and concepts of classes and objects come into existence. It supports inheritance, polymorphism, and encapsulation, etc. The object-oriented procedure helps to programmer to write reusable code and develop applications in less code.
+<br><br>
+
+</p>
+<h4>7. <font color="#33b5e5">Extensible</font></h4>
+<p>
+    It implies that other languages such as C/C++ can be used to compile the code and thus it can be used further in our Python code. It converts the program into byte code, and any platform can use that byte code.
+<br><br>
+</p>
+<h4>8. <font color="#33b5e5">Large Standard Library</font></h4>
+<p>
+    It provides a vast range of libraries for the various fields such as machine learning, web developer, and also for the scripting. There are various machine learning libraries, such as Tensor flow, Pandas, Numpy, Keras, and Pytorch, etc. Django, flask, pyramids are the popular framework for Python web development.
+<br><br>
+</p>
+<h4>9. <font color="#33b5e5">GUI Programming Support</font></h4>
+<p>Graphical User Interface is used for the developing Desktop application. PyQT5, Tkinter, Kivy are the libraries which are used for developing the web application.
+ <br><br></p>
+<h4>10. <font color="#33b5e5">Integrated</font>
+</h4><p>
+    It can be easily integrated with languages like C, C++, and JAVA, etc. Python runs code line by line like C,C++ Java. It makes easy to debug the code.
+ <br><br>
+</p>
+<h4>11. <font color="#33b5e5">Embeddable</font></h4>
+<p>
+    The code of the other programming language can use in the Python source code. We can use Python source code in another programming language as well. It can embed other language into our code.
+ <br><br>
+</p>
+<h4>12. <font color="#33b5e5">Dynamic Memory Allocation</font></h4>
+<p>
+    In Python, we don't need to specify the data-type of the variable. When we assign some value to the variable, it automatically allocates the memory to the variable at run time. Suppose we are assigned integer value 15 to x, then we don't need to write int x = 15. Just write x = 15.
+ <br><br>
+</p>
+
+
+
+
+<h2 id="history">Python <font color="#33b5e5">History and Versions</font></h2>
+<ul>
+<li> Python laid its foundation in the late 1980s.</li><br>
+<li> The implementation of Python was started in December 1989 by Guido Van Rossum at CWI in Netherland.</li><br>
+<li> In February 1991, Guido Van Rossum published the code (labeled version 0.9.0) to alt.sources.</li><br>
+<li> In 1994, Python 1.0 was released with new features like lambda, map, filter, and reduce.</li><br>
+<li> Python 2.0 added new features such as list comprehensions, garbage collection systems.</li><br>
+<li> On December 3, 2008, Python 3.0 (also called "Py3K") was released. It was designed to rectify the fundamental flaw of the language.</li><br>
+<li> ABC programming language is said to be the predecessor of Python language, which was capable of Exception Handling and interfacing with the Amoeba Operating System.</li><br>
+
+</ul>
+<h3>Why the <font color="#33b5e5">Name</font> Python?</h3>
+<p>
+    There is a fact behind choosing the name Python. Guido van Rossum was reading the script of a popular BBC comedy series "Monty Python's Flying Circus". It was late on-air 1970s.
+<br><br>
+Van Rossum wanted to select a name which unique, sort, and little-bit mysterious. So he decided to select naming Python after the "Monty Python's Flying Circus" for their newly created programming language.
+<br><br>
+The comedy series was creative and well random. It talks about everything. Thus it is slow and unpredictable, which made it very interesting.
+<br><br>
+Python is also versatile and widely used in every technical field, such as Machine Learning, Artificial Intelligence, Web Development, Mobile Application, Desktop Application, Scientific Calculation, etc. <br><br>
+</p>
+
+<h3>Python <font color="#33b5e5">Version List</font></h3>
+<p>
+    Python programming language is being updated regularly with new features and supports. There are lots of update in Python versions, started from 1994 to current release.
+<br><br>
+A list of Python versions with its released date is given below. <br>
+</p>
+
+<img src="python/Screenshot1.png.png" alt="">
+<img src="python/Screenshot2.png.png" alt=""><br><br>
+
+
+<h3>Tips to <font color="#33b5e5">Keep in Mind</font> While Learning Python</h3>
+<p>
+    The most common question asked by the beginners - "What is the best way to learn Python"? It is the initial and relevant question because first step in learning any programming language is to know how to learn. <br><br>
+
+The proper way of learning will help us to learn fast and become a good Python developer.
+<br><br>
+In this section, we will discuss various tips that we should keep in mind while learning Python.
+</p><br><br>
+<h4>1. <font color="#33b5e5">Make it</font> Clear Why We Want<font color="#33b5e5"> to Learn</font></h4>
+<p>The goal should be clear before learning the Python. Python is an easy, a vast language as well. It includes numbers of libraries, modules, in-built functions and data structures. If the goal is unclear then it will be a boring and monotonous journey of learning Python. Without any clear goal, you perhaps won't make it done.
+<br><br>
+    So, first figure out the motivation behind learning, which can anything be such as knowing something new, develop projects using Python, switch to Python, etc. Below are the general areas where Python is widely used. Pick any of them.
+    <br></p>
+    <ul>
+<li> Data Analysis and Processing</li><br>
+<li> Artificial Intelligence</li><br>
+<li> Games</li><br>
+<li> Hardware/Sensor/Robots</li><br>
+<li> Desktop Applications</li><br>
+</ul>
+Choose any one or two areas according to your interest and start the journey towards learning Python.
+<p></p>
+
+<h4>2. <font color="#33b5e5">Learn</font> the <font color="#33b5e5">Basic</font> Syntax
+</h4>
+<p>It is the most essential and basic step to learn the syntax of the Python programming language. We have to learn the basic syntax before dive deeper into learning it. As we have discussed in our earlier tutorial, Python is easy to learn and has a simple syntax. It doesn't use semicolon and brackets. Its syntax is like the English language. <br><br>
+
+    So it will take minimum amount of time to learning its syntax. Once we get its syntax properly, further learning will be easier and quicker getting to work on projects. <br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            Note - Learn Python 3, not Python 2.7, because the industry no longer uses it. Our Python tutorial is based on its latest version Python 3.
+          </code>
+        </pre>
+      </div><br><br>
+   
+    </p><br><br>
+<h4>3. Write <font color="#33b5e5">Code by</font> Own</h4>
+<p>Writing the code is the most effective and robust way to learn Python. First, try to write code on paper and run in mind (Dry Run) then move to the system. Writing code on paper will help us get familiar quickly with the syntax and the concept store in the deep memory. While writing the code, try to use proper functions and suitable variables names.
+<br><br>
+    There are many editors available for Python programming which highlights the syntax related issue automatically. So we don't need to pay lot of attention of these mistakes.
+    <br><br></p>
+<h4>4. Keep<font color="#33b5e5"> Practicing</font></h4>
+<p>
+    The next important step is to do the practice. It needs to implementing the Python concepts through the code. We should be consistence to our daily coding practice.
+<br><br>
+Consistency is the key of success in any aspect of life not only in programming. Writing code daily will help to develop muscle memory.
+<br><br>
+We can do the problem exercise of related concepts or solve at least 2 or 3 problems of Python. It may seem hard but muscle memory plays large part in programing. It will take us ahead from those who believe only the reading concept of Python is sufficient.
+<br><br>
+</p>
+<h4>5. <font color="#33b5e5">Make</font> Notes as <font color="#33b5e5">Needed</font></h4>
+<p>Creating notes by own is an excellent method to learn the concepts and syntax of Python. It will establish stability and focus that helps you become a Python developer. Make brief and concise notes with relevant information and include appropriate examples of the subject concerned.
+<br><br>
+    Maintain own notes are also helped to learn fast. A study published in Psychological Science that -
+    <br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            The students who were taking longhand notes in the studies were forced to be more selective — because you can't write as fast as you can type.
+          </code>
+        </pre>
+      </div><br><br>
+    <br><br></p>
+<h4>6. Discuss<font color="#33b5e5"> Concepts with</font> Other</h4>
+<p>
+    
+Coding seems to be solitary activity, but we can enhance our skills by interacting with the others. We should discuss our doubts to the expert or friends who are learning Python. This habit will help to get additional information, tips and tricks, and solution of coding problems. One of the best advantages of Python, it has a great community. Therefore, we can also learn from passionate Python enthusiasts.
+ <br><br>
+</p>
+<h4>7. <font color="#33b5e5">Do small</font> Projects</h4>
+<p>
+    After understanding Python's basic concept, a beginner should try to work on small projects. It will help to understand Python more deeply and become more component in it. Theoretical knowledge is not enough to get command over the Python language. These projects can be anything as long as they teach you something. You can start with the small projects such as calculator app, a tic-toc-toe game, an alarm clock app, a to-do list, student or customer management system, etc.
+<br><br>
+Once you get handy with a small project, you can easily shift toward your interesting domain (Machine Learning, Web Development, etc.).
+<br><br>
+</p>
+<h4>8. Teach<font color="#33b5e5"> Others</font></h4>
+<p>
+    There is a famous saying that "If you want to learn something then you should teach other". It is also true in case of learning Python. Share your information to other students via creating blog posts, recording videos or taking classes in local training center. It will help us to enhance the understanding of Python and explore the unseen loopholes in your knowledge. If you don't want to do all these, join the online forum and post your answers on Python related questions.
+<br><br>
+</p>
+<h4>9. Explore <font color="#33b5e5">Libraries</font> and<font color="#33b5e5"> Frameworks</font></h4>
+<p>
+    Python consists of vast libraries and various frameworks. After getting familiar with Python's basic concepts, the next step is to explore the Python libraries. Libraries are essential to work with the domain specific projects. In the following section, we describe the brief introduction of the main libraries.
+<br>
+</p>
+<li> TensorFlow - It is an artificial intelligence library which allows us to create large scale AI based projects.</li><br>
+<li> Django - It is an open source framework that allows us to develop web applications. It is easy, flexible, and simple to manage.</li><br>
+<li> Flask - It is also an open source web framework. It is used to develop lightweight web applications.</li><br>
+<li> Pandas - It is a Python library which is used to perform scientific computations.</li><br>
+<li> Keras - It is an open source library, which is used to work around the neural network.</li><br>
+<li> There are many libraries in Python. Above, we have mentioned a few of them.</li><br>
+
+<h4>10. <font color="#33b5e5">Contribute</font> to Open <font color="#33b5e5">Source</font></h4>
+<p>
+    As we know, Python is an open source language that means it is freely available for everyone. We can also contribute to Python online community to enhance our knowledge. Contributing to open source projects is the best way to explore own knowledge. We also receive the feedback, comments or suggestions for work that we submitted. The feedback will enable the best practices for Python programming and help us to become a good Python developer.
+ <br><br>
+</p>
+
+
+
+
+<h2 id="install">
+    How to <font color="#33b5e5">Install Python</font> (Environment Set-up)
+</h2>
+<p>
+    In order to become Python developer, the first step is to learn how to install or update Python on a local machine or computer. In this tutorial, we will discuss the installation of Python on various operating systems. <br><br>
+</p>
+
+<h3>Installation on <font color="#33b5e5">Windows</font></h3>
+<p>
+    Visit the link <a href="https://www.python.org/downloads/"><i>https://www.python.org/downloads/</i></a> to download the latest release of Python. In this process, we will install Python 3.8.6 on our Windows operating system. When we click on the above link, it will bring us the following page.
+<br><br>
+
+<b>Step - 1: Select the Python's version to download. <br><br></b>
+
+Click on the download button.
+
+<br><br>
+</p>
+
+<img src="python/python-environment-set-up1.png" alt=""><br><br>
+
+<p>
+    <b>Step - 2: Click on the Install Now</b>
+<br><br>
+Double-click the executable file, which is downloaded; the following window will open. Select Customize installation and proceed. Click on the Add Path check box, it will set the Python path automatically. <br><br>
+</p>
+
+<img src="python/python-environment-set-up2.png" alt=""><br><br>
+
+<p>
+    We can also click on the customize installation to choose desired location and features. Other important thing is install launcher for the all user must be checked. <br><br>
+    <b>Step - 3 Installation in Process</b>
+</p><br><br>
+
+<img src="python/python-environment-set-up3.png" alt=""><br><br>
+
+<p>
+    Now, try to run python on the command prompt. Type the command python -version in case of python3. <br><br>
+</p>
+
+<img src="python/python-environment-set-up4.png" alt=""><br><br>
+
+<p>
+    We are ready to work with the Python. <br><br>
+</p>
+
+
+
+<h2 id="program"><font color="#33b5e5">First</font> Python Program</h2>
+
+<p>
+Python provides us the two ways to run a program:
+<br><br>
+<li> Using Interactive interpreter prompt</li><br>
+<li> Using a script file</li><br>
+Let's discuss each one of them in detail. <br><br>
+</p>
+
+<h3><font color="#33b5e5">Interactive interpreter</font> prompt
+</h3>
+<p>
+    Python provides us the feature to execute the Python statement one by one at the interactive prompt. It is preferable in the case where we are concerned about the output of each line of our Python program.
+<br><br>
+To open the interactive mode, open the terminal (or command prompt) and type python (python3 in case if you have Python2 and Python3 both installed on your system).
+<br><br>
+It will open the following prompt where we can execute the Python statement and check their impact on the console.
+</p><br><br>
+
+<img src="python/first-python-program.png" alt=""><br><br>
+<p>After writing the print statement, press the <b>Enter</b> key.</p>
+<br><br>
+<img src="python/first-python-program2.png" alt=""><br><br>
+<p>
+    Here, we get the message "<b>Hello World</b> !" printed on the console.
+</p>
+
+<h3>Using a <font color="#33b5e5">script file</font> (Script Mode Programming)</h3>
+<p>
+    The interpreter prompt is best to run the single-line statements of the code. However, we cannot write the code every-time on the terminal. It is not suitable to write multiple lines of code.
+<br><br>
+Using the script mode, we can write multiple lines code into a file which can be executed later. For this purpose, we need to open an editor like notepad, create a file named and save it with .py extension, which stands for "Python". Now, we will implement the above example using the script mode.
+
+<br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print ("hello world"); #here, we have used print() function to print the message on the console.  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p>
+    To run this file named as first.py, we need to run the following command on the terminal. <br><br>
+  </p>
+<img src="python/first-python-program3.png" alt="">
+<br><br>
+
+<p>
+    <b>
+        Step - 1:
+    </b> Open the Python interactive shell, and click "File" then choose "New", it will open a new blank script in which we can write our code. <br><br>
+</p>
+<img src="python/first-python-program4.png" alt="">
+<br><br>
+<p>
+    <b>Step -2:</b> Now, write the code and press <b>
+        "Ctrl+S"
+    </b> to save the file.
+</p>
+
+<img src="python/first-python-program5.png" alt=""><br><br>
+<p>
+    <b>Step - 3:</b> After saving the code, we can run it by clicking "Run" or "Run Module". It will display the output to the shell.
+</p>
+<img src="python/first-python-program6.png" alt="">
+<br><br>
+<p>The output will be shown as follows. <br><br></p>
+<img src="python/first-python-program7.png" alt=""><br><br>
+
+<p>
+    <b>Step - 4:</b> Apart from that, we can also run the file using the operating system terminal. But, we should be aware of the path of the directory where we have saved our file.
+<br><br><br>
+<b>Open the command line prompt and navigate to the directory.</b> <br><br>
+</p>
+<img src="python/first-python-program8.png" alt=""><br><br>
+<p>
+    We need to type the <b>python</b> keyword, followed by the file name and hit enter to run the Python file.
+</p>
+<img src="python/first-python-program9.png" alt=""><br><br>
+
+    <h3><font color="#33b5e5">Multi-line</font> Statements</h3>
+<p>
+    Multi-line statements are written into the notepad like an editor and saved it with <b>.py</b> extension. In the following example, we have defined the execution of the multiple code lines using the Python script.
+    <br><br>
+    <b>Code:</b>
+<br><br></p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        name = "Andrew Venis"  
+        branch = "Computer Science"  
+        age = "25"  
+        print("My name is: ", name, )  
+        print("My age is: ", age)  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p>
+    <b>Script File: <br><br></b>
+  </p>
+<img src="python/first-python-program10.png" alt="">
+
+<h2><font color="#33b5e5">Comments </font>in Python</h2>
+<p>
+    Comments are essential for defining the code and help us and other to understand the code. By looking the comment, we can easily understand the intention of every line that we have written in code. We can also find the error very easily, fix them, and use in other applications.
+<br><br>
+In Python, we can apply comments using the # hash character. The Python interpreter entirely ignores the lines followed by a hash character. A good programmer always uses the comments to make code under stable. Let's see the following example of a comment. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        name  = "Thomas"   # Assigning string value to the name variable   
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+<p>
+    We can add comment in each line of the Python code. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        Fees = 10000      # defining course fees is 10000  
+        Fees = 20000      # defining course fees is 20000  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+<p>
+    It is good idea to add code in any line of the code section of code whose purpose is not obvious. This is a best practice to learn while doing the coding. <br><br>
+</p>
+
+
+
+<h2 id="variables">Python <font color="#33b5e5">Variables</font></h2>
+<p>
+    Variable is a name that is used to refer to memory location. Python variable is also known as an identifier and used to hold value.
+<br><br>
+In Python, we don't need to specify the type of variable because Python is a infer language and smart enough to get variable type.
+<br><br>
+Variable names can be a group of both the letters and digits, but they have to begin with a letter or an underscore.
+<br><br>
+It is recommended to use lowercase letters for the variable name. Rahul and rahul both are two different variables. <br><br>
+</p>
+
+<h3><font color="#33b5e5">Identifier</font> Naming</h3>
+<p>
+    Variables are the example of identifiers. An Identifier is used to identify the literals used in the program. The rules to name an identifier are given below. <br><br>
+    <ul>
+<li> The first character of the variable must be an alphabet or underscore ( _ ).</li><br>
+<li> All the characters except the first character may be an alphabet of lower-case(a-z), upper-case (A-Z), underscore, or digit (0-9).</li><br>
+<li> Identifier name must not contain any white-space, or special character (!, @, #, %, ^, &, *).</li><br>
+<li> Identifier name must not be similar to any keyword defined in the language.</li><br>
+<li> Identifier names are case sensitive; for example, my name, and MyName is not the same.</li><br>
+<li> Examples of valid identifiers: a123, _n, n_9, etc.</li><br>
+<li> Examples of invalid identifiers: 1a, n%4, n 9, etc</li><br>
+    </ul>
+</p>
+
+<h3><font color="#33b5e5">Declaring</font> Variable and <font color="#33b5e5">Assigning</font> Values</h3>
+<p>
+    Python does not bind us to declare a variable before using it in the application. It allows us to create a variable at the required time.
+<br><br>
+We don't need to declare explicitly variable in Python. When we assign any value to the variable, that variable is declared automatically.
+<br><br>
+The equal (=) operator is used to assign value to a variable. <br><br>
+</p>
+
+<h3><font color="#33b5e5">Object References
+</font></h3>
+<p>
+    It is necessary to understand how the Python interpreter works when we declare a variable. The process of treating variables is somewhat different from many other programming languages.
+<br><br>
+Python is the highly object-oriented programming language; that's why every data item belongs to a specific type of class. Consider the following example. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print("John")  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+<p>
+    In Python, variables are a symbolic name that is a reference or pointer to an object. The variables are used to denote objects by that name.
+<br><br>
+Let's understand the following example <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 50  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+<img src="python/python-variables.png..png" alt=""><br><br>
+<p>
+    n the above image, the variable a refers to an integer object. <br><br>
+
+Suppose we assign the integer value 50 to a new variable b. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 50
+
+        b = a
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+<img src="python/python-variables2.png" alt=""><br><br>
+<p>
+    The variable b refers to the same object that a points to because Python does not create another object.
+<br><br>
+Let's assign the new value to b. Now both variables will refer to the different objects. <br><br>
+</p>
+<img src="python/python-variables3.png" alt=""><br><br>
+
+<p>
+    Python manages memory efficiently if we assign the same variable to two different values.
+
+ <br><br>
+
+</p>
+
+<h3><font color="#33b5e5">Object</font> Identity</h3>
+<p>
+    In Python, every created object identifies uniquely in Python. Python provides the guaranteed that no two objects will have the same identifier. The built-in id() function, is used to identify the object identifier. Consider the following example. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 50  
+        b = a  
+        print(id(a))  
+        print(id(b))  
+        # Reassigned variable a  
+        a = 500  
+        print(id(a))
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+<p>
+    We assigned the b = a, a and b both point to the same object. When we checked by the id() function it returned the same number. We reassign a to 500; then it referred to the new object identifier.
+</p>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+
+<h2 id="datatypes">Python <font color="#33b5e5">Data Types</font></h2>
+<p>
+    Variables can hold values, and every value has a data-type. Python is a dynamically typed language; hence we do not need to define the type of the variable while declaring it. The interpreter implicitly binds the value with its type. <br><br>
+</p>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 5  
+
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+  <p>
+    The variable a holds integer value five and we did not define its type. Python interpreter will automatically interpret variables a as an integer type.
+<br><br>
+Python enables us to check the type of the variable used in the program. Python provides us the type() function, which returns the type of the variable passed.
+<br><br>
+Consider the following example to define the values of different data types and checking its type. <br><br>
+  </p>
+
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+      <!-- code -->
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+  <h2>
+    <font color="#33b5e5">Standard</font> data types
+  </h2>
+<p>
+    A variable can hold different types of values. For example, a person's name must be stored as a string whereas its id must be stored as an integer.
+<br><br>
+Python provides various standard data types that define the storage method on each of them. The data types defined in Python are given below. <br><br>
+<ol>
+<li> Numbers</li><br>
+<li> Sequence Type</li><br>
+<li> Boolean</li><br>
+<li> Set</li><br>
+<li> Dictionary</li><br>
+</ol>
+
+</p>
+
+<img src="python/python-data-types.png" alt=""><br><br>
+
+<h3><font color="#33b5e5">Numbers</font></h3>
+<p>
+    Number stores numeric values. The integer, float, and complex values belong to a Python Numbers data-type. Python provides the type() function to know the data-type of the variable. Similarly, the isinstance() function is used to check an object belongs to a particular class.
+<br><br>
+Python creates Number objects when a number is assigned to a variable. For example; <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = 5  
+        print("The type of a", type(a))  
+          
+        b = 40.5  
+        print("The type of b", type(b))  
+          
+        c = 1+3j  
+        print("The type of c", type(c))  
+        print(" c is a complex number", isinstance(1+3j,complex))  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+  <p>
+    Python supports three types of numeric data. <br><br>
+  </p>
+<ol>
+<li> <b>Int</b> - Integer value can be any length such as integers 10, 2, 29, -20, -150 etc. Python has no restriction on the length of an integer. Its value belongs to int</li><br>
+<li> <b>Float</b> - Float is used to store floating-point numbers like 1.9, 9.902, 15.2, etc. It is accurate upto 15 decimal points.</li><br>
+<li> <b>complex</b> - A complex number contains an ordered pair, i.e., x + iy where x and y denote the real and imaginary parts, respectively. The complex numbers like 2.14j, 2.0 + 2.3j, etc.</li><br>
+</ol>
+<h3><font color="#33b5e5">Sequence</font> Type</h3>
+<h4><font color="#33b5e5">String
+</font></h4>
+
+<p>
+    The string can be defined as the sequence of characters represented in the quotation marks. In Python, we can use single, double, or triple quotes to define a string.
+<br><br>
+String handling in Python is a straightforward task since Python provides built-in functions and operators to perform operations in the string.
+<br><br>
+In the case of string handling, the operator + is used to concatenate two strings as the operation "hello"+" python" returns "hello python".
+<br><br>
+The operator * is known as a repetition operator as the operation "Python" *2 returns 'Python Python'.
+<br><br>
+The following example illustrates the string in Python. <br><br>
+<b>Example - 1 <br><br></b>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str = "string using double quotes"  
+        print(str)  
+        s = '''''A multiline 
+        string'''  
+        print(s)  
+        
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+
+<p>
+    Consider the following example of string handling. <br><br>
+    <b>Example - 2 <br><br></b>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str1 = 'hello javatpoint' #string str1    
+        str2 = ' how are you' #string str2    
+        print (str1[0:2]) #printing first two character using slice operator    
+        print (str1[4]) #printing 4th character of the string    
+        print (str1*2) #printing the string twice    
+        print (str1 + str2) #printing the concatenation of str1 and str2   
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p><br><br>
+
+  <h4><font color="#33b5e5">List</font></h4>
+<p>
+    Python Lists are similar to arrays in C. However, the list can contain data of different types. The items stored in the list are separated with a comma (,) and enclosed within square brackets [].
+<br><br>
+We can use slice [:] operators to access the data of the list. The concatenation operator (+) and repetition operator (*) works with the list in the same way as they were working with the strings.
+<br><br>
+Consider the following example. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        list1  = [1, "hi", "Python", 2]    
+        #Checking type of given list  
+        print(type(list1))  
+          
+        #Printing the list1  
+        print (list1)  
+          
+        # List slicing  
+        print (list1[3:])  
+          
+        # List slicing  
+        print (list1[0:2])   
+          
+        # List Concatenation using + operator  
+        print (list1 + list1)  
+          
+        # List repetation using * operator  
+        print (list1 * 3) 
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+  <h3><font color="#33b5e5">Tuple</font></h3>
+<p>
+    A tuple is similar to the list in many ways. Like lists, tuples also contain the collection of the items of different data types. The items of the tuple are separated with a comma (,) and enclosed in parentheses ().
+<br><br>
+A tuple is a read-only data structure as we can't modify the size and value of the items of a tuple.
+<br><br>
+Let's see a simple example of the tuple. <br><br>
+</p>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        tup  = ("hi", "Python", 2)    
+        # Checking type of tup  
+        print (type(tup))    
+          
+        #Printing the tuple  
+        print (tup)  
+          
+        # Tuple slicing  
+        print (tup[1:])    
+        print (tup[0:1])    
+          
+        # Tuple concatenation using + operator  
+        print (tup + tup)    
+          
+        # Tuple repatation using * operator  
+        print (tup * 3)     
+          
+        # Adding value to tup. It will throw an error.  
+        t[2] = "hi"  
+        Output:
+        
+        <class 'tuple'>
+        ('hi', 'Python', 2)
+        ('Python', 2)
+        ('hi',)
+        ('hi', 'Python', 2, 'hi', 'Python', 2)
+        ('hi', 'Python', 2, 'hi', 'Python', 2, 'hi', 'Python', 2)
+        
+        Traceback (most recent call last):
+          File "main.py", line 14, in <module>
+            t[2] = "hi";
+        TypeError: 'tuple' object does not support item assignment
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+<h3><font color="#33b5e5">Dictionary</font></h3>
+<p>
+    Dictionary is an unordered set of a key-value pair of items. It is like an associative array or a hash table where each key stores a specific value. Key can hold any primitive data type, whereas value is an arbitrary Python object.
+<br><br>
+The items in the dictionary are separated with the comma (,) and enclosed in the curly braces {}.
+<br><br>
+Consider the following example. <br><br>
+</p>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        d = {1:'Jimmy', 2:'Alex', 3:'john', 4:'mike'}     
+  
+        # Printing dictionary  
+        print (d)  
+          
+        # Accesing value using keys  
+        print("1st name is "+d[1])   
+        print("2nd name is "+ d[4])    
+          
+        print (d.keys())    
+        print (d.values())    
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+<h3><font color="#33b5e5">Boolean</font></h3>
+<p>
+    Boolean type provides two built-in values, True and False. These values are used to determine the given statement true or false. It denotes by the class bool. True can be represented by any non-zero value or 'T' whereas false can be represented by the 0 or 'F'. Consider the following example. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to check the boolean type  
+        print(type(True))  
+        print(type(False))  
+        print(false)  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+<h3><font color="#33b5e5">Set</font></h3>
+<p>
+    Python Set is the unordered collection of the data type. It is iterable, mutable(can modify after creation), and has unique elements. In set, the order of the elements is undefined; it may return the changed sequence of the element. The set is created by using a built-in function set(), or a sequence of elements is passed in the curly braces and separated by the comma. It can contain various types of values. Consider the following example. <br><br>
+</p>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Creating Empty set  
+        set1 = set()  
+          
+        set2 = {'James', 2, 3,'Python'}  
+          
+        #Printing Set value  
+        print(set2)  
+          
+        # Adding element to the set  
+          
+        set2.add(10)  
+        print(set2)  
+          
+        #Removing element from the set  
+        set2.remove(2)  
+        print(set2)  
+
+      
+      // code submitted by HARSH
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br><br>
+  <h2 id="keywords">Python <font color="#33b5e5">Keywords</font></h2>
+<br><br>
+<p>Every scripting language has designated words or keywords, with particular definitions and usage guidelines. Python is no exception. The fundamental constituent elements of any Python program are Python keywords. <br>
+  <br>
+
+  This tutorial will give you a basic overview of all Python keywords and a detailed discussion of some important keywords that are frequently used.</p><br>
+  <br>
+  <h3>Introducing <font color="#33b5e5">Python </font>Keywords</h3>
+<br>
+<p>
+  Python keywords are unique words reserved with defined meanings and functions that we can only apply for those functions. You'll never need to import any keyword into your program because they're permanently present. <br>
+<br>
+Python's built-in methods and classes are not the same as the keywords. Built-in methods and classes are constantly present; however, they are not as limited in their application as keywords. <br>
+<br>
+Assigning a particular meaning to Python keywords means you can't use them for other purposes in our code. You'll get a message of SyntaxError if you attempt to do the same. If you attempt to assign anything to a built-in method or type, you will not receive a SyntaxError message; however, it is still not a smart idea.
+<br><br>
+Python contains thirty-five keywords in the most recent version, i.e., Python 3.8. Here we have shown a complete list of Python keywords for the reader's reference.
+</p>
+<br>
+<br>
+<img src="python/python keywords.png" alt="Image descrption">
+<br>
+<br>
+<p>In distinct versions of Python, the preceding keywords might be changed. Some extras may be introduced, while others may be deleted. By writing the following statement into the coding window, you can anytime retrieve the collection of keywords in the version you are working on.</p><br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to demonstrate the application of iskeyword()  
+        # importing keyword library which has lists  
+        import keyword  
+            
+        # displaying the complete list using "kwlist()."  
+        print("The set of keywords in this version is: ")  
+        print( keyword.kwlist )  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>How to <font color="#33b5e5">Identify Python</font> Keywords</h3>
+<br>
+<br>
+<p>
+  Python's keyword collection has evolved as new versions were introduced. The await and async keywords, for instance, were not introduced till Python 3.7. Also, in Python 2.7, the words print and exec constituted keywords; however, in Python 3+, they were changed into built-in methods and are no longer part of the set of keywords. In the paragraphs below, you'll discover numerous methods for determining whether a particular word in Python is a keyword or not.
+</p>
+<h4>Write Code on a <font color="#33b5e5">Syntax Highlighting </font>IDE</h4>
+<br>
+<p>
+  There are plenty of excellent Python IDEs available. They'll all highlight keywords to set them apart from the rest of the terms in the code. This facility will assist you in immediately identifying Python keywords during coding so that you do not misuse them.
+</p>
+
+<br><br>
+<h3><font color="#33b5e5">Python Keywords </font>and Their Usage</h3>
+<br>
+<br>
+<p>The following sections categorize Python keywords under the headings based on their frequency of use. The first category, for instance, includes all keywords utilized as values, whereas the next group includes keywords employed as operators. These classifications will aid in understanding how keywords are employed and will assist you in arranging the huge collection of Python keywords.
+<br>
+<ul>
+ <li> A few terms mentioned in the segment following may be unfamiliar to you. They're explained here, and you must understand what they mean before moving on:</li>
+ <li> The Boolean assessment of a variable is referred to as truthfulness. A value's truthfulness reveals if the value of the variable is true or false.</li>
+</ul><br>
+  In the Boolean paradigm, truth refers to any variable that evaluates to true. Pass an item as an input to bool() to see if it is true. If True is returned, the value of the item is true. Strings and lists which are not empty, non-zero numbers, and many other objects are illustrations of true values.
+  <br><br>
+  False refers to any item in a Boolean expression that returns false. Pass an item as an input to bool() to see if it is false. If False is returned, the value of the item is false. Examples of false values are " ", 0, { }, and [ ].</p>
+<br>
+ <br>
+ <h3>
+  <font color="#33b5e5"> Iteration Keywords:</font> for, while, break, continue</h3>
+<br><br>
+<p>The iterative process and looping are essential programming fundamentals. To generate and operate with loops, Python has multiple keywords. These would be utilized and observed in almost every Python program. Knowing how to use them correctly can assist you in becoming a better Python developer.</p>
+<br>
+<br>
+<b><h5>The <font color="#33b5e5">for </font>Keyword</h5></b>
+<br>
+<p>  The for loop is by far the most popular loop in Python. It's built by blending two Python keywords. They are for and in, as previously explained.
+</p>
+<br>
+<h5><b>The <font color="#33b5e5">while </font>Keyword</h5></b>
+<br>
+<p> Python's while loop employs the term while and functions similarly to other computer languages' while loops. The block after the while phrase will be repeated repeatedly until the condition following the while keyword is false.</p>
+<br>
+<h5><b><font color="#33b5e5">The break </font>Keyword</h5></b>
+<br>
+<p>
+  If you want to quickly break out of a loop, employ the break keyword. We can use this keyword in both for and while loops.
+</p>
+<br>
+<h5>
+<b>The continue <font color="#33b5e5">Keyword</b></font>
+</h5>
+<br>
+<p>
+  You can use the continue Python keyword if you wish to jump to the subsequent loop iteration. The continue keyword, as in many other computer languages, enables you to quit performing the present loop iteration and go on to the subsequent one.
+</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Program to show the use of keywords for, while, break, continue  
+        for i in range(15):  
+            
+            print( i + 4, end = " ")  
+                
+            # breaking the loop when i = 9  
+            if i == 9:  
+                break     
+        print()  
+                
+        # looping from 1 to 15  
+        i = 0 # initial condition  
+        while i < 15:  
+                
+            # When i has value 9, loop will jump to next iteration using continue. It will not print  
+            if i == 9:  
+                i += 3  
+                continue  
+            else:  
+                # when i is not equal to 9, adding 2 and printing the value  
+                print( i + 2, end = " ")  
+                    
+            i += 1  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<br>
+<h3>Exception <font color="#33b5e5">Handling Keywords </font>- try, except, raise, finally, and assert</h3>
+<br><p>
+<b >try: </b> This keyword is designed to handle exceptions and is used in conjunction with the keyword except to handle problems in the program. When there is some kind of error, the program inside the "try" block is verified, but the code in that block is not executed.
+<br>
+<b>except: </b>As previously stated, this operates in conjunction with "try" to handle exceptions.
+<br>
+<b>finally: </b>Whatever the outcome of the "try" section, the "finally" box is implemented every time.
+<br>
+<b>raise: </b>The raise keyword could be used to specifically raise an exception.
+<br>
+<b>assert: </b>This method is used to help in troubleshooting. Often used to ensure that code is correct. Nothing occurs if an expression is interpreted as true; however, if it is false, "AssertionError" is raised. An output with the error, followed by a comma, can also be printed.
+</p>
+<br>
+<h5><b>Code</b></h5>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # initializing the numbers  
+        var1 = 4  
+        var2 = 0  
+            
+        # Exception raised in the try section  
+        try:  
+            d = var1 // var2 # this will raise a "divide by zero" exception.  
+            print( d )  
+        # this section will handle exception raised in try block  
+        except ZeroDivisionError:  
+            print("We cannot divide by zero")  
+        finally:  
+            # If exception is raised or not, this block will be executed every time  
+            print("This is inside finally block")  
+        # by using assert keyword we will check if var2 is 0  
+        print ("The value of var1 / var2 is : ")  
+        assert var2 != 0, "Divide by 0 error"  
+        print (var1 / var2)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br><br>
+<h2 id="operator">Python <font color="#33b5e5">Operators</font></h2>
+<br><br>
+<p>The operator is a symbol that performs a certain operation between two operands, according to one definition. In a particular programming language, operators serve as the foundation upon which logic is constructed in a programme. The different operators that Python offers are listed here. <br>
+<ul>
+ <li> Arithmetic Operators</li>
+ <li> Comparison Operators</li>
+ <li> Assignment Operators</li>
+ <li> Logical Operators</li>
+ <li> Bitwise Operators</li>
+ <li> Membership Operators</li>
+ <li> Identity Operators</li>
+ <li> Arithmetic Operators</li>
+</ul>
+</p>
+<br>
+<h3>Arithmetic<font color="#33b5e5"> Operators</h3></font>
+<br>
+<p>Arithmetic operations between two operands are carried out using arithmetic operators. It includes the exponent (**) operator as well as the + (addition), - (subtraction), * (multiplication), / (divide), % (reminder), and // (floor division) operators.</p>
+<br>
+<br><table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>+ (Addition)</td>
+    <td> It is used to add two operands. For example, if a = 10, b = 10 => a + b = 20</td>
+  </tr>
+  <tr>
+    <td>- (Subtraction)</td>
+    <td>  It is used to subtract the second operand from the first operand. If the first operand is less than the second operand, the value results negative. For example, if a = 20, b = 5 => a - b = 15</td>
+  </tr>
+  <tr>
+    <td>/ (Division)</td>
+    <td> It returns the quotient after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a / b = 2.0</td>
+  </tr>
+  <tr>
+    <td>* (Multiplication)</td>
+    <td> It is used to multiply one operand with the other. For example, if a = 20, b = 4 => a * b = 80</td>
+  </tr>
+  <tr>
+    <td>%  (Reminder)</td>
+    <td> It returns the remainder after dividing the first operand by the second operand. For example, if a = 20, b = 10 => a % b = 0</td>
+  </tr>
+  <tr>
+    <td>** (Exponent)</td>
+    <td> It calculates the first operand's power to the second operand. For example, if a = 2, b = 3 => a ** b = 8</td>
+  </tr>
+  <tr>
+    <td>//  (Floor division)</td>
+    <td> It provides the floor value of the quotient obtained by dividing the two operands. For example, if a = 20, b = 3 => a // b = 6</td>
+  </tr>
+</table>
+<br><br>
+ <h3>Comparison <font color="#33b5e5">operator</h3></font>
+<br>
+Comparison operators compare the values of the two operands and return a true or false Boolean value in accordance. The following table lists the comparison operators.
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>==</td>
+    <td>If the value of two operands is equal, then the condition becomes true.</td>
+  </tr>
+  <tr>
+    <td>!=</td>
+    <td>If the value of two operands is not equal, then the condition becomes true.</td>
+  </tr>
+  <tr>
+    <td>&lt;=</td>
+    <td>The condition is met if the first operand is smaller than or equal to the second operand.</td>
+  </tr>
+  <tr>
+    <td>&gt;=</td>
+    <td>The condition is met if the first operand is greater than or equal to the second operand.</td>
+  </tr>
+  <tr>
+    <td>&gt;</td>
+    <td>If the first operand is greater than the second operand, then the condition becomes true.</td>
+  </tr>
+  <tr>
+    <td>&lt;</td>
+    <td>If the first operand is less than the second operand, then the condition becomes true.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h3><font color="#33b5e5">Assignment </font>Operators</h3>
+<br>
+<br>
+<p>
+  The right expression's value is assigned to the left operand using the assignment operators. The following table provides a description of the assignment operators.
+</p>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>=</td>
+    <td>It assigns the value of the right expression to the left operand.</td>
+  </tr>
+  <tr>
+    <td>+=</td>
+    <td>By multiplying the value of the right operand by the value of the left operand, the left operand receives a changed value. For example, if a = 10, b = 20 => a += b will be equal to a = a + b and therefore, a = 30.</td>
+  </tr>
+  <tr>
+    <td>-=</td>
+    <td>It decreases the value of the left operand by the value of the right operand and assigns the modified value back to the left operand. For example, if a = 20, b = 10 => a -= b will be equal to a = a - b and therefore, a = 10.</td>
+  </tr>
+  <tr>
+    <td>*=</td>
+    <td>It multiplies the value of the left operand by the value of the right operand and assigns the modified value back to the left operand. For example, if a = 10, b = 20 => a *= b will be equal to a = a * b and therefore, a = 200.</td>
+  </tr>
+  <tr>
+    <td>%=</td>
+    <td>It divides the value of the left operand by the value of the right operand and assigns the remainder back to the left operand. For example, if a = 20, b = 10 => a %= b will be equal to a = a % b and therefore, a = 0.</td>
+  </tr>
+  <tr>
+    <td>**=</td>
+    <td>a **= b will be equal to a = a ** b, for example, if a = 4, b = 2, a **= b will assign 4 ** 2 = 16 to a.</td>
+  </tr>
+  <tr>
+    <td>//=</td>
+    <td>a //= b will be equal to a = a // b, for example, if a = 4, b = 3, a //= b will assign 4 // 3 = 1 to a.</td>
+  </tr>
+</table>
+<br><br>
+<h3> <font color="#33b5e5">Bitwise </font>Operators</h3>
+<br>
+<p>The two operands' values are processed bit by bit by the bitwise operators. Consider the case below.</p>
+<br>
+<h5>For Example</h5>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        if a = 7     
+        b = 6       
+     then, binary (a) = 0111      
+         binary (b) = 0110      
+           
+     hence, a & b = 0011      
+           a | b = 0111      
+                  a ^ b = 0100      
+            ~ a = 1000 
+      </code>
+    </pre>
+  </div>
+  <br>
+  <br>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>&amp;</td>
+    <td>A 1 is copied to the result if both bits in two operands at the same location are 1. If not, 0 is copied.</td>
+  </tr>
+  <tr>
+    <td>|</td>
+    <td>The resulting bit will be 0 if both bits are zero; otherwise, the resulting bit will be 1.</td>
+  </tr>
+  <tr>
+    <td>^</td>
+    <td>If the two bits are different, the outcome bit will be 1, else it will be 0.</td>
+  </tr>
+  <tr>
+    <td>~</td>
+    <td>The operand's bits are calculated as their negations, so if one bit is 0, the next bit will be 1, and vice versa.</td>
+  </tr>
+  <tr>
+    <td>&lt;&lt;</td>
+    <td>The number of bits in the right operand is multiplied by the leftward shift of the value of the left operand.</td>
+  </tr>
+  <tr>
+    <td>&gt;&gt;</td>
+    <td>The left operand is moved right by the number of bits present in the right operand.</td>
+  </tr>
+</table>
+<br><br>
+<h3>Logical Operators</h3>
+<br>
+<p>The assessment of expressions to make decisions typically makes use of the logical operators. The following logical operators are supported by Python.</p>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>and</td>
+    <td>The condition will also be true if the expression is true. If the two expressions a and b are the same, then a and b must both be true.</td>
+  </tr>
+  <tr>
+    <td>or</td>
+    <td>The condition will be true if one of the phrases is true. If a and b are the two expressions, then an or b must be true if and is true and b is false.</td>
+  </tr>
+  <tr>
+    <td>not</td>
+    <td>If an expression a is true, then not (a) will be false and vice versa.</td>
+  </tr>
+</table>
+<br><br>
+<h3><font color="#33b5e5">Membership </font>Operators</h3>
+<br>
+<p>The membership of a value inside a Python data structure can be verified using Python membership operators. The result is true if the value is in the data structure; otherwise, it returns false.</p>
+<br>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>in</td>
+    <td>If the first operand cannot be found in the second operand, it is evaluated to be true (list, tuple, or dictionary).</td>
+  </tr>
+  <tr>
+    <td>not in</td>
+    <td>If the first operand is not present in the second operand, the evaluation is true (list, tuple, or dictionary).</td>
+  </tr>
+</table>
+<br>
+<br>
+<h3>Identity<font color="#33b5e5"> Operators</h3></font>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>is</td>
+    <td>If the references on both sides point to the same object, it is determined to be true.</td>
+  </tr>
+  <tr>
+    <td>is not</td>
+    <td>If the references on both sides do not point at the same object, it is determined to be true.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h3>
+  Operator <font color="#33b5e5">Precedence</font></h3>
+<br>
+<p>The order in which the operators are examined is crucial to understand since it tells us which operator needs to be considered first. Below is a list of the Python operators' precedence tables.</p>
+<br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>**</td>
+    <td>Overall other operators employed in the expression, the exponent operator is given precedence.</td>
+  </tr>
+  <tr>
+    <td>~ + -</td>
+    <td>The minus, unary plus, and negation.</td>
+  </tr>
+  <tr>
+    <td>* / % //</td>
+    <td>The division of the floor, the modules, the division, and the multiplication.</td>
+  </tr>
+  <tr>
+    <td>+ -</td>
+    <td>Binary plus and minus.</td>
+  </tr>
+  <tr>
+    <td>>></td>
+    <td>Left shift.</td>
+  </tr>
+  <tr>
+    <td><<</td>
+    <td>Right shift.</td>
+  </tr>
+  <tr>
+    <td>&</td>
+    <td>Binary and.</td>
+  </tr>
+  <tr>
+    <td>^ |</td>
+    <td>Binary xor and or.</td>
+  </tr>
+  <tr>
+    <td>&lt;= &lt; &gt; &gt;=</td>
+    <td>Comparison operators (less than, less than equal to, greater than, greater than equal to).</td>
+  </tr>
+  <tr>
+    <td>&lt;&gt; == !=</td>
+    <td>Equality operators.</td>
+  </tr>
+  <tr>
+    <td>= %= /= //= -= += *= **=</td>
+    <td>Assignment operators.</td>
+  </tr>
+  <tr>
+    <td>is is not</td>
+    <td>Identity operators.</td>
+  </tr>
+  <tr>
+    <td>in not in</td>
+    <td>Membership operators.</td>
+  </tr>
+  <tr>
+    <td>not or and</td>
+    <td>Logical operators.</td>
+  </tr>
+</table>
+<br>
+<br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br><br>
+
+<h2 id="ifelse"> Python <font color="#33b5e5">If-else </font>statements</h2>
+<br><br>
+<p>Decision making is the most important aspect of almost all the programming languages. As the name implies, decision making allows us to run a particular block of code for a particular decision. Here, the decisions are made on the validity of the particular conditions. Condition checking is the backbone of decision making.</p>
+<br>
+<p>In python, decision making is performed by the following statements.</p>
+<br>
+<table>
+  <tr>
+    <th>Statement</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>If Statement</td>
+    <td>The if statement is used to test a specific condition. If the condition is true, a block of code (if-block) will be executed.</td>
+  </tr>
+  <tr>
+    <td>If - else Statement</td>
+    <td>The if-else statement is similar to the if statement except that it also provides a block of code for the false case of the condition to be checked. If the condition provided in the if statement is false, then the else statement will be executed.</td>
+  </tr>
+  <tr>
+    <td>Nested if Statement</td>
+    <td>Nested if statements enable us to use if-else statements inside an outer if statement.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h3><font color="#33b5e5">Indentation </font>in Python</h3>
+<br>
+<p>
+For the ease of programming and to achieve simplicity, python doesn't allow the use of parentheses for the block level code. In Python, indentation is used to declare a block. If two statements are at the same indentation level, then they are the part of the same block.
+<br><br>
+Generally, four spaces are given to indent the statements which are a typical amount of indentation in python.
+<br><br>
+Indentation is the most used part of the python language since it declares the block of code. All the statements of one block are intended at the same level indentation. We will see how the actual indentation takes place in decision making and other stuff in python.
+<br>
+</p>
+<br>
+<h3>The if <font color="#33b5e5">statement</h3></font>
+<br>
+<p>The if statement is used to test a particular condition and if the condition is true, it executes a block of code known as if-block. The condition of if statement can be any valid logical expression which can be either evaluated to true or false.</p>
+<br>
+<img src="python/python-if-statement.png" alt="img description">
+<br>
+<p>The syntax of the if-statement is given below.</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        num = int(input("enter the number?"))  
+        if num%2 == 0:  
+            print("Number is even")  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h4>Example 1 : Program to <font color="#33b5e5">print the largest </font>of the three numbers.</h4>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        a = int(input("Enter a? "));  
+        b = int(input("Enter b? "));  
+        c = int(input("Enter c? "));  
+        if a>b and a>c:  
+            print("a is largest");  
+        if b>a and b>c:  
+            print("b is largest");  
+        if c>a and c>b:  
+            print("c is largest");  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+
+<h3>The <font color="#33b5e5">if-else </font> Statement</h3>
+<br>
+<p>The if-else statement provides an else block combined with the if statement which is executed in the false case of the condition.
+<br><br>
+  If the condition is true, then the if-block is executed. Otherwise, the else-block is executed.</p>
+<br>
+<img src="python/python-if-else-statement.png" alt="image description">
+<br>
+<br><br>
+<h4>Example : Program to <font color="#33b5e5">check whether a person</font> is eligible to vote or not.</h4>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        age = int (input("Enter your age? "))  
+        if age>=18:  
+            print("You are eligible to vote !!");  
+        else:  
+            print("Sorry! you have to wait !!"); 
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">The elif </font>statement</h3>
+<br>
+<p>
+  The elif statement enables us to check multiple conditions and execute the specific block of statements depending upon the true condition among them. We can have any number of elif statements in our program depending upon our need. However, using elif is optional.
+<br><br>
+The elif statement works like an if-else-if ladder statement in C. It must be succeeded by an if statement.
+<br><br>
+The syntax of the elif statement is given below. <br>
+</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        if expression 1:   
+        # block of statements   
+      
+    elif expression 2:   
+        # block of statements   
+      
+    elif expression 3:   
+        # block of statements   
+      
+    else:   
+        # block of statements  
+    
+      </code>
+    </pre>
+  </div>
+  <br>
+
+<br>
+<img src="python/python-elif-statement.png" alt="Image description">
+<br>
+ <br> <br>
+ <h5>Example 1</h5>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        number = int(input("Enter the number?"))  
+        if number==10:  
+            print("number is equals to 10")  
+        elif number==50:  
+            print("number is equal to 50");  
+        elif number==100:  
+            print("number is equal to 100");  
+        else:  
+            print("number is not equal to 10, 50 or 100");  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<br>
+<h2 id="loop">Python <font color="#33b5e5">Loops</font></h2>
+<br>
+<p>The following loops are available in Python to fulfil the looping needs. Python offers 3 choices for running the loops. The basic functionality of all the techniques is the same, although the syntax and the amount of time required for checking the condition differ.
+<br><br>
+  We can run a single statement or set of statements repeatedly using a loop command.
+  <br><br>
+  The following sorts of loops are available in the Python programming language.</p>
+<br>
+<table>
+  <tr>
+    <th>Sr.No.</th>
+    <th>Name of the Loop</th>
+    <th>Loop Type & Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>While loop</b></td>
+    <td>Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><b>For loop</b></td>
+    <td>This type of loop executes a code block multiple times and abbreviates the code that manages the loop variable.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><b>Nested loops</b></td>
+    <td>We can iterate a loop inside another loop.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h3>Loop Control <font color="#33b5e5">Statements</h3></font>
+<br>
+<p>Statements used to control loops and change the course of iteration are called control statements. All the objects produced within the local scope of the loop are deleted when execution is completed.
+<br><br>
+  Python provides the following control statements. We will discuss them later in detail.
+  <br> <br>
+  Let us quickly go over the definitions of these loop control statements.</p>
+<br>
+<table>
+  <tr>
+    <th>Sr.No.</th>
+    <th>Name of the control statement</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>Break statement</b></td>
+    <td>This command terminates the loop's execution and transfers the program's control to the statement next to the loop.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td><b>Continue statement</b></td>
+    <td>This command skips the current iteration of the loop. The statements following the continue statement are not executed once the Python interpreter reaches the continue statement.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td><b>Pass statement</b></td>
+    <td>The pass statement is used when a statement is syntactically necessary, but no code is to be executed.</td>
+  </tr>
+</table>
+<br><br>
+<h3>The<font color="#33b5e5"> for </font>Loop</h3>
+<br>
+<p>Python's for loop is designed to repeatedly execute a code block while iterating through a list, tuple, dictionary, or other iterable objects of Python. The process of traversing a sequence is known as iteration.</p>
+<br>
+<p><b>Syntax of the for Loop</b></p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        for value in sequence:  
+        { code block }  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+In this case, the variable value is used to hold the value of every item present in the sequence before the iteration begins until this particular iteration is completed.
+<br><br>
+Loop iterates until the final item of the sequence are reached.
+<br>
+<br>
+<p><b>Code</b></p>
+
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how the for loop works  
+  
+        # Creating a sequence which is a tuple of numbers  
+        numbers = [4, 2, 6, 7, 3, 5, 8, 10, 6, 1, 9, 2]  
+          
+        # variable to store the square of the number  
+        square = 0  
+          
+        # Creating an empty list  
+        squares = []  
+          
+        # Creating a for loop  
+        for value in numbers:  
+            square = value ** 2  
+            squares.append(square)  
+        print("The list of squares is", squares)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Using <font color="#33b5e5">else Statement </font>with for Loop</h3>
+<br>
+<p>As already said, a for loop executes the code block until the sequence element is reached. The statement is written right after the for loop is executed after the execution of the for loop is complete.
+<br><br>
+  Only if the execution is complete does the else statement comes into play. It won't be executed if we exit the loop or if an error is thrown.
+  <br><br>
+  Here is a code to better understand if-else statements.</p><br>
+
+<p><b>Code
+</b></p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how if-else statements work  
+  
+        string = "Python Loop"  
+          
+        # Initiating a loop  
+        for s in a string:  
+            # giving a condition in if block  
+            if s == "o":  
+                print("If block")  
+            # if condition is not satisfied then else block will be executed  
+            else:  
+                print(s)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>While <font color="#33b5e5">Loop</h3></font>
+<br>
+<p>While loops are used in Python to iterate until a specified condition is met. However, the statement in the program that follows the while loop is executed once the condition changes to false.</p>
+<br>
+<h5><b>Code</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how to use a while loop  
+        counter = 0  
+        # Initiating the loop  
+        while counter < 10: # giving the condition  
+            counter = counter + 3  
+            print("Python Loops")  
+      </code>
+    </pre>
+  </div>
+  <br>
+<h3>Using <font color="#33b5e5">else Statement </font>with while Loops</h3>
+<br>
+<p>As discussed earlier in the for loop section, we can use the else statement with the while loop also. It has the same syntax.</p>
+<br>
+<h5><b>Code</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #Python program to show how to use else statement with the while loop  
+        counter = 0  
+          
+        # Iterating through the while loop  
+        while (counter < 10):      
+            counter = counter + 3  
+            print("Python Loops") # Executed untile condition is met  
+        # Once the condition of while loop gives False this statement will be executed  
+        else:  
+            print("Code block inside the else statement")
+      </code>
+    </pre>
+  </div>
+  <br>
+  <br>
+<h3><font color="#33b5e5">Loop Control </font>Statements</h3>
+<br>
+<p>Now we will discuss the loop control statements in detail. We will see an example of each control statement.</p>
+<br>
+<h4>Continue <font color="#33b5e5">Statement</h4></font>
+<br>
+<p>It returns the control to the beginning of the loop.
+</p>
+<br>
+<h5><b>Code</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how the continue statement works  
+  
+# Initiating the loop  
+for string in "Python Loops":  
+    if string == "o" or string == "p" or string == "t":  
+         continue  
+    print('Current Letter:', string)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h4><font color="#33b5e5">Break </font>Statement</h4>
+<br>
+<p>It stops the execution of the loop when the break statement is reached.</p>
+<h5><b>Code</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how the break statement works  
+  
+        # Initiating the loop  
+        for string in "Python Loops":  
+            if string == 'L':  
+                 break  
+            print('Current Letter: ', string)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h4>Pass <font color="#33b5e5">Statement</h4></font>
+<br>
+<p>Pass statements are used to create empty loops. Pass statement is also employed for classes, functions, and empty control statements.</p>
+
+<h5><b>Code</b></h5>
+<br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python program to show how the pass statement works  
+        for a string in "Python Loops":  
+            pass  
+        print( 'Last Letter:', string)   
+      </code>
+    </pre>
+  </div>
+  <br>
+
+<br><br>
+<h2 id="string">Python <font color="#33b5e5">Strings   </font></h2>
+<br><br>
+<p>
+  Till now, we have discussed numbers as the standard data-types in Python. In this section of the tutorial, we will discuss the most popular data type in Python, i.e., string.
+<br><br>
+Python string is the collection of the characters surrounded by single quotes, double quotes, or triple quotes. The computer does not understand the characters; internally, it stores manipulated character as the combination of the 0's and 1's.
+<br><br>
+Each character is encoded in the ASCII or Unicode character. So we can say that Python strings are also called the collection of Unicode characters.
+<br><br>
+In Python, strings can be created by enclosing the character or the sequence of characters in the quotes. Python allows us to use single quotes, double quotes, or triple quotes to create the string.
+<br><br>
+Consider the following example in Python to create a string.
+</p>
+<br>
+<h5>Example</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        print(type(str)), then it will print a string (str).    
+      </code>
+    </pre>
+  </div>
+  <br>
+
+<p>In Python, strings are treated as the sequence of characters, which means that Python doesn't support the character data-type; instead, a single character written as 'p' is treated as the string of length 1.</p>
+<br>
+<br>
+<h3><font color="#33b5e5">Creating String</font> in Python</h3>
+<br>
+<p>We can create a string by enclosing the characters in single-quotes or double- quotes. Python also provides triple-quotes to represent the string, but it is generally used for multiline string or <b>docstrings.</b></p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #Using single quotes  
+        str1 = 'Hello Python'  
+        print(str1)  
+        #Using double quotes  
+        str2 = "Hello Python"  
+        print(str2)  
+          
+        #Using triple quotes  
+        str3 = '''''Triple quotes are generally used for  
+            represent the multiline or 
+            docstring'''   
+        print(str3)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Strings <font color="#33b5e5">indexing </font>and <font color="#33b5e5">splitting</font></h3>
+<br>
+<p>Like other languages, the indexing of the Python strings starts from 0. For example, The string "HELLO" is indexed as given in the below figure.</p>
+<br>
+<img src="python/strings-indexing-and-splitting.png" alt="Image description">
+<br>
+<br>
+<br>
+<p><b>Consider the following example:</b></p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str = "HELLO"  
+        print(str[0])  
+        print(str[1])  
+        print(str[2])  
+        print(str[3])  
+        print(str[4])  
+        # It returns the IndexError because 6th index doesn't exist  
+        print(str[6])  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Reassigning </font>Strings</h3>
+<br>
+<p>Updating the content of the strings is as easy as assigning it to a new string. The string object doesn't support item assignment i.e., A string can only be replaced with new string since its content cannot be partially replaced. Strings are immutable in Python.
+<br><br>
+  Consider the following example.</p>
+<br>
+<h5><b>Example 1</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str = "HELLO"    
+        str[0] = "h"    
+        print(str)    
+      </code>
+    </pre>
+  </div>
+  <br>
+
+<br>
+<h3>Deleting the <font color="#33b5e5">String</h3></font>
+<br>
+<p>As we know that strings are immutable. We cannot delete or remove the characters from the string.  But we can delete the entire string using the <b> del </b>keyword.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str = "CODINGCLASSROOM"  
+        del str[1]  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<br>
+
+<h3>String <font color="#33b5e5">Operators</h3></font>
+<br><br>
+<table>
+  <tr>
+    <th>Operator</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>+</td>
+    <td>It is known as concatenation operator used to join the strings given either side of the operator.</td>
+  </tr>
+  <tr>
+    <td>*</td>
+    <td>It is known as repetition operator. It concatenates the multiple copies of the same string.</td>
+  </tr>
+  <tr>
+    <td>[]</td>
+    <td>It is known as slice operator. It is used to access the sub-strings of a particular string.</td>
+  </tr>
+  <tr>
+    <td>[:]</td>
+    <td>It is known as range slice operator. It is used to access the characters from the specified range.</td>
+  </tr>
+  <tr>
+    <td>in</td>
+    <td>It is known as membership operator. It returns if a particular sub-string is present in the specified string.</td>
+  </tr>
+  <tr>
+    <td>not in</td>
+    <td>It is also a membership operator and does the exact reverse of in. It returns true if a particular substring is not present in the specified string.</td>
+  </tr>
+  <tr>
+    <td>r/R</td>
+    <td>It is used to specify the raw string. Raw strings are used in the cases where we need to print the actual meaning of escape characters such as "C://python". To define any string as a raw string, the character r or R is followed by the string.</td>
+  </tr>
+  <tr>
+    <td>%</td>
+    <td>It is used to perform string formatting. It makes use of the format specifiers used in C programming like %d or %f to map their values in python. We will discuss how formatting is done in python.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h5>Example</h5>
+<br>
+<p>Consider the following example to understand the real use of Python operators.
+
+  </p>
+  <br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              str = "Hello"     
+              str1 = " world"    
+              print(str*3) # prints HelloHelloHello    
+              print(str+str1)# prints Hello world     
+              print(str[4]) # prints o                
+              print(str[2:4]); # prints ll                    
+              print('w' in str) # prints false as w is not present in str    
+              print('wo' not in str1) # prints false as wo is present in str1.     
+              print(r'C://python37') # prints C://python37 as it is written    
+              print("The string str : %s"%(str)) # prints The string str : Hello     
+            </code>
+          </pre>
+        </div>
+        <br>
+<br>
+<h3>Python String <font color="#33b5e5">Formatting</h3></font>
+<br>
+<h4><font color="#33b5e5">Escape </font>Sequence</h4>
+<br>
+<p>Let's suppose we need to write the text as - They said, "Hello what's going on?"- the given statement can be written in single quotes or double quotes but it will raise the SyntaxError as it contains both single and double-quotes.</p>
+<br>
+<h5>Example</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        str = "They said, "Hello what's going on?""  
+        print(str)  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<p>We can use the triple quotes to accomplish this problem but Python provides the escape sequence.
+<br><br>
+  The backslash(/) symbol denotes the escape sequence. The backslash can be followed by a special character and it interpreted differently. The single quotes inside the string must be escaped. We can apply the same as in the double quotes.</p>
+<br>
+<h5>Example</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # using triple quotes  
+        print('''''They said, "What's there?"''')  
+          
+        # escaping single quotes  
+        print('They said, "What\'s going on?"')  
+          
+        # escaping double quotes  
+        print("They said, \"What's going on?\"")  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<p><b>The list of an escape sequence is given below:</b></p>
+<br>
+<table>
+  <tr>
+    <th>Sr.</th>
+    <th>Escape Sequence</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+  <tr>
+    <td>1.</td>
+    <td>\newline</td>
+    <td>It ignores the new line.</td>
+    <td>print("Python1 \<br> Python2 \<br> Python3")<br>Output:<br>Python1 Python2 Python3</td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>\\</td>
+    <td>Backslash</td>
+    <td>print("\\")<br>Output:<br>\</td>
+  </tr>
+  <tr>
+    <td>3.</td>
+    <td>\'</td>
+    <td>Single Quotes</td>
+    <td>print('\'')<br>Output:<br>'</td>
+  </tr>
+  <tr>
+    <td>4.</td>
+    <td>\\''</td>
+    <td>Double Quotes</td>
+    <td>print("\"")<br>Output:<br>"</td>
+  </tr>
+  <tr>
+    <td>5.</td>
+    <td>\a</td>
+    <td>ASCII Bell</td>
+    <td>print("\a")</td>
+  </tr>
+  <tr>
+    <td>6.</td>
+    <td>\b</td>
+    <td>ASCII Backspace(BS)</td>
+    <td>print("Hello \b World")<br>Output:<br>Hello World</td>
+  </tr>
+  <tr>
+    <td>7.</td>
+    <td>\f</td>
+    <td>ASCII Formfeed</td>
+    <td>print("Hello \f World!")<br>Hello  World!</td>
+  </tr>
+  <tr>
+    <td>8.</td>
+    <td>\n</td>
+    <td>ASCII Linefeed</td>
+    <td>print("Hello \n World!")<br>Output:<br>Hello<br>World!</td>
+  </tr>
+  <tr>
+    <td>9.</td>
+    <td>\r</td>
+    <td>ASCII Carriage Return(CR)</td>
+    <td>print("Hello \r World!")<br>Output:<br>World!</td>
+  </tr>
+  <tr>
+    <td>10.</td>
+    <td>\t</td>
+    <td>ASCII Horizontal Tab</td>
+    <td>print("Hello \t World!")<br>Output:<br>Hello     World!</td>
+  </tr>
+  <tr>
+    <td>11.</td>
+    <td>\v</td>
+    <td>ASCII Vertical Tab</td>
+    <td>print("Hello \v World!")<br>Output:<br>Hello <br>World!</td>
+  </tr>
+  <tr>
+    <td>12.</td>
+    <td>\ooo</td>
+    <td>Character with octal value</td>
+    <td>print("\110\145\154\154\157")<br>Output:<br>Hello</td>
+  </tr>
+
+  <tr>
+    <td>13.</td>
+    <td>\xHH</td>
+    <td>Character with hex value.</td>
+    <td>print("\x48\x65\x6c\x6c\x6f")<br>Output:<br>Hello</td>
+  </tr>
+</table>
+<br><br>
+<h3>The <font color="#33b5e5">format() </font>method</h3>
+<br>
+<p>The <b>format() </b>method is the most flexible and useful method in formatting strings. The curly braces {} are used as the placeholder in the string and replaced by the format() method argument. Let's have a look at the given an example:</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Using Curly braces  
+        print("{} and {} both are the best friend".format("Devansh","Abhishek"))  
+          
+        #Positional Argument  
+        print("{1} and {0} best players ".format("Virat","Rohit"))  
+          
+        #Keyword Argument  
+        print("{a},{b},{c}".format(a = "James", b = "Peter", c = "Ricky"))  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Python String<font color="#33b5e5"> Formatting Using</font> % Operator</h3>
+<br>
+<p>Python allows us to use the format specifiers used in C's printf statement. The format specifiers in Python are treated in the same way as they are treated in C. However, Python provides an additional operator %, which is used as an interface between the format specifiers and their values. In other words, we can say that it binds the format specifiers to the values.
+<br><br>
+  Consider the following example.</p>
+  <br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              Integer = 10;    
+              Float = 1.290    
+              String = "Aakash"    
+              print("Hi I am Integer ... My value is %d\nHi I am float ... My value is %f\nHi I am string ... My value is %s"%(Integer,Float,String))    
+            </code>
+          </pre>
+        </div>
+        <br>
+
+<br>
+<h3>Python String <font color="#33b5e5">functions</h3></font>
+<br>
+<p>Python provides various in-built functions that are used for string handling. Many String fun</p>
+<br>
+<table>
+  <tr>
+    <th>Method</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><b>capitalize()</b></td>
+    <td>It capitalizes the first character of the String. This function is deprecated in python3</td>
+  </tr>
+  <tr>
+    <td><b>casefold()</b></td>
+    <td>It returns a version of s suitable for case-less comparisons.</td>
+  </tr>
+  <tr>
+    <td><b>center(width, fillchar)</b></td>
+    <td>It returns a space padded string with the original string centered with an equal number of left and right spaces.</td>
+  </tr>
+  <tr>
+    <td><b>count(string, begin, end)</b></td>
+    <td>It counts the number of occurrences of a substring in a String between the begin and end index.</td>
+  </tr>
+  <tr>
+    <td><b>decode(encoding='UTF8', errors='strict')</b></td>
+    <td>Decodes the string using the codec registered for encoding.</td>
+  </tr>
+  <tr>
+    <td><b>encode()</b></td>
+    <td>Encode S using the codec registered for encoding. The default encoding is 'utf-8'.</td>
+  </tr>
+  <tr>
+    <td><b>endswith(suffix, begin=0, end=len(string))</b></td>
+    <td>It returns a Boolean value if the string terminates with the given suffix between the begin and end.</td>
+  </tr>
+  <tr>
+    <td><b>expandtabs(tabsize=8)</b></td>
+    <td>It defines tabs in a string to multiple spaces. The default tab size is 8.</td>
+  </tr>
+  <tr>
+    <td><b>find(substring, beginIndex, endIndex)</b></td>
+    <td>It returns the index value of the string where the substring is found between the begin index and end index.</td>
+  </tr>
+  <tr>
+    <td><b>format(value)</b></td>
+    <td>It returns a formatted version of S, using the passed value.</td>
+  </tr>
+  <tr>
+    <td><b>index(substring, beginIndex, endIndex)</b></td>
+    <td>It throws an exception if the string is not found. It works the same as the find() method.</td>
+  </tr>
+  <tr>
+    <td><b>isalnum()</b></td>
+    <td>It returns true if the characters in the string are alphanumeric (i.e., alphabets or numbers) and there is at least 1 character. Otherwise, it returns false.</td>
+  </tr>
+  <tr>
+    <td><b>isalpha()</b></td>
+    <td>It returns true if all the characters are alphabets and there is at least one character, otherwise false.</td>
+  </tr>
+  <tr>
+    <td><b>isdecimal()</b></td>
+    <td>It returns true if all the characters of the string are decimals.</td>
+  </tr>
+  <tr>
+    <td><b>isdigit()</b></td>
+    <td>It returns true if all the characters are digits and there is at least one character, otherwise false.</td>
+  </tr>
+  <tr>
+    <td><b>isidentifier()</b></td>
+    <td>It returns true if the string is a valid identifier.</td>
+  </tr>
+  <tr>
+    <td><b>islower()</b></td>
+    <td>It returns true if the characters of a string are in lowercase, otherwise false.</td>
+  </tr>
+  <tr>
+    <td><b>isnumeric()</b></td>
+    <td>It returns true if the string contains only numeric characters.</td>
+  </tr>
+  <tr>
+    <td><b>isprintable()</b></td>
+    <td>It returns true if all the characters of s are printable or s is empty, false otherwise.</td>
+  </tr>
+  <tr>
+    <td><b>isupper()</b></td>
+    <td>It returns false if the characters of a string are in uppercase, otherwise false.</td>
+  </tr>
+  <tr>
+    <td><b>isspace()</b></td>
+    <td>It returns true if the characters of a string are whitespace, otherwise false.</td>
+  </tr>
+  <tr>
+    <td><b>istitle()</b></td>
+    <td>It returns true if the string is titled properly and false otherwise. A title string is one in which the first character is uppercase whereas the other characters are lowercase.</td>
+  </tr>
+  <tr>
+    <td><b>isupper()</b></td>
+    <td>It returns true if all the characters of the string (if they exist) are uppercase, otherwise it returns false.</td>
+  </tr>
+  <tr>
+    <td><b>join(seq)</b></td>
+    <td>It merges the string representations of the given sequence.</td>
+  </tr>
+  <tr>
+    <td><b>len(string)</b></td>
+    <td>It returns the length of a string.</td>
+  </tr>
+  <tr>
+    <td><b>ljust(width[, fillchar])</b></td>
+    <td>It returns the space padded strings with the original string left-justified to the given width.</td>
+  </tr>
+  <tr>
+    <td><b>lower()</b></td>
+    <td>It converts all the characters of a string to lowercase.</td>
+  </tr>
+  <tr>
+    <td><b>lstrip()</b></td>
+    <td>It removes all leading whitespaces of a string and can also be used to remove a particular character from the leading.</td>
+  </tr>
+  <tr>
+    <td><b>partition()</b></td>
+    <td>It searches for the separator sep in S and returns the part before it, the separator itself, and the part after it. If the separator is not found, return S and two empty strings.</td>
+  </tr>
+  <tr>
+    <td><b>maketrans()</b></td>
+    <td>It returns a translation table to be used in the translate function.</td>
+  </tr>
+  <tr>
+    <td><b>replace(old, new[, count])</b></td>
+    <td>It replaces the old sequence of characters with the new sequence. The maximum characters are replaced if max is given.</td>
+  </tr>
+  <tr>
+    <td><b>rfind(str, beg=0, end=len(str))</b></td>
+    <td>It is similar to find but it traverses the string in the backward direction.</td>
+  </tr>
+  <tr>
+    <td><b>rindex(str, beg=0, end=len(str))</b></td>
+    <td>It is the same as index but it traverses the string in the backward direction.</td>
+  </tr>
+  <tr>
+    <td><b>rjust(width[, fillchar])</b></td>
+    <td>Returns a space padded string having the original string right-justified to the number of characters specified.</td>
+  </tr>
+  <tr>
+    <td><b>rstrip()</b></td>
+    <td>It removes all trailing whitespace of a string and can also be used to remove a particular character from trailing.</td>
+  </tr>
+  <tr>
+    <td><b>rsplit(sep=None, maxsplit=-1)</b></td>
+    <td>It is the same as split() but it processes the string from the backward direction. It returns the list of words in the string. If the separator is not specified, then the string splits according to whitespace.</td>
+  </tr>
+  <tr>
+    <td><b>split(str, num=string.count(str))</b></td>
+    <td>Splits the string according to the delimiter str. The string splits according to the space if the delimiter is not provided. It returns the list of substrings concatenated with the delimiter.</td>
+  </tr>
+  <tr>
+    <td><b>splitlines(num=string.count('\n'))</b></td>
+    <td>It returns the list of strings at each line with newline removed.</td>
+  </tr>
+  <tr>
+    <td><b>startswith(str, beg=0, end=len(str))</b></td>
+    <td>It returns a Boolean value if the string starts with the given str between the begin and end.</td>
+  </tr>
+  <tr>
+    <td><b>strip([chars])</b></td>
+    <td>It is used to perform lstrip() and rstrip() on the string.</td>
+  </tr>
+  <tr>
+    <td><b>swapcase()</b></td>
+    <td>It inverts the case of all characters in a string.</td>
+  </tr>
+  <tr>
+    <td><b>title()</b></td>
+    <td>It is used to convert the string into title case, i.e., the string "meEruT" will be converted to "Meerut".</td>
+  </tr>
+  <tr>
+    <td><b>translate(table, deletechars='')</b></td>
+    <td>It translates the string according to the translation table passed in the function.</td>
+  </tr>
+  <tr>
+    <td><b>upper()</b></td>
+    <td>It converts all the characters of a string to uppercase.</td>
+  </tr>
+  <tr>
+    <td><b>zfill(width)</b></td>
+    <td>Returns the original string left-padded with zeros to a total of width characters; intended for numbers, zfill() retains any sign given (less one zero).</td>
+  </tr>
+</table>
+<br><br><br>
+<h2 id="function">Python <font color="#33b5e5">Functions</font></h2>
+<br>
+<p>The fundamentals of Python functions, including what they are, their syntax, their primary parts, return keywords, and major types, will be covered in this tutorial. Additionally, we'll examine several instances of Python function definitions.</p>
+<br>
+<h3>What are <font color="#33b5e5">Python Functions?</font></h3>
+<br>
+<p>A function is a collection of related assertions that performs a mathematical, analytical, or evaluative operation. A collection of statements called Python Functions returns the particular task. Python functions are simple to define and essential to intermediate-level programming. The exact criteria hold to function names as they do to variable names. The goal is to group up certain often performed actions and define a function. We may call the function and reuse the code contained within it with different variables rather than repeatedly creating the same code block for different input variables.
+<br><br>
+  User-defined and built-in functions are the two main categories of functions in Python. It helps maintain the programme concise, unique, and well-structured.</p>
+<br><br>
+  <h3>Advantages of <font color="#33b5e5">Functions </font>in Python</h3>
+<br>
+<p>Python functions have the following Perks.</p>
+<br><ul>
+
+<li>   By including functions, we can prevent repeating the same code block repeatedly in a program.</li>
+<li> Python functions, once defined, can be called many times and from anywhere in a program.</li>
+<li> If our Python program is large, it can be separated into numerous functions which is simple to track.</li>
+<li> The key accomplishment of Python functions is we can return as many outputs as we want with different arguments.</li>
+</ul> <p> However, calling functions has always been overhead in a Python program.
+</p>
+<br>
+<h5><b>Syntax of Python Function</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #  An example Python Function  
+        def function_name( parameters ):  
+            # code block  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<p>
+  The following elements make up to define a function, as seen above.
+<br><br>
+<ul>
+<li> The beginning of a function header is indicated by a keyword called def.</li>
+<li> function_name is the function's name that we can use to separate it from others. We will use this name to call the function later in the program. In Python, name functions must follow the same rules as naming variables.</li>
+<li> We pass arguments to the defined function using parameters. However, they are optional.</li>
+<li> The function header is terminated by a colon (:).</li>
+<li> We can use a documentation string called docstring in the short form to explain the purpose of the function.</li>
+<li> The body of the function is made up of several valid Python statements. The indentation depth of the whole code block must be the same (usually 4 spaces).</li>
+<li> We can use a return expression to return a value from a defined function.</li>
+</ul>
+</p>
+
+<h3>Example of a <font color="#33b5e5">User-Defined </font>Function</h3>
+<br>
+<p>We will define a function that when called will return the square of the number passed to it as an argument.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Example Python Code for User-Defined function  
+        def square( num ):    
+            """  
+            This function computes the square of the number.  
+            """    
+            return num**2     
+        object_ = square(6)    
+        print( "The square of the given number is: ", object_ )   
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Calling a<font color="#33b5e5"> Function</h3></font>
+<br>
+<p>A function is defined by using the def keyword and giving it a name, specifying the arguments that must be passed to the function, and structuring the code block.
+<br><br>
+  After a function's fundamental framework is complete, we can call it from anywhere in the program. The following is an example of how to use the a_function function.</p>
+<br>
+<h5><b>Code</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Example Python Code for calling a function  
+        # Defining a function    
+        def a_function( string ):    
+            "This prints the value of length of string"    
+            return len(string)    
+            
+        # Calling the function we defined    
+        print( "Length of the string Functions is: ", a_function( "Functions" ) )    
+        print( "Length of the string Python is: ", a_function( "Python" ) )    
+      </code>
+    </pre>
+  </div>
+  <br>
+  <br>
+  <h3>Pass by <font color="#33b5e5">Reference </font>vs. Pass by <font color="#33b5e5">Value</font></h3>
+<br>
+<p>All parameters in the Python programming language are provided by reference. It indicates that if we alter the value of an argument inside of a function, the calling function will likewise reflect the change. For example,</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Example Python Code for Pass by Reference vs. Value  
+        # defining the function    
+        def square( item_list ):    
+            '''''''This function will find the square of items in the list'''    
+            squares = [ ]    
+            for l in item_list:    
+                squares.append( l**2 )    
+            return squares    
+            
+        # calling the defined function    
+        my_list = [17, 52, 8];    
+        my_result = square( my_list )    
+        print( "Squares of the list are: ", my_result )    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Function </font>Arguments</h3>
+<br>
+<p>The following are the types of arguments that we can use to call a function:
+<br><br>
+<ol>
+ <li> Default arguments</li>
+ <li> Keyword arguments</li>
+ <li> Required arguments</li>
+ <li> Variable-length arguments</li>
+</ol></p>
+<br>
+<h4>1) Default<font color="#33b5e5"> Arguments</h4></font>
+<br>
+<p>A default argument is a kind of parameter that takes as input a default value if no value is supplied for the argument when the function is called. Default arguments are demonstrated in the following instance.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate the use of default arguments    
+        # defining a function    
+        def function( n1, n2 = 20 ):    
+            print("number 1 is: ", n1)    
+            print("number 2 is: ", n2)    
+             
+             
+        # Calling the function and passing only one argument    
+        print( "Passing only one argument" )    
+        function(30)    
+            
+        # Now giving two arguments to the function    
+        print( "Passing two arguments" )    
+        function(50,30)    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h4>2) <font color="#33b5e5">Keyword </font>Arguments</h4>
+<br>
+<p>A function called's arguments are linked to keyword arguments. When invoking a function with keyword arguments, the user may tell whose parameter value it is by looking at the parameter label.
+<br><br>
+  We can remove certain arguments or arrange them in a different order since the Python interpreter will connect the provided keywords to link the values with its parameters. Another way to use keywords to invoke the function() method is as follows:</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate the use of keyword arguments    
+        # Defining a function    
+      def function( n1, n2 ):    
+          print("number 1 is: ", n1)    
+          print("number 2 is: ", n2)    
+          
+      # Calling function and passing arguments without using keyword    
+      print( "Without using keyword" )    
+      function( 50, 30)       
+              
+      # Calling function and passing arguments using keyword    
+      print( "With using keyword" )    
+      function( n2 = 50, n1 = 30)    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h4>3) Required <font color="#33b5e5">Arguments</h4></font>
+<br>
+<p>The arguments given to a function while calling in a pre-defined positional sequence are required arguments. The count of required arguments in the method call must be equal to the count of arguments provided while defining the function.
+<br><br>
+  We must send two arguments to the function function() in the correct order, or it will return a syntax error, as seen below.</p><br>
+  <h5><b>Example</b></h5>
+  <br>
+  <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          # Python code to demonstrate the use of default arguments      
+          # Defining a function    
+          def function( n1, n2 ):    
+              print("number 1 is: ", n1)    
+              print("number 2 is: ", n2)    
+              
+          # Calling function and passing two arguments out of order, we need num1 to be 20 and num2 to be 30    
+          print( "Passing out of order arguments" )    
+          function( 30, 20 )       
+              
+          # Calling function and passing only one argument    
+          print( "Passing only one argument" )    
+          try:    
+              function( 30 )    
+          except:    
+              print( "Function needs two positional arguments" )  
+        </code>
+      </pre>
+    </div>
+    <br>
+<br>
+<h4>4) <font color="#33b5e5">Variable-Length</font> Arguments</h4>
+<br>
+<p>We can use special characters in Python functions to pass as many arguments as we want in a function. There are two types of characters that we can use for this purpose:
+<br><br>
+<ol>
+ <li> <b>*args</b> -These are Non-Keyword Arguments</li>
+ <li> <b>**kwargs</b> -These are Keyword Arguments.</li>
+</ol>
+  Here is an example to clarify Variable length arguments</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate the use of variable-length arguments       
+        # Defining a function    
+        def function( *args_list ):    
+            ans = []    
+            for l in args_list:    
+                ans.append( l.upper() )    
+            return ans    
+        # Passing args arguments    
+        object = function('Python', 'Functions', 'tutorial')    
+        print( object )    
+            
+        # defining a function    
+        def function( **kargs_list ):    
+            ans = []    
+            for key, value in kargs_list.items():    
+                ans.append([key, value])    
+            return ans    
+        # Paasing kwargs arguments    
+        object = function(First = "Python", Second = "Functions", Third = "Tutorial")    
+        print(object)    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">return </font>Statement</h3>
+<br>
+<p>We write a return statement in a function to leave a function and give the calculated value when a defined function is called.
+  <br>
+  The return statement, which is supplied as output when a particular job or function is finished, might take the form of an argument, a statement, or a value. A declared function will return a None object if no return statement is written.
+</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate the use of return statements      
+        # Defining a function with return statement    
+        def square( num ):    
+            return num**2    
+             
+        # Calling function and passing arguments.    
+        print( "With return statement" )    
+        print( square( 52 ) )    
+            
+        # Defining a function without return statement     
+        def square( num ):    
+             num**2     
+            
+        # Calling function and passing arguments.    
+        print( "Without return statement" )    
+        print( square( 52 ) )    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>The <font color="#33b5e5">Anonymous </font>Functions</h3>
+<br>
+<p>These types of Python functions are anonymous since we do not declare them, as we declare usual functions, using the def keyword. We can use the lambda keyword to define the short, single output, anonymous functions.
+<br><br>
+  Lambda expressions can accept an unlimited number of arguments; however, they only return one value as the result of the function. They can't have numerous expressions or instructions in them. Since lambda needs an expression, an anonymous function cannot be directly called to print.
+  <br><br>
+  Lambda functions contain their unique local domain, meaning they can only reference variables in their argument list and the global domain name.
+  <br><br>
+  Although lambda expressions seem to be a one-line representation of a function, they are not like inline expressions in C and C++, which pass function stack allocations at execution for efficiency concerns.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate ananymous functions  
+        # Defining a function    
+        lambda_ = lambda argument1, argument2: argument1 + argument2;    
+            
+        # Calling the function and passing values    
+        print( "Value of the function is : ", lambda_( 20, 30 ) )    
+        print( "Value of the function is : ", lambda_( 40, 50 ) )    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Scope and </font>Lifetime of Variables</h3>
+<br>
+<p>The scope of a variable refers to the domain of a program wherever it is declared. A function's arguments and variables are not accessible outside the defined function. As a result, they only have a local domain.
+<br><br>
+  The lifespan of a variable in RAM is how long it stays there. A function's lifespan is the same as that of its internal variables. They are taken away after we exit the function. Consequently, a function does not keep the value of a variable from previous executions.
+  <br><br>
+  Here's a simple example of a variable's scope within a function.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to demonstrate scope and lifetime of variables  
+        #defining a function to print a number.    
+        def number( ):    
+            num = 50    
+            print( "Value of num inside the function: ", num)    
+            
+        num = 10    
+        number()    
+        print( "Value of num outside the function:", num)
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>
+  Python Function <font color="#33b5e5">within Another</font> Function
+</h3>
+<br>
+<p>Functions are considered first-class objects in Python. In a programming language, first-class objects are treated the same wherever they are used. They can be used in conditional expressions, as arguments, and saved in built-in data structures. A programming language is considered to implement first-class functions if it treats functions as first-class objects. The concept of First Class functions is supported by Python.
+<br><br>
+  Inner or nested function refers to a function defined within another defined function. Inner functions can access the parameters of the outer scope. Inner functions are constructed to cover them from the changes that happen outside the function. Many developers regard this process as encapsulation.</p>
+<br>
+<h5><b> Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # Python code to show how to access variables of a nested functions    
+        # defining a nested function    
+        def word():    
+            string = 'Python functions tutorial'    
+            x = 5     
+            def number():    
+                print( string )   
+                print( x )  
+                     
+            number()    
+        word()    
+      </code>
+    </pre>
+  </div>
+  <br>
+
+<br><br><br>
+<h2 id="file">Python File <font color="#33b5e5">Handling</h2></font>
+<br>
+<br>
+<p>Till now, we were taking the input from the console and writing it back to the console to interact with the user.
+<br><br>
+  Sometimes, it is not enough to only display the data on the console. The data to be displayed may be very large, and only a limited amount of data can be displayed on the console since the memory is volatile, it is impossible to recover the programmatically generated data again and again.
+  <br><br>
+  The file handling plays an important role when the data needs to be stored permanently into the file. A file is a named location on disk to store related information. We can access the stored information (non-volatile) after the program termination.
+  <br><br>
+  The file-handling implementation is slightly lengthy or complicated in the other programming language, but it is easier and shorter in Python.
+  <br><br>
+  In Python, files are treated in two modes as text or binary. The file may be in the text or binary format, and each line of a file is ended with the special character.
+  <br><br>
+  Hence, a file operation can be done in the following order.
+  <br>
+  <ul>
+<li>  Open a file</li>
+<li>  Read or write - Performing operation</li>
+<li>  Close the file</li>
+</ul>
+</p>
+<br><br>
+<h3><font color="#33b5e5">Opening </font>a file</h3>
+<br>
+<p> Python provides an open() function that accepts two arguments, file name and access mode in which the file is accessed. The function returns a file object which can be used to perform various operations like reading, writing, etc.</p>
+<br>
+<h5><b>Syntax</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        file object = open(<file-name>, <access-mode>, <buffering>)     
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<p>The files can be accessed using various modes like read, write, or append. The following are the details about the access mode to open a file.</p>
+<br>
+<table>
+  <tr>
+    <th>SN</th>
+    <th>Access mode</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>r</td>
+    <td>It opens the file in read-only mode. The file pointer exists at the beginning.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>rb</td>
+    <td>It opens the file in read-only mode in binary format. The file pointer exists at the beginning of the file.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>r+</td>
+    <td>It opens the file in read and write mode. The file pointer exists at the beginning of the file.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>rb+</td>
+    <td>It opens the file in read and write mode in binary format. The file pointer exists at the beginning of the file.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>w</td>
+    <td>It opens the file in write-only mode. It overwrites the file if it previously exists or creates a new one.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>wb</td>
+    <td>It opens the file in write-only mode in binary format. It overwrites the file if it exists or creates a new one.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>w+</td>
+    <td>It opens the file in write and read mode. It overwrites the previous file if one exists or creates a new one.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>wb+</td>
+    <td>It opens the file in write and read mode in binary format.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>a</td>
+    <td>It opens the file in append mode. The file pointer exists at the end of the previously written file.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>ab</td>
+    <td>It opens the file in append mode in binary format. The file pointer exists at the end of the previously written file.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>a+</td>
+    <td>It opens the file in append and read mode. The file pointer remains at the end of the file if it exists.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>ab+</td>
+    <td>It opens the file in append and read mode in binary format. The file pointer remains at the end of the file.</td>
+  </tr>
+</table>
+<br>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #opens the file file.txt in read mode    
+        fileptr = open("file.txt","r")    
+            
+        if fileptr:    
+            print("file is opened successfully")    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>The <font color="#33b5e5">close() </font>method</h3>
+<br>
+<p>Once all the operations are done on the file, we must close it through our Python script using the close() method. Any unwritten information gets destroyed once the close() method is called on a file object.
+<br><br>
+  We can perform any operation on the file externally using the file system which is the currently opened in Python; hence it is good practice to close the file once all the operations are done.
+  <br><br>
+  The syntax to use the <b> close()</b> method is given below.</p>
+<br>
+<h5><b>Syntax</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        fileobject.close()   
+      </code>
+    </pre>
+  </div>
+  <br>
+<p>Consider the following example.</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # opens the file file.txt in read mode    
+        fileptr = open("file.txt","r")    
+            
+        if fileptr:    
+            print("file is opened successfully")    
+            
+        #closes the opened file    
+        fileptr.close()  
+      </code>
+    </pre>
+  </div>
+  <br> <br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br>  <br>
+<p>After closing the file, we cannot perform any operation in the file. The file needs to be properly closed. If any exception occurs while performing some operations in the file then the program terminates without closing the file.
+<br><br>
+  We should use the following method to overcome such type of problem.</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        try:  
+        fileptr = open("file.txt")  
+        # perform file operations  
+     finally:  
+        fileptr.close()  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>The with <font color="#33b5e5">statement</h3></font>
+<br>
+<p>The with statement was introduced in python 2.5. The with statement is useful in the case of manipulating the files. It is used in the scenario where a pair of statements is to be executed with a block of code in between.
+<br>
+<br>
+The advantage of using with statement is that it provides the guarantee to close the file regardless of how the nested block exits.
+<br><br>
+It is always suggestible to use the with statement in the case of files because, if the break, return, or exception occurs in the nested block of code then it automatically closes the file, we don't need to write the close() function. It doesn't let the file to corrupt.
+<br><br>
+Consider the following example. <br>
+</p>
+
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        with open("file.txt",'r') as f:    
+        content = f.read();    
+        print(content)    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Writing </font>the file</h3>
+<br>
+<p>o write some text to a file, we need to open the file using the open method with one of the following access modes.
+<br><br>
+<b>  w: </b>It will overwrite the file if any file exists. The file pointer is at the beginning of the file.
+  <br><br>
+ <b> a:</b> It will append the existing file. The file pointer is at the end of the file. It creates a new file if no file exists.
+  <br><br>
+  Consider the following example.</p>
+  <br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              # open the file.txt in append mode. Create a new file if no such file exists.  
+              fileptr = open("file2.txt", "w")  
+                
+              # appending the content to the file  
+              fileptr.write('''''Python is the modern day language. It makes things so simple. 
+              It is the fastest-growing programing language''')  
+                
+              # closing the opened the file  
+              fileptr.close()  
+            </code>
+          </pre>
+        </div>
+        <br>
+<br>
+<h4>Read <font color="#33b5e5">file through </font>for loop</h4>
+<br> 
+<p>We can read the file using for loop. Consider the following example.</p>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #open the file.txt in read mode. causes an error if no such file exists.    
+        fileptr = open("file2.txt","r");     
+        #running a for loop     
+        for i in fileptr:    
+            print(i) # i contains each line of the file     
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Read <font color="#33b5e5">Lines of</font> the file</h3>
+<br>
+<p>Python facilitates to read the file line by line by using a function readline() method. The readline() method reads the lines of the file from the beginning, i.e., if we use the readline() method two times, then we can get the first two lines of the file.
+<br><br>
+  Consider the following example which contains a function readline() that reads the first line of our file "file2.txt" containing three lines. Consider the following example.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #open the file.txt in read mode. causes error if no such file exists.    
+        fileptr = open("file2.txt","r");     
+        #stores all the data of the file into the variable content    
+        content = fileptr.readline()     
+        content1 = fileptr.readline()  
+        #prints the content of the file    
+        print(content)     
+        print(content1)  
+        #closes the opened file    
+        fileptr.close()    
+      </code>
+    </pre>
+  </div>
+  <br><br>
+<p>We called the readline() function two times that's why it read two lines from the file.
+<br><br>
+  Python provides also the readlines() method which is used for the reading lines. It returns the list of the lines till the end of file(EOF) is reached.</p>
+<br>
+<h5>Example 2: Reading Lines Using readlines() function</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        #open the file.txt in read mode. causes error if no such file exists.    
+        fileptr = open("file2.txt","r");     
+            
+        #stores all the data of the file into the variable content    
+        content = fileptr.readlines()     
+          
+        #prints the content of the file    
+        print(content)     
+            
+        #closes the opened file    
+        fileptr.close()  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Creating </font>a new file</h3>
+<br>
+<p>The new file can be created by using one of the following access modes with the function open().
+<br><br>
+ <b> x: </b>it creates a new file with the specified name. It causes an error a file exists with the same name.
+  <br><br>
+ <b>a:</b>  It creates a new file with the specified name if no such file exists. It appends the content to the file if the file already exists with the specified name.
+  <br><br>
+ <b>w: </b> It creates a new file with the specified name if no such file exists. It overwrites the existing file.
+  <br><br>
+  Consider the following example.</p>
+  <br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              #open the file.txt in read mode. causes error if no such file exists.    
+              fileptr = open("file2.txt","x")   
+              print(fileptr)    
+              if fileptr:    
+                  print("File created successfully")  
+            </code>
+          </pre>
+        </div>
+        <br>
+<br>
+<h3>File <font color="#33b5e5">Pointer </font>positions</h3>
+<br>
+<p>Python provides the tell() method which is used to print the byte number at which the file pointer currently exists. Consider the following example.</p>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # open the file file2.txt in read mode    
+        fileptr = open("file2.txt","r")    
+          
+        #initially the filepointer is at 0     
+        print("The filepointer is at byte :",fileptr.tell())    
+            
+        #reading the content of the file    
+        content = fileptr.read();    
+            
+        #after the read operation file pointer modifies. tell() returns the location of the fileptr.     
+            
+        print("After reading, the filepointer is at:",fileptr.tell())    
+      </code>
+    </pre>
+  </div>
+  <br><br>
+  <h3> <font color="#33b5e5">Modifying file </font>pointer position</h3>
+<br>
+<p> In real-world applications, sometimes we need to change the file pointer location externally since we may need to read or write the content at various locations.
+<br><br>
+For this purpose, the Python provides us the seek() method which enables us to modify the file pointer position externally.
+<br><br>
+<b> offset:</b> It refers to the new position of the file pointer within the file.
+<br><br>
+<b> from: </b>It indicates the reference position from where the bytes are to be moved. If it is set to 0, the beginning of the file is used as the reference position. If it is set to 1, the current position of the file pointer is used as the reference position. If it is set to 2, the end of the file pointer is used as the reference position.
+<br><br>
+Consider the following example.
+</p>
+
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        # open the file file2.txt in read mode    
+        fileptr = open("file2.txt","r")    
+            
+        #initially the filepointer is at 0     
+        print("The filepointer is at byte :",fileptr.tell())    
+            
+        #changing the file pointer location to 10.    
+        fileptr.seek(10);    
+            
+        #tell() returns the location of the fileptr.     
+        print("After reading, the filepointer is at:",fileptr.tell())    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Python OS <font color="#33b5e5">module</h3></font>
+<br>
+<h4><font color="#33b5e5">Renaming </font>the file</h4>
+<br>
+<p>The Python <b> os </b>module enables interaction with the operating system. The os module provides the functions that are involved in file processing operations like renaming, deleting, etc. It provides us the rename() method to rename the specified file to a new name.
+<br>
+<br>
+The first argument is the current file name and the second argument is the modified name. We can change the file name bypassing these two arguments.
+</p>
+<br>
+<h5><b>
+  Example
+</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        import os    
+    
+        #rename file2.txt to file3.txt    
+        os.rename("file2.txt","file3.txt")  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Removing </font>the file</h3>
+<br>
+<p>The os module provides the remove() method which is used to remove the specified file. The Example to use the remove() method is given below.</p>
+<br>
+<h5><b>Example</b>
+</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        import os;    
+        #deleting the file named file3.txt     
+        os.remove("file3.txt")    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Creating the <font color="#33b5e5">new directory</h3></font>
+<br>
+<p>The <b> mkdir() </b>method is used to create the directories in the current working directory. The example to create the new directory is given below.</p>
+<br>
+<h5><b>Example</b></h5>
+  <br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              import os    
+    
+              #creating a new directory with the name new    
+              os.mkdir("new")    
+            </code>
+          </pre>
+        </div>
+        <br>
+<br>
+<h3>The <font color="#33b5e5">getcwd() </font>method</h3>
+<br>
+<p>This method returns the current working directory.
+<br><br>
+  The example to use the getcwd() method is given below.</p>    
+<br>
+<h5><b>
+  Example
+</b>
+</h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        import os  
+os.getcwd() 
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Changing the <font color="#33b5e5">current working </font>directory</h3>
+<br>
+<p>The chdir() method is used to change the current working directory to a specified directory.
+<br><br>
+  The example to use the chdir() method is given below.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        import os   
+        # Changing current directory with the new directiory  
+        os.chdir("C:\\Users\\DEVANSH SHARMA\\Documents")  
+        #It will display the current working directory  
+        os.getcwd()  
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3><font color="#33b5e5">Deleting </font>directory</h3>
+<br>
+<p>The rmdir() method is used to delete the specified directory.
+<br><br>
+  The example to use the rmdir() method is given below.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        import os  
+        #removing the new directory     
+        os.rmdir("directory_name")    
+      </code>
+    </pre>
+  </div>
+  <br>
+<br>
+<h3>Writing<font color="#33b5e5"> Python output </font>to the files</h3>
+<br>
+<p>In Python, there are the requirements to write the output of a Python script to a file.
+<br><br>
+  The check_call() method of module subprocess is used to execute a Python script and write the output of that script to a file.
+  <br><br>
+  The following example contains two python scripts. The script file1.py executes the script file.py and writes its output to the text file output.txt.</p>
+<br>
+<h5><b>Example</b></h5>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        temperatures=[10,-20,-289,100]    
+        def c_to_f(c):    
+            if c< -273.15:    
+                return "That temperature doesn't make sense!"    
+            else:    
+                f=c*9/5+32    
+                return f    
+        for t in temperatures:    
+            print(c_to_f(t))    
+      </code>
+    </pre>
+  </div>
+  <br>
+  <br>
+  <h3>The file<font color="#33b5e5"> related </font> methods</h3>
+<br>
+<p>The file object provides the following methods to manipulate the files on various operating systems.</p>
+<br>
+<table>
+  <tr>
+    <th>SN</th>
+    <th>Method</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>file.close()</td>
+    <td>It closes the opened file. The file once closed, it can't be read or written anymore.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>File.flush()</td>
+    <td>It flushes the internal buffer.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>File.fileno()</td>
+    <td>It returns the file descriptor used by the underlying implementation to request I/O from the OS.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>File.isatty()</td>
+    <td>It returns true if the file is connected to a TTY device, otherwise returns false.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>File.next()</td>
+    <td>It returns the next line from the file.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>File.read([size])</td>
+    <td>It reads the file for the specified size.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>File.readline([size])</td>
+    <td>It reads one line from the file and places the file pointer to the beginning of the new line.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>File.readlines([sizehint])</td>
+    <td>It returns a list containing all the lines of the file. It reads the file until the EOF occurs using the readline() function.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>File.seek(offset[, from])</td>
+    <td>It modifies the position of the file pointer to a specified offset with the specified reference.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>File.tell()</td>
+    <td>It returns the current position of the file pointer within the file.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>File.truncate([size])</td>
+    <td>It truncates the file to the optional specified size.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>File.write(str)</td>
+    <td>It writes the specified string to a file.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>File.writelines(seq)</td>
+    <td>It writes a sequence of strings to a file.</td>
+  </tr>
+</table>
+<br>
+
+
+<br><br><br>
+  <h3 id="END">Congratulations on <font color="#33b5e5">completing </font>Python course!</h3>
+  <p>Thank you for choosing our website to learn C++. We hope you found the course informative and useful. With your new C++ skills, you are now ready to tackle exciting programming challenges. Keep practicing and never stop learning!</p>
+  <p>Best regards,</p>
+  <p>The team at Coding Classroom</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>    
+</body>
+</html>

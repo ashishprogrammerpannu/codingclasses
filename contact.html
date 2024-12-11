@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Contact Us</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lang.css">
+    <link rel="stylesheet" href="about.html">
+    <link rel="stylesheet" href="homepage.html">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body {
+        background-color: #fff;
+        color: #333;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+    
+    h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .contact-form label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: #f5f5f5;
+        margin-bottom: 20px;
+        width: 100%;
+        color:#333;
+    }
+    .contact-form textarea{
+        min-height: 150px;
+    }
+    .submit-btn {
+        background-color: #33b5e5;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .submit-btn:hover {
+        background-color: #666;
+    }
+    
+    .contact-info ul {
+        list-style: none;
+        margin-top:10px 0;
+        padding: 0;
+        font-size: 18px;
+    }
+    li{
+
+    }
+    .contact-info i {
+        margin-right: 10px;
+        color: #666;
+    }
+    .homeicon{
+        color:wheat;
+    }
+</style>
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+    
+    
+        
+    
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+                
+           
+                <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+             
+             <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+           <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>   
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+	<div class="container">
+		<div class="contact-form">
+			<h2>Contact Us</h2>
+			<form action="contact.php" method="POST">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" rows="5" required></textarea>
+
+				<button type="submit" class="submit-btn">Send Message</button>
+			</form>
+		</div>
+		<div class="contact-info">
+            <br><br><br><br>
+			<h2>Contact Information</h2>
+			<ul>
+				<li><i class="fas fa-map-marker-alt"></i>HARSH DAHIYA</li>
+				<li><i class="fas fa-phone"></i> +917400000921</li>
+				<li><i class="fas fa-envelope"></i> dahiyaharsh489@gmail.com</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

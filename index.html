@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Coding Classroom</title>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<style>
+		.header {
+			background-color: rgb(52, 152, 219);
+			color: #fff;
+			padding: 50px;
+			text-align: center;
+		}
+		
+		.header img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		
+		.header h1 {
+			font-size: 60px;
+			margin-bottom: 30px;
+			text-shadow: 2px 2px #000;
+		}
+		
+		.header p {
+			font-size: 25px;
+			margin-bottom: 30px;
+			/* text-shadow: 2px 2px #000; */
+		}
+		
+		.header button {
+			font-size: 20px;
+			padding: 10px 30px;
+			background-color: #fff;
+			color: #333;
+			border: none;
+			border-radius: 20px;
+			text-shadow: none;
+			box-shadow: none;
+		}
+		
+		.header button:hover {
+			background-color: #333;
+			color: #fff;
+			cursor: pointer;
+			text-shadow: none;
+			box-shadow: none;
+		}
+
+        .moving-dots-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.moving-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation-name: moving-dot-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes moving-dot-animation {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -150%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+.moving-dot:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.moving-dot:nth-child(3) {
+  animation-delay: 1s;
+}
+	</style>
+</head>
+<body>
+	<header class="header">
+		<img src="logo.png" alt="Logo">
+		<!-- <h1>Welcome to Coding Classroom</h1> -->
+		<p>"Learn as if you will live forever, live like you will die tomorrow."</p>
+		<button id="myButton" class="btn btn-danger">Get Started</button>
+	</header>
+
+<!-- button function control -->
+<script>
+  var myButton = document.getElementById("myButton");
+  myButton.addEventListener("click", function() {
+    // Redirect to the existing page
+    window.location.href = "sign_up.html";
+  });
+</script>
+<div class="moving-dots-container">
+    <div class="moving-dot">.</div>
+    <div class="moving-dot">.</div>
+    <div class="moving-dot">*</div>
+  </div>
+</body>
+</html>

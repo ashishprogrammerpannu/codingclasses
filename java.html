@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="about.html">
+<link rel="stylesheet" href="homepage.html">
+<link rel="stylesheet" href="contact.html">
+<link rel="stylesheet" href="signup.html">
+
+
+
+<link rel="stylesheet" href="introduction c++.html">
+
+
+
+<link rel="stylesheet" href="lang.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<!-- navbar main  -->
+<!-- 
+
+ -->
+ <div class="navbar-main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+<!-- NAVIGATION BAR END -->
+
+
+
+<!-- navigation for languages -->
+<div class="navbar-sec">
+<div class="language-nav">
+<nav class="navbar navbar-expand-lg navbar-light badge-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-xl-center" id="navbarNavAltMarkup2">
+    <div class="navbar-nav w-100">
+      <a class="nav-item nav-link text-muted active" id="a" href="c.html">C</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="c++.html"> C++</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="dsa.html">DSA</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="java.html">Java</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="python.html">Python</a>
+    </div>      
+    </div>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+
+<!-- table view -->
+
+<div class="content">
+   
+   
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-3">
+        <div class="list-group">
+        
+          <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+          <a href="#history" class="list-group-item list-group-item-action">History of Java</a>  
+           <a href="#features" class="list-group-item list-group-item-action">Features </a>
+           <a href="#program" class="list-group-item list-group-item-action">First Java Program</a>
+           <a href="#internal" class="list-group-item list-group-item-action">Program Internals</a>
+           <a href="#jdk" class="list-group-item list-group-item-action">JDK,JRE, & JVM</a>
+           <a href="#variables" class="list-group-item list-group-item-action">Variables in Java</a>
+           <a href="#datatypes" class="list-group-item list-group-item-action">Datatypes</a>
+           <a href="#operators" class="list-group-item list-group-item-action">Operators in Java</a>
+           <a href="#control" class="list-group-item list-group-item-action">Control Statements</a>
+           <a href="#oops" class="list-group-item list-group-item-action">OOPs Concept</a>
+           <a href="#objects" class="list-group-item list-group-item-action">Objects and Classes</a>
+
+           <a href="#constructors" class="list-group-item list-group-item-action">Constructors</a>
+           <a href="#inherit" class="list-group-item list-group-item-action">Inheritence</a>
+           <a href="#array" class="list-group-item list-group-item-action">Array</a>
+           <a href="#END" class="list-group-item list-group-item-action">END</a>
+           <a href="#introduction" class="list-group-item list-group-item-action">Back to Starting </a>
+        </div>
+      </div>
+
+      <div class="col-md-9">
+   
+    <h2 id="introduction">What is <font color="#33b5e5">JAVA</font></h2>
+    <br>
+    <br>
+    Java is a <b>programming language</b> and a <b>platform</b>. Java is a high level, robust, object-oriented and secure programming language.Java was developed by <i>Sun Microsystems</i> (which is now the subsidiary of Oracle) in the year 1995. <i>James Gosling</i> is known as the father of Java. Before Java, its name was <i>Oak</i>. Since Oak was already a registered company, so James Gosling and his team changed the name from Oak to Java.<br>
+    <br><b>Platform:</b> Any hardware or software environment in which a program runs, is known as a platform. Since Java has a runtime environment (JRE) and API, it is called a platform.</br>
+    <br><h3>JAVA <font color="#33b5e5">Example</font></h3>
+    Let's have a quick look at Java programming example. A detailed description of Hello Java example is available in next page.<br><br>
+    <b>Simple.java</b><br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          class Simple{  
+            public static void main(String args[]){  
+             System.out.println("Hello Java");  
+            }  
+        }  
+
+
+        // code submitted by HARSH 
+        </code>
+      </pre>
+    </div> <br><br>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+  <br><br>
+
+    <h2><font color="#33b5e5">Application</font></h2>
+    According to Sun, 3 billion devices run Java. There are many devices where Java is currently used. Some of them are as follows:<br>
+    <ol>
+        <li>
+            Desktop Applications such as acrobat reader, media player, antivirus, etc.</li>
+<li>Web Applications such as irctc.co.in, javatpoint.com, etc.</li>
+<li>Enterprise Applications such as banking applications.</li>
+<li>Mobile</li>
+<li>Embedded System</li>
+<li>Smart Card</li>
+<li>Robotics</li>
+<li>Games, etc.
+        </li>
+    </ol><br><br>
+    <h3><font color="#33b5e5">Types</font> of Java Applications</h3>
+    There are mainly 4 types of applications that can be created using Java programming:<br>
+    <ol>
+        <li><b>Standalone Application</b></li>
+        Standalone applications are also known as desktop applications or window-based applications. These are traditional software that we need to install on every machine. Examples of standalone application are Media player, antivirus, etc. AWT and Swing are used in Java for creating standalone applications.<br><br>
+        <li><b>Web Application</b></li>An application that runs on the server side and creates a dynamic page is called a web application. Currently, Servlet, JSP, Struts, Spring, Hibernate, JSF, etc. technologies are used for creating web applications in Java.<br><br>
+        <li><b>Enterprise Application</b></li>An application that is distributed in nature, such as banking applications, etc. is called an enterprise application. It has advantages like high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.<br><br>
+        <li><b>Mobile Application</b></li>An application which is created for mobile devices is called a mobile application. Currently, Android and Java ME are used for creating mobile applications.<br><br>
+    </ol><br><br>
+    <h2>Java <font color="#33b5e5">Platforms / Editions</font></h2>
+    There are 4 platforms or editions of Java:<br>
+    <ol>
+        <li><b>Java SE (Java Standard Edition)</b></li>It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading, I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.<br><br>
+        <li><b>Java EE (Java Enterprise Edition)</b></li>It is an enterprise platform that is mainly used to develop web and enterprise applications. It is built on top of the Java SE platform. It includes topics like Servlet, JSP, Web Services, EJB, JPA, etc.<br><br>
+        <li><b>Java ME (Java Micro Edition)</b></li>It is a micro platform that is dedicated to mobile applications.<br><br>
+        <li><b>JavaFX</b></li>It is used to develop rich internet applications. It uses a lightweight user interface API.<br>
+    </ol>
+
+
+
+
+<br><br>
+
+    <h2 id="history"><font color="#33b5e5">History</font> of JAVA</h2>
+    The history of Java is very interesting. Java was originally designed for interactive television, but it was too advanced technology for the digital cable television industry at the time. The history of Java starts with the Green Team. Java team members (also known as Green Team), initiated this project to develop a language for digital devices such as set-top boxes, televisions, etc. However, it was best suited for internet programming. Later, Java technology was incorporated by Netscape.<br><br>
+    The principles for creating Java programming were "Simple, Robust, Portable, Platform-independent, Secured, High Performance, Multithreaded, Architecture Neutral, Object-Oriented, Interpreted, and Dynamic". Java was developed by James Gosling, who is known as the father of Java, in 1995. James Gosling and his team members started the project in the early '90s.<br><br>
+    Currently, Java is used in internet programming, mobile devices, games, e-business solutions, etc. Following are given significant points that describe the history of Java.<br>
+    <ol>
+        <li><b>James Gosling</b>, <b>Mike Sheridan</b>, and <b>Patrick Naughton</b> initiated the Java language project in June 1991. The small team of sun engineers called Green Team.</li><br>
+        <li>Initially it was designed for small, embedded systems in electronic appliances like set-top boxes.</li><br>
+        <li>Firstly, it was called <b>"Greentalk"</b> by James Gosling, and the file extension was .gt.</li><br>
+        <li>After that, it was called <b>Oak</b> and was developed as a part of the Green project.</li><br>
+        <li><b>Why Oak?</b> Oak is a symbol of strength and chosen as a national tree of many countries like the U.S.A., France, Germany, Romania, etc.</li><br>
+        <li>In 1995, Oak was renamed as <b>"Java"</b> because it was already a trademark by Oak Technologies.</li>
+    </ol><br><br>
+    <h3>Why Java Programming named <font color="#33b5e5">"Java"</font>?</h3>
+    <ol>
+        <li> Why had they chose the name Java for Java language? The team gathered to choose a new name. The suggested words were "dynamic", "revolutionary", "Silk", "jolt", "DNA", etc. They wanted something that reflected the essence of the technology: revolutionary, dynamic, lively, cool, unique, and easy to spell, and fun to say.</li><br>
+        According to James Gosling, "Java was one of the top choices along with Silk". Since Java was so unique, most of the team members preferred Java than other names.<br>
+        <li>Java is an island in Indonesia where the first coffee was produced (called Java coffee). It is a kind of espresso bean. Java name was chosen by James Gosling while having a cup of coffee nearby his office.</li><br>
+        <li>Notice that Java is just a name, not an acronym.</li><br>
+        <Li>Initially developed by James Gosling at Sun Microsystems (which is now a subsidiary of Oracle Corporation) and released in 1995.</Li><br>
+        <li>In 1995, Time magazine called <b>Java one of the Ten Best Products of 1995.</b></li><br>
+        <li>JDK 1.0 was released on January 23, 1996. After the first release of Java, there have been many additional features added to the language. Now Java is being used in Windows applications, Web applications, enterprise applications, mobile applications, cards, etc. Each new version adds new features in Java.</li><br>
+    </ol><br><br>
+    <h3>Java <font color="#33b5e5">Version</font> History</h3>
+    Many java versions have been released till now. The current stable release of Java is Java SE 10.<br>
+    <ol>
+        <li>JDK Alpha and Beta (1995)</li><br>
+        <li>JDK 1.0 (23rd Jan 1996)</li><br>
+        <li>JDK 1.1 (19th Feb 1997)</li><br>
+        <li>J2SE 1.2 (8th Dec 1998)</li><br>
+        <li>J2SE 1.3 (8th May 2000)</li><br>
+        <li>J2SE 1.4 (6th Feb 2002)</li><br>
+        <li>J2SE 5.0 (30th Sep 2004)</li><br>
+        <li>Java SE 6 (11th Dec 2006)</li><br>
+        <li>Java SE 7 (28th July 2011)</li><br>
+        <li>Java SE 8 (18th Mar 2014)</li><br>
+        <li>Java SE 9 (21st Sep 2017)</li><br>
+        <li>Java SE 10 (20th Mar 2018)</li><br>
+        <li>Java SE 11 (September 2018)</li><br>
+        <li>Java SE 12 (March 2019)</li><br>
+        <li>Java SE 13 (September 2019)</li><br>
+        <li>Java SE 14 (Mar 2020)</li><br>
+        <li>Java SE 15 (September 2020)</li><br>
+        <li>Java SE 16 (Mar 2021)</li><br>
+        <li>Java SE 17 (September 2021)</li><br>
+        <li>Java SE 18 (to be released by March 2022)</li><br>
+    </ol>
+    Since Java SE 8 release, the Oracle corporation follows a pattern in which every even version is release in March month and an odd version released in September month.<br>
+
+<br>
+  
+
+
+
+    <h2 id="features"><font color="#33b5e5">Features of java</font> of Java</h2>
+    The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.<br><br>
+    A list of the most important features of the Java language is given below.<br>
+    <ol>
+        <li>Simple</li><br>
+        <li>Object-Oriented</li><br>
+        <li>Portable</li><br>
+        <li>Secured</li><br>
+        <li>Secured</li><br>
+        <li>Robust</li><br>
+        <li>Architecture neutral</li><br>
+        <li>Interpreted</li><br>
+        <li>High Performance</li><br>
+        <li>Multithreaded</li><br>
+        <li>Distributed</li><br>
+        <li>Dynamic</li><br>
+    </ol><br><br>
+    <h3><font color="#33b5e5">Simple</font></h3>
+    Java is very easy to learn, and its syntax is simple, clean and easy to understand. According to Sun Microsystem, Java language is a simple programming language because:
+    <ul>
+        <li>Java syntax is based on C++ (so easier for programmers to learn it after C++).</li><br>
+        <li>Java has removed many complicated and rarely-used features, for example, explicit pointers, operator overloading, etc.</li><br>
+        <li>There is no need to remove unreferenced objects because there is an Automatic Garbage Collection in Java.</li><br>
+    </ul><br><br>
+    <h3><font color="#33b5e5">Object-oriented</font></h3>
+    Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize our software as a combination of different types of objects that incorporate both data and behavior.Object-oriented programming (OOPs) is a methodology that simplifies software development and maintenance by providing some rules.<br><br>
+    Basic concepts of OOPs are:
+    <ol>
+        <li>Object</li><br>
+        <li>Polymorphism</li><br>
+        <li>Class</li><br>
+        <li>Inheritance</li><br>
+        <li>Abstraction</li><br>
+        <li>Encapsulation</li><br>
+    </ol>
+<br><br>
+    <h3><font color="#33b5e5">Platform Independent</font></h3>
+    Java is platform independent because it is different from other languages like C, C++, etc. which are compiled into platform specific machines while Java is a write once, run anywhere language. A platform is the hardware or software environment in which a program runs.<br><br>
+
+    <img src="java/platform-independent-java.2.png.png" alt=""><br><br>
+
+    There are two types of platforms software-based and hardware-based. Java provides a software-based platform.<br><br>
+    The Java platform differs from most other platforms in the sense that it is a software-based platform that runs on top of other hardware-based platforms. It has two components:<br>
+    <ol>
+        <li>Runtime Environment</li><br>
+        <li>API(Application Programming Interface)</li><br>
+    </ol>
+    Java code can be executed on multiple platforms, for example, Windows, Linux, Sun Solaris, Mac/OS, etc. Java code is compiled by the compiler and converted into bytecode. This bytecode is a platform-independent code because it can be run on multiple platforms, i.e., Write Once and Run Anywhere (WORA).<br><br>
+    <h3><font color="#33b5e5">Secured</font></h3>
+    Java is best known for its security. With Java, we can develop virus-free systems. Java is secured because:<br><br>
+    <ul>
+        <li><b>No explicit pointer</b></li><br>
+        <li><b>Java Programs run inside a virtual machine sandbox</b></li><br><br>
+
+        <img src="java/java-security.3.png.png" alt="wef"><br><br>
+
+        <li><b>Classloader:</b>Classloader in Java is a part of the Java Runtime Environment (JRE) which is used to load Java classes into the Java Virtual Machine dynamically. It adds security by separating the package for the classes of the local file system from those that are imported from network sources.</li><br>
+        <li><b>Bytecode Verifier:</b>It checks the code fragments for illegal code that can violate access rights to objects.</li><br>
+        <li><b>Security Manager:</b>It determines what resources a class can access such as reading and writing to the local disk.</li>
+</ul>
+Java language provides these securities by default. Some security can also be provided by an application developer explicitly through SSL, JAAS, Cryptography, etc.<br><br>
+<h3><font color="#33b5e5">Robust</font></h3>
+The English mining of Robust is strong. Java is robust because:<br>
+<ul>
+    <li>It uses strong memory management.</li><br>
+    <li>There is a lack of pointers that avoids security problems.</li><br>
+    <li>Java provides automatic garbage collection which runs on the Java Virtual Machine to get rid of objects which are not being used by a Java application anymore.</li><br>
+    <li>There are exception handling and the type checking mechanism in Java. All these points make Java robust.</li><br>
+</ul><br><br>
+<h3><font color="#33b5e5">Architecture-neutral</font></h3>
+Java is architecture neutral because there are no implementation dependent features, for example, the size of primitive types is fixed.<br><br>
+In C programming, int data type occupies 2 bytes of memory for 32-bit architecture and 4 bytes of memory for 64-bit architecture. However, it occupies 4 bytes of memory for both 32 and 64-bit architectures in Java.<br><br>
+<h3><font color="#33b5e5">Portable</font></h3>
+Java is portable because it facilitates you to carry the Java bytecode to any platform. It doesn't require any implementation.<br><br>
+<h3><font color="#33b5e5">High-performance</font></h3>
+Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native code. It is still a little bit slower than a compiled language (e.g., C++). Java is an interpreted language that is why it is slower than compiled languages, e.g., C, C++, etc.<br><br>
+<h3><font color="#33b5e5">Distributed</font></h3>
+Java is distributed because it facilitates users to create distributed applications in Java. RMI and EJB are used for creating distributed applications. This feature of Java makes us able to access files by calling the methods from any machine on the internet.<br><br>
+<h3><font color="#33b5e5">Multi-threaded</font></h3>
+A thread is like a separate program, executing concurrently. We can write Java programs that deal with many tasks at once by defining multiple threads. The main advantage of multi-threading is that it doesn't occupy memory for each thread. It shares a common memory area. Threads are important for multi-media, Web applications, etc.<br><br>
+<h3><font color="#33b5e5">Dynamic</font></h3>
+Java is a dynamic language. It supports the dynamic loading of classes. It means classes are loaded on demand. It also supports functions from its native languages, i.e., C and C++.<br><br>
+Java supports dynamic compilation and automatic memory management (garbage collection).<br><br>
+
+
+<h2 id="programs"><font color="#33b5e5">First Java</font> Program | Hello World Example</h2>
+In this section, we will learn how to write the simple program of Java. We can write a simple hello Java program easily after installing the JDK.<br><br>
+To create a simple Java program, you need to create a class that contains the main method. Let's understand the requirement first.
+<br><br>
+<h3>The requirement for Java <font color="#33b5e5">Hello World Example</font></h3>
+For executing any Java program, the following software or application must be properly installed.<br>
+<ul>
+    <li>Install the JDK if you don't have installed it, download the JDK and install it.</li><br>
+    <li>Set path of the jdk/bin directory.</li><br>
+    <li>Create the Java program</li><br>
+    <li>Compile and run the Java program</li><br>
+</ul><br><br>
+    <h4><font color="#33b5e5">Creating </font>Hello World Example</h4>
+    Let's create the hello java program:<br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          class Simple{  
+            public static void main(String args[]){  
+             System.out.println("Hello Java");  
+            }  
+        }  
+
+
+        // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br>
+
+        <br>Save the above file as Simple.java.<br><br>
+        <b>To compile:</b><br>
+        javac Simple.java<br>
+        <b>To execute:</b><br>
+        java Simple<br>
+        <b>Output:</b><br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              Hello Java
+            </code>
+          </pre>
+        </div><br>
+
+
+    <b>Compilation Flow:</b><br><br>
+    When we compile Java program using javac tool, the Java compiler converts the source code into byte code.<br><br>
+
+<img src="java/javacodecompile.png" alt="wdw">
+<br><br>
+    <h2><font color="#33b5e5">Parameters</font> used in First Java Program</h2>
+    Let's see what is the meaning of class, public, static, void, main, String[], System.out.println().<br>
+    <ul>
+        <li><b>class </b>keyword is used to declare a class in Java.</li><br>
+        <li><b>public </b>keyword is an access modifier that represents visibility. It means it is visible to all.</li><br>
+        <li><b>static </b> is a keyword. If we declare any method as static, it is known as the static method. The core advantage of the static method is that there is no need to create an object to invoke the static method. The main() method is executed by the JVM, so it doesn't require creating an object to invoke the main() method. So, it saves memory.
+            void is the return type of the method. It means it doesn't return any value.</li><br>
+        <li><b>void </b>is the return type of the method. It means it doesn't return any value.</li><br>
+        <li><b>main </b>represents the starting point of the program.</li><br>
+        <li><b>String[] args or String args[] </b>is used for command line argument. We will discuss it in coming section.</li><br>
+        <li><b>System.out.println() </b>is used to print statement. Here, System is a class, out is an object of the PrintStream class, println() is a method of the PrintStream class. We will discuss the internal working of System.out.println() statement in the coming section.
+        </li><br>
+    </ul>
+    <h3><font color="#33b5e5">Valid</font> Java main() method signature</h3>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          public static void main(String[] args)  
+          public static void main(String []args)  
+          public static void main(String args[])  
+          public static void main(String... args)  
+          static public void main(String[] args)  
+          public static final void main(String[] args)  
+          final public static void main(String[] args)  
+          final strictfp public static void main(String[] args)  
+          
+
+        // code submitted by HARSH
+        </code>
+      </pre>
+    </div>
+<br><br>
+    <h3><font color="#33b5e5">Invalid</font> Java main() method signature</h3>
+    
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          public void main(String[] args)  
+          static void main(String[] args)  
+          public void static main(String[] args)  
+          abstract public static void main(String[] args)  
+          
+
+        // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br><br>
+
+
+
+    <h2 id="internal"><font color="#33b5e5">Internal Details</font> of Hello Java Program</h2> 
+    In the previous section, we have created Java Hello World program and learn how to compile and run a Java program. In this section, we are going to learn, what happens while we compile and run the Java program. Moreover, we will see some questions based on the first program.<br><br>
+    <h3>What happens at <font color="#33b5e5">compile time</font>?</h3>
+    At compile time, the Java file is compiled by Java Compiler (It does not interact with OS) and converts the Java code into bytecode.<br><br>
+
+ <img src="java/javacodecompile (1).png" alt="pqn"><br><br>
+<br><br>
+    <h3>What happens at <font color="#33b5e5">runtime</font>?</h3>
+    At runtime, the following steps are performed:<br><br>
+
+    <img src="java/java-runtime-processing.png" alt="fwaf"><br><br>
+<br><br>
+    <b>Classloader: </b>It is the subsystem of JVM that is used to load class files.<br><br>
+    <b>Bytecode Verifier: </b>Checks the code fragments for illegal code that can violate access rights to objects.<br><br>
+    <b>Interpreter: </b>Read bytecode stream then execute the instructions.<br><br>
+
+    <h3>Can you <font color="#33b5e5">save a Java source file</font> by another name than the class name?</h3>
+    Yes, if the class is not public. It is explained in the figure given below:
+
+        <img src="java/another.png" alt="sca"><br><br>
+
+        <b>To compile:</b><br><br>
+        javac Hard.java<br><br>
+        <b>To execute:</b><br><br>
+        java Simple<br><br>
+        Observe that, we have compiled the code with file name but running the program with class name. Therefore, we can save a Java program other than class name.<br><br>
+
+
+      
+        <h2 id="jdk">Difference between <font color="#33b5e5">JDK, JRE, and JVM</font></h2>
+
+        We must understand the differences between JDK, JRE, and JVM before proceeding further to Java. See the brief overview of JVM here. <br><br>
+
+If you want to get the detailed knowledge of Java Virtual Machine, move to the next page. Firstly, let's see the differences between the JDK, JRE, and JVM.<br><br>
+    <h3><font color="#33b5e5">JVM</font></h3>
+    JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that provides a runtime environment in which Java bytecode can be executed. It can also run those programs which are written in other languages and compiled to Java bytecode.<br><br>
+    JVMs are available for many hardware and software platforms. JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent. There are three notions of the JVM: specification, implementation, and instance.<br><br>
+    The JVM performs the following main tasks:<br>
+    <ul>
+        <li>Loads code</li><br>
+        <li>Verifies code</li><br>
+        <li>Executes code</li><br>
+        <li>Provides runtime environment</li><br>
+    </ul><br><br>
+    <h4>JVM <font color="#33b5e5">Architecture</font></h4><br><br>
+<img src="java/jvm-architecture.png" alt="wrg"><br><br>
+
+    <h3><font color="#33b5e5">JRE</font></h3>
+    JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.<br><br>
+    The implementation of JVM is also actively released by other companies besides Sun Micro Systems.<br><br>
+
+<img src="java/jre2.png" alt="dgdsa"><br><br>
+
+    <h3><font color="#33b5e5">JDK</font></h3>
+    JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools.<br><br>
+    JDK is an implementation of any one of the below given Java Platforms released by Oracle Corporation:<br>
+    <ul>
+        <li>Standard Edition Java Platform</li><br>
+        <li>Enterprise Edition Java Platform</li><br>
+        li>Micro Edition Java Platform</li><br>
+    </ul>
+    The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.<br><br>
+
+<img src="java/jdk2.png" alt=""><br><br>
+
+
+    <h2 idk="variables">Java <font color="#33b5e5">Variables</font></h2>
+    A variable is a container which holds the value while the Java program is executed. A variable is assigned with a data type.<br><br>
+    Variable is a name of memory location. A variable is the name of a reserved area allocated in memory. In other words, it is a name of the memory location. It is a combination of "vary + able" which means its value can be changed.<br><br>
+
+
+    <img src="java/variable.png" alt=""><br><br>
+
+    <h3><font color="#33b5e5">Types</font> of Variable</h3>
+    There are three types of variables in Java:<br><br>
+    <ul>
+        <li>local variable</li><br>
+        <li>instance variable</li><br>
+        <li>static variable</li><br>
+    </ul>
+
+    <img src="java/types-of-variables1.png" alt=""><br><br>
+
+    <ol>
+        <li><b>Local Variable</b><br><br>A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.<br>A local variable cannot be defined with "static" keyword.</li><br>
+        <li><b>Instance Variable</b><br><br>A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.<br>It is called an instance variable because its value is instance-specific and is not shared among instances.</li><br>
+        <li><b>Static variable</b><br><br>A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.</li><br>
+    </ol>
+<br><br>
+
+    <h3><font color="#33b5e5">Example</font> to understand the types of variables in java</h3>
+
+
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          public class A  
+          {  
+              static int m=100;//static variable  
+              void method()  
+              {    
+                  int n=90;//local variable    
+              }  
+              public static void main(String args[])  
+              {  
+                  int data=50;//instance variable    
+              }  
+          }//end of class 
+          
+
+        // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br><br>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<br><br>
+
+
+
+    <h2 id="datatypes"><font color="#33b5e5">Data Types</font> in Java</h2>
+    Data types specify the different sizes and values that can be stored in the variable. There are two types of data types in Java:<br><br>
+    <ol>
+        <li><b>Primitive data types:</b> The primitive data types include boolean, char, byte, short, int, long, float and double.</li><br>
+        <li><b>Non-primitive data types: </b> The non-primitive data types include Classes, Interfaces, and Arrays.</li><br>
+    </ol>
+    <h3>Java <font color="#33b5e5">Primitive</font> Data Types</h3>
+    In Java language, primitive data types are the building blocks of data manipulation. These are the most basic data types available in Java language.<br><br>
+    There are 8 types of primitive data types:<br><br>
+    <ul>
+        <li>boolean data type</li><br>
+        <li>byte data type</li><br>
+        <li>char data type</li><br>
+        <li>short data type</li><br>
+        <li>int data type</li><br>
+        <li>long data type</li><br>
+        <li>float data type</li><br>
+        <li>double data type</li><br>
+    </ul><br><br>
+    <img src="java/java-data-types.png" alt=""><br><br>
+    
+    <h3><font color="#33b5e5">Boolean</font> Data Type</h3>
+    The Boolean data type is used to store only two possible values: true and false. This data type is used for simple flags that track true/false conditions.<br>
+    The Boolean data type specifies one bit of information, but its "size" can't be defined precisely.<br><br>
+    <h3><font color="#33b5e5">Byte</font> Data Type</h3>
+    The byte data type is an example of primitive data type. It isan 8-bit signed two's complement integer. Its value-range lies between -128 to 127 (inclusive). Its minimum value is -128 and maximum value is 127. Its default value is 0.<br>
+    The byte data type is used to save memory in large arrays where the memory savings is most required. It saves space because a byte is 4 times smaller than an integer. It can also be used in place of "int" data type.<br><br>
+    <h3><font color="#33b5e5">Short</font> Data Type</h3>
+    The short data type is a 16-bit signed two's complement integer. Its value-range lies between -32,768 to 32,767 (inclusive). Its minimum value is -32,768 and maximum value is 32,767. Its default value is 0.<br>
+    The short data type can also be used to save memory just like byte data type. A short data type is 2 times smaller than an integer.<br><br>
+    <h3><font color="#33b5e5">Int</font> Data Type</h3>
+    The int data type is a 32-bit signed two's complement integer. Its value-range lies between - 2,147,483,648 (-2^31) to 2,147,483,647 (2^31 -1) (inclusive). Its minimum value is - 2,147,483,648and maximum value is 2,147,483,647. Its default value is 0.<br>
+    The int data type is generally used as a default data type for integral values unless if there is no problem about memory.<br><br>
+    <h3><font color="#33b5e5">Long</font> Data Type</h3>
+    The long data type is a 64-bit two's complement integer. Its value-range lies between -9,223,372,036,854,775,808(-2^63) to 9,223,372,036,854,775,807(2^63 -1)(inclusive). Its minimum value is - 9,223,372,036,854,775,808and maximum value is 9,223,372,036,854,775,807. Its default value is 0. The long data type is used when you need a range of values more than those provided by int.<br><br>
+    <h3><font color="#33b5e5">Float</font> Data Type</h3>
+    The float data type is a single-precision 32-bit IEEE 754 floating point.Its value range is unlimited. It is recommended to use a float (instead of double) if you need to save memory in large arrays of floating point numbers. The float data type should never be used for precise values, such as currency. Its default value is 0.0F.<br><br>
+    <h3><font color="#33b5e5">Double</font> Data Type</h3>
+    The double data type is a double-precision 64-bit IEEE 754 floating point. Its value range is unlimited. The double data type is generally used for decimal values just like float. The double data type also should never be used for precise values, such as currency. Its default value is 0.0d.<br><br>
+    <h3><font color="#33b5e5">Char</font> Data Type</h3>
+    The char data type is a single 16-bit Unicode character. Its value-range lies between '\u0000' (or 0) to '\uffff' (or 65,535 inclusive).The char data type is used to store characters.<br><br>
+
+    <h2 id="operators"><font color="#33b5e5">Operators</font> in Java</h2>
+    <b>Operator</b> in Java is a symbol that is used to perform operations. For example: +, -, *, / etc.<br><br>
+    There are many types of operators in Java which are given below:<br>
+    <ul>
+        <li>Unary Operator,</li><br>
+        <li>Arithmetic Operator, </li><br>
+        <li>Shift Operator,</li><br>
+        <li>Relational Operator,</li><br>
+        <li>Bitwise Operator,</li><br>
+        <li>Logical Operator,</li><br>
+        <li>Ternary Operator and</li><br>
+        <li>Assignment Operator.</li><br>
+    </ul>
+ 
+    <h3>Java <font color="#33b5e5">Unary </font>Operator</h3>
+    The Java unary operators require only one operand. Unary operators are used to perform various operations i.e.:<br>
+    <ul>
+        <li>incrementing/decrementing a value by one</li><br>
+         <li>negating an expression</li><br>
+          <li>inverting the value of a boolean</li><br>
+    
+    </ul>
+
+    <h3>Java <font color="#33b5e5">Unary</font> Operator Example: <font color="#33b5e5">++ and --</font></h3>
+    <br><div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int x=10;  
+                System.out.println(x++);//10 (11)  
+                System.out.println(++x);//12  
+                System.out.println(x--);//12 (11)  
+                System.out.println(--x);//10  
+                }}  
+                
+
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java <font color="#33b5e5">Unary </font>Operator Example 2:<font color="#33b5e5"> ++ and --</font></h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int a=10;  
+                int b=10;  
+                System.out.println(a++ + ++a);//10+12=22  
+                System.out.println(b++ + b++);//10+11=21  
+                  
+                }}  
+                
+
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java Unary  <font color="#33b5e5">Operator </font>Example:<font color="#33b5e5"> ~ and !</font>
+
+      </h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int a=10;  
+                int b=-10;  
+                boolean c=true;  
+                boolean d=false;  
+                System.out.println(~a);//-11 (minus of total positive value which starts from 0)  
+                System.out.println(~b);//9 (positive of total minus, positive starts from 0)  
+                System.out.println(!c);//false (opposite of boolean value)  
+                System.out.println(!d);//true  
+                }}
+                
+
+                // code submitted by HARSH   
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java <font color="#33b5e5">Arithmetic</font> Operators</h3>
+      Java arithmetic operators are used to perform addition, subtraction, multiplication, and division. They act as basic mathematical operations.<br><br>
+      <h3>Java Arithmetic Operator Example</h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int a=10;  
+                int b=5;  
+                System.out.println(a+b);//15  
+                System.out.println(a-b);//5  
+                System.out.println(a*b);//50  
+                System.out.println(a/b);//2  
+                System.out.println(a%b);//0  
+                }}  
+                
+
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java Arithmetic Operator Example: <font color="#33b5e5">Expression</font></h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                System.out.println(10*10/5+3-1*4/2);  
+                }}
+                
+
+                // code submitted by HARSH   
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java <font color="#33b5e5">Left Shift</font> Operator</h3>
+      The Java left shift operator << is used to shift all of the bits in a value to the left side of a specified number of times.<br>
+      <h3>Java Left Shift Operator Example</h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                System.out.println(10<<2);//10*2^2=10*4=40  
+                System.out.println(10<<3);//10*2^3=10*8=80  
+                System.out.println(20<<2);//20*2^2=20*4=80  
+                System.out.println(15<<4);//15*2^4=15*16=240  
+                }}
+                
+
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java <font color="#33b5e5">Right Shift</font> Operator</h3>
+      The Java right shift operator >> is used to move the value of the left operand to right by the number of bits specified by the right operand.<br><br>
+      <h3>Java Right Shift Operator Example</h3>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public OperatorExample{  
+                public static void main(String args[]){  
+                System.out.println(10>>2);//10/2^2=10/4=2  
+                System.out.println(20>>2);//20/2^2=20/4=5  
+                System.out.println(20>>3);//20/2^3=20/8=2  
+                }} 
+                
+                
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      <h3>Java <font color="#33b5e5">Shift Operator</font> Example:<font color="#33b5e5"> >> vs >>></font>
+    </h3>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                    //For positive number, >> and >>> works same  
+                    System.out.println(20>>2);  
+                    System.out.println(20>>>2);  
+                    //For negative number, >>> changes parity bit (MSB) to 0  
+                    System.out.println(-20>>2);  
+                    System.out.println(-20>>>2);  
+                }} 
+                
+                
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div>
+      <h3>Java <font color="#33b5e5">AND</font> Operator Example: <font color="#33b5e5">Logical && and Bitwise &</font></h3>
+      The logical && operator doesn't check the second condition if the first condition is false. It checks the second condition only if the first one is true.<br><br>
+      The bitwise & operator always checks both conditions whether first condition is true or false.<br><br>
+
+
+
+
+      <h3>
+        Java <font color="#33b5e5">OR</font> Operator Example: <font color="#33b5e5">Logical || and Bitwise |</font>
+      </h3>
+      The logical || operator doesn't check the second condition if the first condition is true. It checks the second condition only if the first one is false. <br><br>
+      The bitwise | operator always checks both conditions whether first condition is true or false.<br><br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+              public static void main(String args[]){  
+              int a=10;  
+              int b=5;  
+              int c=20;  
+              System.out.println(a&gtb||a<&ltc);//true || true = true  
+              System.out.println(a&gtb|a&ltc);//true | true = true  
+               //|| vs |  
+              
+              
+              System.out.println(a&gtb||a++&ltc);//true || true = true  
+              System.out.println(a);//10 because second condition is not checked  
+              System.out.println(a&gtb|a++Gltc);//true | true = true  
+              System.out.println(a);//11 because second condition is checked  
+              }}
+
+          
+          // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+     
+
+
+      <h3>Java <font color="#33b5e5">Ternary</font> Operator</h3>
+      Java Ternary operator is used as one line replacement for if-then-else statement and used a lot in Java programming. It is the only conditional operator which takes three operands.<br>
+    <b>Example</b> 
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int a=2;  
+                int b=5;  
+                int min=(a=b)?a:b;  
+                System.out.println(min);  
+                }}
+                
+                
+                // code submitted by HARSH 
+                
+          </code>
+        </pre>
+      </div> <br><br>    
+      <h3>Java <font color="#33b5e5">Assignment</font> Operator</h3>
+      Java assignment operator is one of the most common operators. It is used to assign the value on its right to the operand on its left. <br><br>
+      <b>Example</b> 
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class OperatorExample{  
+                public static void main(String args[]){  
+                int a=10;  
+                int b=20;  
+                a+=4;//a=a+4 (a=10+4)  
+                b-=4;//b=b-4 (b=20-4)  
+                System.out.println(a);  
+                System.out.println(b);  
+                }} 
+                
+                
+                // code submitted by HARSH 
+          </code>
+        </pre>
+      </div>
+      <br><br>
+      <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br>
+
+
+        <h2 id="control">Java <font color="#33b5e5">Control</font> Statements</h2>
+
+        Java compiler executes the code from top to bottom. The statements in the code are executed according to the order in which they appear. However, Java provides statements that can be used to control the flow of Java code. Such statements are called control flow statements. It is one of the fundamental features of Java, which provides a smooth flow of program.<br><br>
+        Java provides three types of control flow statements.<br><br>
+        <ol>
+          <li><b>Decision Making statements</b><br>
+          <ul>
+            <br><li>if statements</li><br>
+            <li>switch statement</li><br>
+          </ul></li><br><br>
+          <li><b>Loop statements</b><br>
+            <ul>
+            <br><li>do while loop</li><br>
+            <li>while loop</li><br>
+            <li>for loop</li><br>
+            <li>for loop</li><br>
+          </ul></li><br><br>
+          <li><b>Jump statements</b><br>
+            <ul>
+              <br><li>break statement</li><br>
+              <li>continue statement</li><br>
+            </ul>
+          </li>
+        </ol><br><br>
+        <h3><font color="#33b5e5">Decision-Making</font> statements:</h3>
+        As the name suggests, decision-making statements decide which statement to execute and when. Decision-making statements evaluate the Boolean expression and control the program flow depending upon the result of the condition provided. There are two types of decision-making statements in Java, i.e., If statement and switch statement.<br>
+        <br>
+        <h4>1. If Statement:</h4>
+        In Java, the "if" statement is used to evaluate a condition. The control of the program is diverted depending upon the specific condition. The condition of the If statement gives a Boolean value, either true or false. In Java, there are four types of if-statements given below.
+        <br>
+        <ol>
+          <li>Simple if statement</li><br>
+          <li>if-else statement</li><br>
+          <li>if-else-if ladder</li><br>
+          <li>Nested if-statement</li><br>
+        </ol>
+        <b>Let's understand the if-statements one by one.</b><br><br>
+        <h4>1. <font color="#33b5e5">Simple if</font> statement:
+        </h4>It is the most basic statement among all control flow statements in Java. It evaluates a Boolean expression and enables the program to enter a block of code if the expression evaluates to true.<br><br>
+        Syntax of if statement is given below.<br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              if(condition) {    
+                statement 1; //executes when condition is true   
+                }    
+
+
+                // code submitted by HARSH 
+            </code>
+          </pre>
+        </div>
+                <br><br>        
+        <h4>2. <font color="#33b5e5">if-else</font> statement</h4>
+        The if-else statement is an extension to the if-statement, which uses another block of code, i.e., else block. The else block is executed if the condition of the if-block is evaluated as false.<br><br>
+        <b>Syntax:</b>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              if(condition) {    
+                statement 1; //executes when condition is true   
+                }  
+                else{  
+                statement 2; //executes when condition is false   
+                }  
+
+
+                // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+        <h4>3. <font color="#33b5e5">if-else-if</font> ladder:</h4>
+        The if-else-if statement contains the if-statement followed by multiple else-if statements. In other words, we can say that it is the chain of if-else statements that create a decision tree where the program may enter in the block of code where the condition is true. We can also define an else statement at the end of the chain.<br><br>
+        <b>
+          Syntax 
+        </b><br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              if(condition 1) {    
+                statement 1; //executes when condition 1 is true   
+                }  
+                else if(condition 2) {  
+                statement 2; //executes when condition 2 is true   
+                }  
+                else {  
+                statement 2; //executes when all the conditions are false   
+                } 
+                
+                
+                // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+        <h4>4. <font color="#33b5e5">Nested if</font>-statement</h4>
+        In nested if-statements, the if statement can contain a if or if-else statement inside another if or else-if statement.<br><br>
+        Syntax of Nested if-statement is given below.<br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              if(condition 1) {    
+                statement 1; //executes when condition 1 is true   
+                if(condition 2) {  
+                statement 2; //executes when condition 2 is true   
+                }  
+                else{  
+                statement 2; //executes when condition 2 is false   
+                }  
+                } 
+                
+                
+                // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<br><br>
+
+        <h3><font color="#33b5e5">Switch</font> Statement:</h3>
+        In Java, Switch statements are similar to if-else-if statements. The switch statement contains multiple blocks of code called cases and a single case is executed based on the variable which is being switched. The switch statement is easier to use instead of if-else-if statements. It also enhances the readability of the program.<br><br>
+        Points to be noted about switch statement:<br>
+        <ol>
+          <li>The case variables can be int, short, byte, char, or enumeration. String type is also supported since version 7 of Java</li><br>
+          <li>Cases cannot be duplicate</li><br>
+          <li>Default statement is executed when any of the case doesn't match the value of expression. It is optional.</li><br>
+          <li>Break statement terminates the switch block when the condition is satisfied.
+            It is optional, if not used, next case is executed.</li><br>
+          <li>While using switch statements, we must notice that the case expression will be of the same type as the variable. However, it will also be a constant value.</li><br>
+        </ol><br>
+
+        <b>syntax</b><br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              switch (expression){  
+                case value1:  
+                 statement1;  
+                 break;  
+                .  
+                .  
+                .  
+                case valueN:  
+                 statementN;  
+                 break;  
+                default:  
+                 default statement;  
+            }  
+
+
+            // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<br><br>
+
+        <h3><font color="#33b5e5">Loop</font> Statements</h3>
+        In programming, sometimes we need to execute the block of code repeatedly while some condition evaluates to true. However, loop statements are used to execute the set of instructions in a repeated order. The execution of the set of instructions depends upon a particular condition.<br><br>
+        In Java, we have three types of loops that execute similarly. However, there are differences in their syntax and condition checking time.<br>
+        <ol>
+          <li>for loop</li><br>
+          <li>while loop</li><br>
+          <li>do-while loop</li><br>
+        </ol>
+        <b>Let's understand the loop statements one by one.</b>
+        <h3>Java for <font color="#33b5e5">loop</font></h3>
+        In Java, for loop is similar to C and C++. It enables us to initialize the loop variable, check the condition, and increment/decrement in a single line of code. We use the for loop only when we exactly know the number of times, we want to execute the block of code.<br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              for(initialization, condition, increment/decrement) {    
+                //block of statements    
+                }  
+                
+
+                // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+       <b> Consider the following example to understand the proper functioning of the for loop in java.</b><br><br>
+       <b>Calculation.java</b><br>
+       <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            public class Calculattion {  
+              public static void main(String[] args) {  
+              // TODO Auto-generated method stub  
+              int sum = 0;  
+              for(int j = 1; j&lt=10; j++) {  
+              sum = sum + j;  
+              }  
+              System.out.println("The sum of first 10 natural numbers is " + sum);  
+              }  
+              }  
+
+
+              // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+
+      <h3>Java <font color="#33b5e5">while</font> loop</h3>
+      The while loop is also used to iterate over the number of statements multiple times. However, if we don't know the number of iterations in advance, it is recommended to use a while loop. Unlike for loop, the initialization and increment/decrement doesn't take place inside the loop statement in while loop.<br><br>
+      It is also known as the entry-controlled loop since the condition is checked at the start of the loop. If the condition is true, then the loop body will be executed; otherwise, the statements after the loop will be executed.<br><br>
+      The <b>syntax</b> of the while loop is given below.
+      <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            while(condition){    
+              //looping statements    
+              } 
+              
+              
+              // code submitted by HARSH 
+          </code>
+        </pre>
+      </div><br><br>
+      The flow chart for the while loop is given in the following image.<br><br>
+
+
+
+
+      Consider the following <b>example</b>.<br><br>
+     <b> Calculation .java</b><br><br>
+     <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          public class Calculation {    
+            public static void main(String[] args) {    
+            // TODO Auto-generated method stub    
+            int i = 0;    
+            System.out.println("Printing the list of first 10 even numbers \n");    
+            while(i&lt=10) {    
+            System.out.println(i);    
+            i = i + 2;    
+            }    
+            }    
+            } 
+            
+            
+            // code submitted by HARSH 
+            
+        </code>
+      </pre>
+    </div><br><br>
+    <b>Output</b><br><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          Printing the list of first 10 even numbers 
+
+          0
+          2
+          4
+          6
+          8
+          10
+
+
+          // code submitted by HARSH 
+        </code>
+      </pre>
+    </div>
+<br><br>
+    <h3>Java <font color="#33b5e5">do-while</font> loop</h3>
+    The do-while loop checks the condition at the end of the loop after executing the loop statements. When the number of iteration is not known and we have to execute the loop at least once, we can use do-while loop.<br><br>
+    It is also known as the exit-controlled loop since the condition is not checked in advance. The syntax of the do-while loop is given below.<br><br>
+
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          do     
+          {    
+          //statements    
+          } while (condition);  
+          
+          
+          // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br><br>
+
+    <b>The flow chart of the do-while loop is given in the following image.</b>
+
+<br><br>
+
+
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          public class Calculation {    
+            public static void main(String[] args) {    
+            // TODO Auto-generated method stub    
+            int i = 0;    
+            System.out.println("Printing the list of first 10 even numbers \n");    
+            do {    
+            System.out.println(i);    
+            i = i + 2;    
+            }while(i&lt=10);    
+            }    
+            } 
+            
+            
+            // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br><br>
+
+    <b>Output</b><br>
+    <div style="background-color: #f2f2f2; padding: 20px;">
+      <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+        <code>
+          Printing the list of first 10 even numbers 
+          0
+          2
+          4
+          6
+          8
+          10
+
+
+          // code submitted by HARSH 
+        </code>
+      </pre>
+    </div><br><br>
+    <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br>
+
+
+
+    <h3><font color="#33b5e5">Jump</font> Statements</h3>
+    Jump statements are used to transfer the control of the program to the specific statements. In other words, jump statements transfer the execution control to the other part of the program. There are two types of jump statements in Java, i.e., break and continue.<br><br>
+
+    <h3>Java <font color="#33b5e5">break</font> statement</h3>
+    As the name suggests, the break statement is used to break the current flow of the program and transfer the control to the next statement outside a loop or switch statement. However, it breaks only the inner loop in the case of the nested loop.<br><br>
+    The break statement cannot be used independently in the Java program, i.e., it can only be written inside the loop or switch statement.<br><br>
+   <b> The break statement example with for loop</b><br><br>
+   Consider the following example in which we have used the break statement with the for loop.<br><br>
+   <b>BreakExample.java</b><br><br>
+
+   <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        public class BreakExample {  
+  
+          public static void main(String[] args) {  
+          // TODO Auto-generated method stub  
+          for(int i = 0; i<= 10; i++) {  
+          System.out.println(i);  
+          if(i==6) {  
+          break;  
+          }  
+          }  
+          }  
+          } 
+
+
+          // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <b>Output:</b><br><br>
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        0
+        1
+        2
+        3
+        4
+        5
+        6
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3>Java <font color="#33b5e5">continue</font> statement</h3>
+  Unlike break statement, the continue statement doesn't break the loop, whereas, it skips the specific part of the loop and jumps to the next iteration of the loop immediately.<br><br>
+  <b>Consider the following example to understand the functioning of the continue statement in Java.</b><br><br>
+
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        public class ContinueExample {  
+  
+          public static void main(String[] args) {  
+          // TODO Auto-generated method stub  
+            
+          for(int i = 0; i<= 2; i++) {  
+            
+          for (int j = i; j<=5; j++) {  
+            
+          if(j == 4) {  
+          continue;  
+          }  
+          System.out.println(j);  
+          }  
+          }  
+          }  
+            
+          } 
+          
+          
+          // code submitted by HARSH 
+      </code>
+    </pre>
+  </div>
+
+  <b>Output:</b><br><br>
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        0
+        1
+        2
+        3
+        5
+        1
+        2
+        3
+        5
+        2
+        3
+        5
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<br><br>
+
+
+
+  <h2 id="oops">Java <font color="#33b5e5">OOPs</font> Concepts</h2>
+
+  In this page, we will learn about the basics of OOPs. Object-Oriented Programming is a paradigm that provides many concepts, such as <b>inheritance, data binding, polymorphism, etc.</b><br><br>
+  <b>Simula</b> is considered the first object-oriented programming language. The programming paradigm where everything is represented as an object is known as a truly object-oriented programming language.<br><br>
+  <b>Smalltalk</b> is considered the first truly object-oriented programming language.<br><br>
+  The popular object-oriented languages are Java, C#, PHP, Python, C++, etc.<br><br>
+  The main aim of object-oriented programming is to implement real-world entities, for example, object, classes, abstraction, inheritance, polymorphism, etc.
+
+<br><br>
+
+<h2><font color="#33b5e5">OOPs</font> (Object-Oriented Programming System)
+</h2>
+
+<b>Object</b> means a real-world entity such as a pen, chair, table, computer, watch, etc. <b>Object-Oriented Programming</b> is a methodology or paradigm to design a program using classes and objects. It simplifies software development and maintenance by providing some concepts:<br>
+<ul>
+  <li>Object</li><br>
+  <li>Class</li><br>
+  <li>Inheritance</li><br>
+  <li>Polymorphism</li><br>
+  <li>Abstraction</li><br>
+  <li>Encapsulation</li><br>
+</ul>
+<br><br>
+<img src="java/java-oops.png" alt="sfdq"><br><br>
+
+<h3><font color="#33b5e5">Object</font></h3>
+
+Any entity that has state and behavior is known as an object. For example, a chair, pen, table, keyboard, bike, etc. It can be physical or logical.<br><br>
+An Object can be defined as an instance of a class. An object contains an address and takes up some space in memory. Objects can communicate without knowing the details of each other's data or code. The only necessary thing is the type of message accepted and the type of response returned by the objects.<br><br>
+<b>Example</b> A dog is an object because it has states like color, name, breed, etc. as well as behaviors like wagging the tail, barking, eating, etc.<br><br>
+
+<img src="java/objects,png.png" alt="df">
+<br><br>
+<h3><font color="#33b5e5">Class</font>
+</h3>
+
+<i>Collection of objects is called class.</i> It is a logical entity. <br><br>
+A class can also be defined as a blueprint from which you can create an individual object. Class doesn't consume any space. <br><br>
+
+<h3><font color="#33b5e5">Inheritance</font></h3>
+<i>When one object acquires all the properties and behaviors of a parent object,</i> it is known as inheritance. It provides code reusability. It is used to achieve runtime polymorphism. <br><br>
+
+<h3><font color="#33b5e5">Polymorphism</font></h3>
+<i>If one task is performed in different ways,</i> it is known as polymorphism. For example: to convince the customer differently, to draw something, for example, shape, triangle, rectangle, etc. <br><br>
+In Java, we use method overloading and method overriding to achieve polymorphism. <br><br>
+Another example can be to speak something; for example, a cat speaks meow, dog barks woof, etc. <br><br>
+
+<h3><font color="#33b5e5">Abstraction
+</font></h3>
+<i>Hiding internal details and showing functionality</i> is known as abstraction. For example phone call, we don't know the internal processing. <br><br>
+In Java, we use abstract class and interface to achieve abstraction. <br><br>
+
+<h3><font color="#33b5e5">Encapsulation</font></h3>
+<i>Binding (or wrapping) code and data together into a single unit</i> are known as encapsulation. For example, a capsule, it is wrapped with different medicines. <br><br>
+A java class is the example of encapsulation. Java bean is the fully encapsulated class because all the data members are private here. <br><br>
+
+<h3><font color="#33b5e5">Advantage of OOPs </font>over Procedure-oriented programming language</h3>
+<ol>
+  <li>OOPs makes development and maintenance easier, whereas, in a procedure-oriented programming language, it is not easy to manage if code grows as project size increases.</li><br>
+  <li>OOPs provides data hiding, whereas, in a procedure-oriented programming language, global data can be accessed from anywher
+
+  <li>OOPs provides the ability to simulate real-world event much more effectively. We can provide the solution of real word problem if we are using the Object-Oriented Programming language.</li><br>
+  
+</ol><br><br>
+
+<h2 id="naming">Java <font color="#33b5e5">Naming Convention</font></h2>
+
+Java naming convention is a rule to follow as you decide what to name your identifiers such as class, package, variable, constant, method, etc. <br><br>
+But, it is not forced to follow. So, it is known as convention not rule. These conventions are suggested by several Java communities such as Sun Microsystems and Netscape. <br><br>
+All the classes, interfaces, packages, methods and fields of Java programming language are given according to the Java naming convention. If you fail to follow these conventions, it may generate confusion or erroneous code. <br><br>
+
+<h3><font color="#33b5e5">Advantage</font> of Naming Conventions in Java</h3>
+
+By using standard Java naming conventions, you make your code easier to read for yourself and other programmers. Readability of Java program is very important. It indicates that less time is spent to figure out what the code does. <br><br>
+<h2><font color="#33b5e5">Naming Conventions
+
+</font> of the Different Identifiers</h2>
+The following table shows the popular conventions used for the different identifiers. <br><br>
+
+<img src="java/Screenshot (26).png.png" alt="wrqw">
+<img src="java/Screenshot (28).png.png" alt="afFA"><br><br>
+
+<h3><font color="#33b5e5">CamelCase</font> in Java naming conventions</h3>
+Java follows camel-case syntax for naming the class, interface, method, and variable. <br><br>
+If the name is combined with two words, the second word will start with uppercase letter always such as actionPerformed(), firstName, ActionEvent, ActionListener, etc. <br><br>
+
+
+
+<h2 id="objects"><font color="#33b5e5">Objects and Classes</font> in Java</h2>
+In this page, we will learn about Java objects and classes. In object-oriented programming technique, we design a program using objects and classes. <br><br>
+An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity only. <br><br>
+
+<h3>What is an <font color="#33b5e5">object</font> in Java</h3>
+An entity that has state and behavior is known as an object e.g., chair, bike, marker, pen, table, car, etc. It can be physical or logical (tangible and intangible). The example of an intangible object is the banking system. <br><br>
+An object has three characteristics:<br>
+<ul>
+  <li><b>State:</b> represents the data (value) of an object.
+  </li><br>
+  <li><b>Behavior:</b> represents the behavior (functionality) of an object such as deposit, withdraw, etc.</li><br>
+  <li><b>Identity:</b> An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user. However, it is used internally by the JVM to identify each object uniquely.</li><br>
+</ul><br><br>
+
+<img src="java/characteristics-of-object.jpg" alt="wdef">
+<br><br>
+
+
+
+<h4><font color="#33b5e5">Object</font> Definitions:</h4>
+<ul>
+  <li>An object is a real-world entity.</li><br>
+  <li>An object is a runtime entity.</li><br>
+  <li>The object is an entity which has state and behavior</li><br>
+  <li>The object is an instance of a class.</li><br>
+</ul>
+<br><br>
+
+<h3>What is a <font color="#33b5e5">class</font> in Java</h3>
+A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical. <br><br>
+A class in Java can contain: <br>
+<ul>
+  <li><b></b></li><br>
+  <li><b>Methods</b></li><br>
+  <li><b>Constructors</b></li><br>
+  <li><b>Blocks</b></li><br>
+  <li><b>Nested class and interface</b></li><br>
+</ul>
+<br><br>
+<img src="java/class-in-java.png" alt="efrg">
+
+<h4><font color="#33b5e5">Syntax</font> to declare a class:</h4>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class <class_name>{  
+        field;  
+        method;  
+    } 
+    
+    
+    // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3>Object and Class <font color="#33b5e5">Example:</font> main within the class</h3>
+
+In this example, we have created a Student class which has two data members id and name. We are creating the object of the Student class by new keyword and printing the object's value. <br><br>
+Here, we are creating a main() method inside the class. <br><br>
+<b>File: Student.java</b> <br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to illustrate how to define a class and fields  
+      //Defining a Student class.  
+      class Student{  
+       //defining fields  
+       int id;//field or data member or instance variable  
+       String name;  
+       //creating main method inside the Student class  
+       public static void main(String args[]){  
+        //Creating an object or instance  
+        Student s1=new Student();//creating an object of Student  
+        //Printing values of the object  
+        System.out.println(s1.id);//accessing member through reference variable  
+        System.out.println(s1.name);  
+       }  
+      }
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+
+<h3>Object and Class <font color="#33b5e5">Example</font>: main outside the class</h3>
+In real time development, we create classes and use it from another class. It is a better approach than previous one. Let's see a simple example, where we are having main() method in another class. <br><br>
+We can have multiple classes in different Java files or single Java file. If you define multiple classes in a single Java source file, it is a good idea to save the file name with the class name which has main() method. <br><br>
+<b>File: TestStudent1.java</b> <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to demonstrate having the main method in   
+      //another class  
+      //Creating Student class.  
+      class Student{  
+       int id;  
+       String name;  
+      }  
+      //Creating another class TestStudent1 which contains the main method  
+      class TestStudent1{  
+       public static void main(String args[]){  
+        Student s1=new Student();  
+        System.out.println(s1.id);  
+        System.out.println(s1.name);  
+       }  
+      } 
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+
+<h2><font color="#33b5e5">3 Ways</font> to <font color="#33b5e5">initialize</font> object</h2>
+There are 3 ways to initialize object in Java. <br>
+<ol>
+  <li>By reference variable</li><br>
+  <li>By method
+  </li><br>
+  <li>By constructor</li><br>
+</ol><br><br>
+
+<h3>1. Object and Class Example: <font color="#33b5e5">Initialization through reference</font></h3>
+Initializing an object means storing data into the object. Let's see a simple example where we are going to initialize the object through a reference variable. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Student{  
+        int id;  
+        String name;  
+       }  
+       class TestStudent2{  
+        public static void main(String args[]){  
+         Student s1=new Student();  
+         s1.id=101;  
+         s1.name="Sonoo";  
+         System.out.println(s1.id+" "+s1.name);//printing members with a white space  
+        }  
+       }
+       
+       
+       // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+
+<h3>2. Object and Class Example: <font color="#33b5e5">Initialization through method</font></h3>
+In this example, we are creating the two objects of Student class and initializing the value to these objects by invoking the insertRecord method. Here, we are displaying the state (data) of the objects by invoking the displayInformation() method.
+
+ <br><br>
+ <div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Student{  
+        int rollno;  
+        String name;  
+        void insertRecord(int r, String n){  
+         rollno=r;  
+         name=n;  
+        }  
+        void displayInformation(){System.out.println(rollno+" "+name);}  
+       }  
+       class TestStudent4{  
+        public static void main(String args[]){  
+         Student s1=new Student();  
+         Student s2=new Student();  
+         s1.insertRecord(111,"Karan");  
+         s2.insertRecord(222,"Aryan");  
+         s1.displayInformation();  
+         s2.displayInformation();  
+        }  
+       }  
+
+
+       // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<br><br>
+
+<h3>3. Object and Class Example: <font color="#33b5e5">Initialization through a constructor</font>
+</h3>
+
+We will learn about constructors in Java later.
+<br><br>
+
+
+
+<h2 id="constructors"><font color="#33b5e5">Constructors</font> in Java</h2>
+In Java, a constructor is a block of codes similar to the method. It is called when an instance of the class is created. At the time of calling constructor, memory for the object is allocated in the memory. <br><br>
+It is a special type of method which is used to initialize the object. <br><br>
+Every time an object is created using the new() keyword, at least one constructor is called. <br><br>
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default. <br><br>
+There are two types of constructors in Java: no-arg constructor, and parameterized constructor. <br><br>
+<b>Note:</b> It is called constructor because it constructs the values at the time of object creation. It is not necessary to write a constructor for a class. It is because java compiler creates a default constructor if your class doesn't have any. <br><br>
+
+
+<h3><font color="#33b5e5">Rules</font> for creating Java constructor</h3>
+<ul>
+  <li>Constructor name must be the same as its class name</li><br>
+  <li>A Constructor must have no explicit return type</li><br>
+  <li>A Java constructor cannot be abstract, static, final, and synchronized</li><br>
+</ul>
+
+<h3><font color="#33b5e5">Types</font> of Java constructors</h3>
+There are two types of constructors in Java: br.
+
+<ol>
+  <li>Default constructor (no-arg constructor)</li><br>
+  <li>Parameterized constructor</li><br>
+
+</ol><br><br>
+
+<img src="java/java-constructor.png" alt="efew">
+<br><br>
+<h3>Java Default Constructor</h3>
+A constructor is called "Default Constructor" when it doesn't have any parameter. <br><br>
+<br>
+<h4><font color="#33b5e5">Synatx</font>of default constructor:</h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      <class_name>(){} 
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+
+<h4><font color="#33b5e5">Example</font> of default constructor</h4>
+In this example, we are creating the no-arg constructor in the Bike class. It will be invoked at the time of object creation. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to create and call a default constructor  
+      class Bike1{  
+      //creating a default constructor  
+      Bike1(){System.out.println("Bike is created");}  
+      //main method  
+      public static void main(String args[]){  
+      //calling a default constructor  
+      Bike1 b=new Bike1();  
+      }  
+      } 
+
+
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3>Java <font color="#33b5e5">Parameterized</font> Constructor</h3>
+A constructor which has a specific number of parameters is called a parameterized constructor.
+
+<br><br>
+<b>Why use the parameterized constructor?</b><br><br>
+The parameterized constructor is used to provide different values to distinct objects. However, you can provide the same values also. <br><br>
+
+<h3>Example of <font color="#33b5e5">parameterized</font> constructor</h3>
+In this example, we have created the constructor of Student class that have two parameters. We can have any number of parameters in the constructor. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to demonstrate the use of the parameterized constructor.  
+      class Student4{  
+          int id;  
+          String name;  
+          //creating a parameterized constructor  
+          Student4(int i,String n){  
+          id = i;  
+          name = n;  
+          }  
+          //method to display the values  
+          void display(){System.out.println(id+" "+name);}  
+         
+          public static void main(String args[]){  
+          //creating objects and passing values  
+          Student4 s1 = new Student4(111,"Karan");  
+          Student4 s2 = new Student4(222,"Aryan");  
+          //calling method to display the values of object  
+          s1.display();  
+          s2.display();  
+         }  
+      }
+      
+      
+      // code submitted by HARSH 
+      
+    </code>
+  </pre>
+</div><br><br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+
+
+<h2 id="inherit"><font color="#33b5e5">Inheritance</font></h2>
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system). <br><br>
+The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also. <br><br>
+Inheritance represents the IS-A relationship which is also known as a <b>parent-child relationship.</b>
+
+<h4>Why use <font color="#33b5e5">inheritance</font> in java</h4>
+<ul>
+  <li>For Method Overriding (so runtime polymorphism can be achieved).
+  </li><br>
+  <li>For Code Reusability.</li><br>
+</ul>
+<br><br>
+<h4>The <font color="#33b5e5">syntax</font> of Java Inheritance</h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Subclass-name extends Superclass-name  
+      {  
+         //methods and fields  
+      }
+      
+      
+      // code submitted by HARSH 
+      
+    </code>
+  </pre>
+</div><br><br>
+
+The <b>extends keyword</b> indicates that you are making a new class that derives from an existing class. The meaning of "extends" is to increase the functionality. <br><br>
+In the terminology of Java, a class which is inherited is called a parent or superclass, and the new class is called child or subclass. <br><br>
+
+<h4>Java Inheritance <font color="#33b5e5">Example</font></h4>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Employee{  
+        float salary=40000;  
+       }  
+       class Programmer extends Employee{  
+        int bonus=10000;  
+        public static void main(String args[]){  
+          Programmer p=new Programmer();  
+          System.out.println("Programmer salary is:"+p.salary);  
+          System.out.println("Bonus of Programmer is:"+p.bonus);  
+       }  
+       } 
+       
+       
+       // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+
+<h3><font color="#33b5e5">Types</font> of inheritance in java</h3>
+On the basis of class, there can be three types of inheritance in java: single, multilevel and hierarchical. <br><br>
+In java programming, multiple and hybrid inheritance is supported through interface only. We will learn about interfaces later. <br><br>
+
+<img src="java/typesofinheritance.jpg" alt="">
+<br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      <b>Note:</b> Multiple inheritance is not supported in Java through class.
+
+
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+<img src="java/multiple.jpg" alt=""><br><br>
+
+
+
+<h3><font color="#33b5e5">Single</font> Inheritance Example</h3>
+When a class inherits another class, it is known as a single inheritance. In the example given below, Dog class inherits the Animal class, so there is the single inheritance. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Animal{  
+        void eat(){System.out.println("eating...");}  
+        }  
+        class Dog extends Animal{  
+        void bark(){System.out.println("barking...");}  
+        }  
+        class TestInheritance{  
+        public static void main(String args[]){  
+        Dog d=new Dog();  
+        d.bark();  
+        d.eat();  
+        }} 
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Multilevel</font> Inheritance Example</h3>
+When there is a chain of inheritance, it is known as multilevel inheritance. As you can see in the example given below, BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Animal{  
+        void eat(){System.out.println("eating...");}  
+        }  
+        class Dog extends Animal{  
+        void bark(){System.out.println("barking...");}  
+        }  
+        class BabyDog extends Dog{  
+        void weep(){System.out.println("weeping...");}  
+        }  
+        class TestInheritance2{  
+        public static void main(String args[]){  
+        BabyDog d=new BabyDog();  
+        d.weep();  
+        d.bark();  
+        d.eat();  
+        }}
+
+
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Hierarchical</font> Inheritance Example</h3>
+When two or more classes inherits a single class, it is known as hierarchical inheritance. In the example given below, Dog and Cat classes inherits the Animal class, so there is hierarchical inheritance. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class Animal{  
+        void eat(){System.out.println("eating...");}  
+        }  
+        class Dog extends Animal{  
+        void bark(){System.out.println("barking...");}  
+        }  
+        class Cat extends Animal{  
+        void meow(){System.out.println("meowing...");}  
+        }  
+        class TestInheritance3{  
+        public static void main(String args[]){  
+        Cat c=new Cat();  
+        c.meow();  
+        c.eat();  
+        //c.bark();//C.T.Error  
+        }}
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+
+<h3>Q= Why <font color="#33b5e5">multiple</font> inheritance is not supported in java?</h3>
+To reduce the complexity and simplify the language, multiple inheritance is not supported in java. <br><br>
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes have the same method and you call it from child class object, there will be ambiguity to call the method of A or B class. <br><br>
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes. So whether you have same method or different, there will be compile time error. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      class A{  
+        void msg(){System.out.println("Hello");}  
+        }  
+        class B{  
+        void msg(){System.out.println("Welcome");}  
+        }  
+        class C extends A,B{//suppose if it were  
+           
+         public static void main(String args[]){  
+           C obj=new C();  
+           obj.msg();//Now which msg() method would be invoked?  
+        }  
+        }
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<b>Output</b>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      Compile Time Error
+
+
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+
+
+
+
+
+ 
+
+
+<h2 id="array">JAVA <font color="#33b5e5">Arrays</font></h2>
+
+Normally, an array is a collection of similar type of elements which has contiguous memory location. <br><br>
+<b>Java array</b> is an object which contains elements of a similar data type. Additionally, The elements of an array are stored in a contiguous memory location. It is a data structure where we store similar elements. We can store only a fixed set of elements in a Java array. <br><br>
+Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on. <br><br>
+Unlike C/C++, we can get the length of the array using the length member. In C/C++, we need to use the sizeof operator. <br><br>
+In Java, array is an object of a dynamically generated class. Java array inherits the Object class, and implements the Serializable as well as Cloneable interfaces. We can store primitive values or objects in an array in Java. Like C/C++, we can also create single dimentional or multidimentional arrays in Java. <br><br>
+Moreover, Java provides the feature of anonymous arrays which is not available in C/C++. <br><br>
+
+<img src="java/array.png.gif" alt="fnvljdf"><br><br>
+
+<h3><font color="#33b5e5">Advantages</font></h3>
+<ul>
+  <li><b>Code Optimization:</b> It makes the code optimized, we can retrieve or sort the data efficiently.</li><br>
+  <li><b>Random access:</b> We can get any data located at an index position.</li><br>
+</ul><br><br>
+
+<h3><font color="#33b5e5">Disadvantages</font></h3>
+<ul>
+  <li>Size Limit: We can store only the fixed size of elements in the array. It doesn't grow its size at runtime. To solve this problem, collection framework is used in Java which grows automatically.</li><br>
+</ul><br><br>
+
+<h3><font color="#33b5e5">Types</font> of Array in java
+</h3>
+There are two types of array. <br><br>
+<ul>
+  <li>Single Dimensional Array</li><br>
+  <li>Multidimensional Array</li><br>
+</ul>
+<br><br>
+
+<h2><font color="#33b5e5">Single Dimensional</font> Array in Java</h2>
+<b>Syntax to Declare an Array in Java
+
+</b><br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      dataType[] arr; (or)  
+      dataType []arr; (or)  
+      dataType arr[];
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<b>Instantiation of an Array in Java</b><br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      arrayRefVar=new datatype[size];
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h4><font color="#33b5e5">Example</font> of Java Array</h4>
+Let's see the simple example of java array, where we are going to declare, instantiate, initialize and traverse an array. <br>
+<br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to illustrate how to declare, instantiate, initialize  
+      //and traverse the Java array.  
+      class Testarray{  
+      public static void main(String args[]){  
+      int a[]=new int[5];//declaration and instantiation  
+      a[0]=10;//initialization  
+      a[1]=20;  
+      a[2]=70;  
+      a[3]=40;  
+      a[4]=50;  
+      //traversing array  
+      for(int i=0;i&lta.length;i++)//length is the property of array  
+      System.out.println(a[i]);  
+      }}
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Declaration, Instantiation and Initialization</font> of Java Array</h3>
+We can declare, instantiate and initialize the java array together by: <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int a[]={33,3,4,5};//declaration, instantiation and initialization 
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+Let's see the simple example to print this array. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to illustrate the use of declaration, instantiation   
+      //and initialization of Java array in a single line  
+      class Testarray1{  
+      public static void main(String args[]){  
+      int a[]={33,3,4,5};//declaration, instantiation and initialization  
+      //printing array  
+      for(int i=0;i&lta.length;i++)//length is the property of array  
+      System.out.println(a[i]);  
+      }}
+
+
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">For-each</font> Loop for Java Array</h3>
+We can also print the Java array using for-each loop. The Java for-each loop prints the array elements one by one. It holds an array element in a variable, then executes the body of the loop. <br><br>
+The syntax of the for-each loop is given below: <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      for(data_type variable:array){  
+        //body of the loop  
+        } 
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+Let us see the example of print the elements of Java array using the for-each loop. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to print the array elements using for-each loop  
+      class Testarray1{  
+      public static void main(String args[]){  
+      int arr[]={33,3,4,5};  
+      //printing array using for-each loop  
+      for(int i:arr)  
+      System.out.println(i);  
+      }}
+
+
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3>Passing Array to a <font color="#33b5e5">Method</font> in Java</h3>
+We can pass the java array to method so that we can reuse the same logic on any array. <br><br>
+Let's see the simple example to get the minimum number of an array using a method. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to demonstrate the way of passing an array  
+      //to method.  
+      class Testarray2{  
+      //creating a method which receives an array as a parameter  
+      static void min(int arr[]){  
+      int min=arr[0];  
+      for(int i=1;i<arr.length;i++)  
+       if(min>arr[i])  
+        min=arr[i];  
+        
+      System.out.println(min);  
+      }  
+        
+      public static void main(String args[]){  
+      int a[]={33,3,4,5};//declaring and initializing an array  
+      min(a);//passing array to method  
+      }}
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+
+<br><br>
+
+
+<h3><font color="#33b5e5">Returning</font> Array from the Method</h3>
+
+We can also return an array from the method in Java. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to return an array from the method  
+      class TestReturnArray{  
+      //creating method which returns an array  
+      static int[] get(){  
+      return new int[]{10,30,50,90,60};  
+      }  
+        
+      public static void main(String args[]){  
+      //calling method which returns an array  
+      int arr[]=get();  
+      //printing the values of an array  
+      for(int i=0;i&ltarr.length;i++)  
+      System.out.println(arr[i]);  
+      }}
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+<h2><font color="#33b5e5">Multidimensional</font> Array in Java</h2>
+
+In such case, data is stored in row and column based index (also known as matrix form). <br><br>
+<b>Syntax to Declare Multidimensional Array in Java</b> <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      dataType[][] arrayRefVar; (or)  
+      dataType [][]arrayRefVar; (or)  
+      dataType arrayRefVar[][]; (or)  
+      dataType []arrayRefVar[]; 
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<b>Example to instantiate Multidimensional Array in Java</b> <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      int[][] arr=new int[3][3];//3 row and 3 column 
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<b>Example to initialize Multidimensional Array in Java</b> <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      arr[0][0]=1;  
+      arr[0][1]=2;  
+      arr[0][2]=3;  
+      arr[1][0]=4;  
+      arr[1][1]=5;  
+      arr[1][2]=6;  
+      arr[2][0]=7;  
+      arr[2][1]=8;  
+      arr[2][2]=9;
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3>
+  <font color="#33b5e5">Example</font> of Multidimensional Java Array
+</h3>
+
+Let's see the simple example to declare, instantiate, initialize and print the 2Dimensional array. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to illustrate the use of multidimensional array  
+      class Testarray3{  
+      public static void main(String args[]){  
+      //declaring and initializing 2D array  
+      int arr[][]={{1,2,3},{2,4,5},{4,4,5}};  
+      //printing 2D array  
+      for(int i=0;i<3;i++){  
+       for(int j=0;j<3;j++){  
+         System.out.print(arr[i][j]+" ");  
+       }  
+       System.out.println();  
+      }  
+      }} 
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Copying </font>a Java Array</h3>
+
+We can copy an array to another by the arraycopy() method of System class. <br><br>
+<b>Syntax of arraycopy method</b> <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      public static void arraycopy(  
+        Object src, int srcPos,Object dest, int destPos, int length  
+        )
+        
+        
+        // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Example</font> of Copying an Array in Java</h3>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to copy a source array into a destination array in Java  
+      class TestArrayCopyDemo {  
+          public static void main(String[] args) {  
+              //declaring a source array  
+              char[] copyFrom = { 'd', 'e', 'c', 'a', 'f', 'f', 'e',  
+                      'i', 'n', 'a', 't', 'e', 'd' };  
+              //declaring a destination array  
+              char[] copyTo = new char[7];  
+              //copying array using System.arraycopy() method  
+              System.arraycopy(copyFrom, 2, copyTo, 0, 7);  
+              //printing the destination array  
+              System.out.println(String.valueOf(copyTo));  
+          }  
+      }
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Addition</font> of 2 Matrices in Java</h3>
+
+Let's see a simple example that adds two matrices. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to demonstrate the addition of two matrices in Java  
+      class Testarray5{  
+      public static void main(String args[]){  
+      //creating two matrices  
+      int a[][]={{1,3,4},{3,4,5}};  
+      int b[][]={{1,3,4},{3,4,5}};  
+        
+      //creating another matrix to store the sum of two matrices  
+      int c[][]=new int[2][3];  
+        
+      //adding and printing addition of 2 matrices  
+      for(int i=0;i<2;i++){  
+      for(int j=0;j<3;j++){  
+      c[i][j]=a[i][j]+b[i][j];  
+      System.out.print(c[i][j]+" ");  
+      }  
+      System.out.println();//new line  
+      }  
+        
+      }}
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<h3><font color="#33b5e5">Multiplication</font> of 2 Matrices in Java</h3>
+In the case of matrix multiplication, a one-row element of the first matrix is multiplied by all the columns of the second matrix which can be understood by the image given below. <br><br>
+
+<img src="java/matrix-multiplication-in-cpp1.png" alt="kdmkmd">
+<br><br>
+
+Let's see a simple example to multiply two matrices of 3 rows and 3 columns. <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      //Java Program to multiply two matrices  
+      public class MatrixMultiplicationExample{  
+      public static void main(String args[]){  
+      //creating two matrices    
+      int a[][]={{1,1,1},{2,2,2},{3,3,3}};    
+      int b[][]={{1,1,1},{2,2,2},{3,3,3}};    
+          
+      //creating another matrix to store the multiplication of two matrices    
+      int c[][]=new int[3][3];  //3 rows and 3 columns  
+          
+      //multiplying and printing multiplication of 2 matrices    
+      for(int i=0;i<3;i++){    
+      for(int j=0;j<3;j++){    
+      c[i][j]=0;      
+      for(int k=0;k<3;k++)      
+      {      
+      c[i][j]+=a[i][k]*b[k][j];      
+      }//end of k loop  
+      System.out.print(c[i][j]+" ");  //printing matrix element  
+      }//end of j loop  
+      System.out.println();//new line    
+      }    
+      }}
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div>
+<br><br>
+<b>Output</b>  <br><br>
+<div style="background-color: #f2f2f2; padding: 20px;">
+  <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+    <code>
+      6 6 6 
+      12 12 12 
+      18 18 18
+      
+      
+      // code submitted by HARSH 
+    </code>
+  </pre>
+</div><br><br>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+<br><br><br>
+<h3 id="END">Congratulations on <font color="#33b5e5">completing </font>Java course!</h3><br>
+<p>Thank you for choosing our website to learn C++. We hope you found the course informative and useful. With your new Java skills, you are now ready to tackle exciting programming challenges. Keep practicing and never stop learning!</p>
+  <p>Best regards,</p><br>
+  <p>The team at Coding Classroom</p>
+</div>
+</body>
+</html>

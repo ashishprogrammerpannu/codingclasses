@@ -1,0 +1,2518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        
+    <script src="js/bootstrap.min.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="about.php">
+<link rel="stylesheet" href="homepage.php">
+<link rel="stylesheet" href="contact.php">
+
+
+<link rel="stylesheet" href="introduction c++.php">
+<link rel="stylesheet" href="C:\xampp\htdocs\php.1\basic\project(minor):sign_up11.php">
+
+
+<link rel="stylesheet" href="lang.css">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <title>C Language Topics</title>
+
+</head>
+<body>
+    <div class="navbar-main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+        <a class="navbar-brand" href="#">Coding Classroom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             
+              <a class="nav-link" href="homepage.html"> <ion-icon name="home-outline" class="homeicon"></ion-icon>               Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><ion-icon name="information-circle-outline" class="homeicon"></ion-icon>           About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><ion-icon name="call-outline" class="homeicon"></ion-icon>         Contact</a>
+
+            <li class="nav-item">
+              <a class="nav-link btn btn-warning" href="logout.php">        Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+<!-- NAVIGATION BAR END -->
+
+
+
+<!-- navigation for languages -->
+<div class="navbar-sec">
+<div class="language-nav">
+<nav class="navbar navbar-expand-lg navbar-light badge-light">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2" aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-xl-center" id="navbarNavAltMarkup2">
+    <div class="navbar-nav w-100">
+      <a class="nav-item nav-link text-muted active" id="a" href="c.html">C</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="c++.html"> C++</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="dsa.html">DSA</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="java.html">Java</a>
+      <a class="nav-item  nav-link text-muted active" id="a" href="python.html">Python</a>
+    </div>      
+    </div>
+  </div>
+</div>
+</nav>
+
+
+
+
+
+
+<!-- table view -->
+
+<div class="content">
+   
+   
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="list-group">
+        
+          <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+          <a href="#stack ds" class="list-group-item list-group-item-action">Stack Data Structure</a>
+          <a href="#queue ds" class="list-group-item list-group-item-action">Queue Data Structure</a>
+          <a href="#queue types" class="list-group-item list-group-item-action">Types of Queues</a>
+          <a href="#circular queue" class="list-group-item list-group-item-action">Circular Queue Data Structure</a>
+          <a href="#priority q" class="list-group-item list-group-item-action">Priority Queue</a>
+          <a href="#ll" class="list-group-item list-group-item-action">Linked List</a>
+          <a href="#ll operation" class="list-group-item list-group-item-action">Linked List Operations </a>
+          <a href="#ll types" class="list-group-item list-group-item-action">Types of Linked List</a>
+          <a href="#hash" class="list-group-item list-group-item-action">Hash Table</a>
+          <a href="#tree" class="list-group-item list-group-item-action">Tree Data Structure</a>
+          <a href="#b tree" class="list-group-item list-group-item-action">Binary Tree</a>          
+          <a href="#END" class="list-group-item list-group-item-action">END</a>
+          <a href="#introduction" class="list-group-item list-group-item-action">back to starting</a>
+          <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+          <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+
+          <a href="#functions" class="list-group-item list-group-item-action">Functions</a>
+          
+        </div>
+      </div>
+      <div class="col-md-9">
+
+
+    
+
+
+    <h2>What are <font color="#33b5e5">Data Structures</font>?</h2> <br><br>
+    Data structure is a storage that is used to store and organize data. It is a way of arranging data on a computer so that it can be accessed and updated efficiently. <br><br>
+
+Depending on your requirement and project, it is important to choose the right data structure for your project. For example, if you want to store data sequentially in the memory, then you can go for the Array data structure. <br><br>
+
+ <img src="dsa/array_dsa.png" alt="rtr"> <br><br>
+
+ <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        <b>
+            Note:
+        </b> Data structure and data types are slightly different. Data structure is the collection of data types arranged in a specific order.
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Types</font> of Data Structure</h3>
+
+  Basically, data structures are divided into two categories: <br>
+  <ul>
+    <li>Linear data structure</li><br>
+    <li>Non-linear data structure</li><br>
+  </ul><br>
+
+  <h2><font color="#33b5e5">Linear </font>data structures</h2>
+  In linear data structures, the elements are arranged in sequence one after the other. Since elements are arranged in particular order, they are easy to implement.
+<br><br>
+However, when the complexity of the program increases, the linear data structures might not be the best choice because of operational complexities. <br><br>
+
+<h5><b>Popular linear data structures are:</b></h5>
+
+<h4>1. <font color="#33b5e5">Array</font> Data Structure</h4>
+
+In an array, elements in memory are arranged in continuous memory. All the elements of an array are of the same type. And, the type of elements that can be stored in the form of arrays is determined by the programming language. <br><br>
+
+<img src="dsa/array_.png" alt=""><br><br>
+
+ <h4>2. <font color="#33b5e5">Stack</font> Data Structure</h4>
+In stack data structure, elements are stored in the LIFO principle. That is, the last element stored in a stack will be removed first. <br><br>
+It works just like a pile of plates where the last plate kept on the pile will be removed first. <br><br>
+
+<img src="dsa/stack_dsa.png" alt=""><br><br>
+
+
+<h4>3. <font color="#33b5e5">Queue</font> Data Structure</h4>
+
+Unlike stack, the queue data structure works in the FIFO principle where first element stored in the queue will be removed first.
+ <br><br>
+It works just like a queue of people in the ticket counter where first person on the queue will get the ticket first. <br><br>
+
+<img src="dsa/queue_dsa.png" alt=""><br><br>
+
+
+<h4>4. <font color="#33b5e5">Linked </font>List Data Structure
+</h4>
+
+
+In linked list data structure, data elements are connected through a series of nodes. And, each node contains the data items and address to the next node. <br><br>
+
+<img src="dsa/linked-list_dsa.png" alt=""><br><br>
+
+
+<h3><font color="#33b5e5">Non linear </font>data structures</h3>
+
+Unlike linear data structures, elements in non-linear data structures are not in any sequence. Instead they are arranged in a hierarchical manner where one element will be connected to one or more elements.
+ <br><br>
+Non-linear data structures are further divided into graph and tree based data structures. <br><br>
+
+<h4>1. <font color="#33b5e5">Graph</font> Data Structure
+</h4>
+
+In graph data structure, each node is called vertex and each vertex is connected to other vertices through edges. <br><br>
+
+<img src="dsa/graph_dsa.png" alt=""><br><br>
+
+<h4>2. <font color="#33b5e5">Trees</font> Data Structure</h4>
+
+Similar to a graph, a tree is also a collection of vertices and edges. However, in tree data structure, there can only be one edge between two vertices. <br><br>
+
+<img src="dsa/tree_dsa.png" alt=""><br><br>
+
+<h3><font color="#33b5e5">Linear Vs Non-linear</font> Data Structures</h3>
+
+Now that we know about linear and non-linear data structures, let's see the major differences between them. <br><br>
+
+<img src="dsa/Screenshot (30).png.png" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="stack ds"><font color="#33b5e5">Stack</font> Data Structure</h2>
+
+A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.
+ <br><br>
+You can think of the stack data structure as the pile of plates on top of another. <br><br>
+
+<ul>
+    <li>Put a new plate on top</li><br>
+    <li>Remove the top plate</li><br>
+</ul>
+
+And, if you want the plate at the bottom, you must first remove all the plates on top. This is exactly how the stack data structure works. <br><br>
+
+<h3><font color="#33b5e5">LIFO Principle</font> of Stack</h3>
+
+In programming terms, putting an item on top of the stack is called push and removing an item is called pop.
+<br><br>
+<img src="dsa/stack.png" alt=""><br><br>
+
+In the above image, although item 3 was kept last, it was removed first. This is exactly how the LIFO (Last In First Out) Principle works.
+ <br><br>
+We can implement a stack in any programming language like C, C++, Java, Python or C#, but the specification is pretty much the same.
+<br><br>
+
+<h3>Basic <font color="#33b5e5">Operations</font> of Stack
+</h3>
+
+There are some basic operations that allow us to perform different actions on a stack. <br>
+
+<ul>
+    <li><b>Push:</b> Add an element to the top of a stack</li><br>
+    <li><b>Pop:</b> Remove an element from the top of a stack</li><br>
+    <li><b>IsEmpty:</b> Check if the stack is empty</li><br>
+    <li><b>IsFull:</b> Check if the stack is full</li><br>
+    <li><b>Peek:</b> Get the value of the top element without removing it</li><br>
+</ul>
+
+<h3><font color="#33b5e5">Working </font>of Stack Data Structure</h3>
+
+The operations work as follows: <br>
+
+<ol>
+    <li>A pointer called TOP is used to keep track of the top element in the stack.</li><br>
+    <li>When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.</li><br>
+    <li>On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.</li><br>
+    <li>On popping an element, we return the element pointed to by TOP and reduce its value.</li><br>
+    <li>Before pushing, we check if the stack is already full
+    </li><br>
+    <li>Before popping, we check if the stack is already empty</li><br>
+</ol>
+<img src="dsa/stack-operations.png" alt="">
+
+<h3>Stack <font color="#33b5e5">Implementations </font>in C++</h3>
+
+The most common stack implementation is using arrays, but it can also be implemented using lists.
+
+ <br><br>
+
+ <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Stack implementation in C++
+
+        #include <stdlib.h>
+        #include <iostream>
+        
+        using namespace std;
+        
+        #define MAX 10
+        int size = 0;
+        
+        // Creating a stack
+        struct stack {
+          int items[MAX];
+          int top;
+        };
+        typedef struct stack st;
+        
+        void createEmptyStack(st *s) {
+          s->top = -1;
+        }
+        
+        // Check if the stack is full
+        int isfull(st *s) {
+          if (s->top == MAX - 1)
+            return 1;
+          else
+            return 0;
+        }
+        
+        // Check if the stack is empty
+        int isempty(st *s) {
+          if (s->top == -1)
+            return 1;
+          else
+            return 0;
+        }
+        
+        // Add elements into stack
+        void push(st *s, int newitem) {
+          if (isfull(s)) {
+            cout << "STACK FULL";
+          } else {
+            s->top++;
+            s->items[s->top] = newitem;
+          }
+          size++;
+        }
+        
+        // Remove element from stack
+        void pop(st *s) {
+          if (isempty(s)) {
+            cout << "\n STACK EMPTY \n";
+          } else {
+            cout << "Item popped= " << s->items[s->top];
+            s->top--;
+          }
+          size--;
+          cout << endl;
+        }
+        
+        // Print elements of stack
+        void printStack(st *s) {
+          printf("Stack: ");
+          for (int i = 0; i < size; i++) {
+            cout << s->items[i] << " ";
+          }
+          cout << endl;
+        }
+        
+        // Driver code
+        int main() {
+          int ch;
+          st *s = (st *)malloc(sizeof(st));
+        
+          createEmptyStack(s);
+        
+          push(s, 1);
+          push(s, 2);
+          push(s, 3);
+          push(s, 4);
+        
+          printStack(s);
+        
+          pop(s);
+        
+          cout << "\nAfter popping out\n";
+          printStack(s);
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+  <h4>Stack <font color="#33b5e5">Time Complexity</font></h4>
+  For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).
+
+<br><br>
+
+<h3><font color="#33b5e5">Applications </font>of Stack Data Structure</h3>
+Although stack is a simple data structure to implement, it is very powerful. The most common uses of a stack are: <br>
+
+<ul>
+    <li><b>To reverse a word -</b> Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.</li><br>
+    <li><b>In compilers - </b> Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.</li><br>
+    <li><b>In browsers -</b> The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.</li><br>
+</ul>
+
+
+
+
+
+<h2 id="queue ds"><font color="#33b5e5">Queue </font>Data Structure</h2>
+A queue is a useful data structure in programming. It is similar to the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.
+<br><br>
+Queue follows the First In First Out (FIFO) rule - the item that goes in first is the item that comes out first.
+
+<br><br>
+
+<img src="dsa/queue.png" alt="">
+
+In the above image, since 1 was kept in the queue before 2, it is the first to be removed from the queue as well. It follows the FIFO rule. <br><br>
+
+In programming terms, putting items in the queue is called enqueue, and removing items from the queue is called dequeue.
+<br><br>
+We can implement the queue in any programming language like C, C++, Java, Python or C#, but the specification is pretty much the same.
+<br><br>
+
+<h3>Basic <font color="#33b5e5">Operations</font> of Queue
+</h3>
+
+A queue is an object (an abstract data structure - ADT) that allows the following operations: <br>
+<ul>
+    <li><b>Enqueue</b> Add an element to the end of the queue
+    </li><br>
+    <li><b>Dequeue:</b> Remove an element from the front of the queue</li><br>
+    <li><b>IsEmpty:</b> Check if the queue is empty</li><br>
+    <li><b>IsFull:</b> Check if the queue is full</li><br>
+    <li><b>Peek:</b> Get the value of the front of the queue without removing it</li><br>
+</ul>
+
+<h3><font color="#33b5e5">Working</font> of Queue
+</h3>
+
+Queue operations work as follows: <br>
+<ul>
+    <li>two pointers FRONT and REAR
+    </li><br>
+    <li>FRONT track the first element of the queue</li><br>
+    <li>REAR track the last element of the queue
+    </li><br>
+    <li>initially, set value of FRONT and REAR to -1</li><br>
+</ul>
+
+<h4><font color="#33b5e5">Enqueue</font> Operation
+</h4>
+
+<ul>
+    <li>check if the queue is full</li><br>
+    <li>for the first element, set the value of FRONT to 0</li><br>
+    <li>increase the REAR index by 1</li><br>
+    <li>add the new element in the position pointed to by REAR</li><br>
+</ul>
+
+<h4><font color="#33b5e5">Dequeue</font> Operation</h4>
+<ul>
+    <li>check if the queue is empty</li><br>
+    <li>return the value pointed by FRONT</li><br>
+    <li>increase the FRONT index by 1
+    </li><br>
+    <li>for the last element, reset the values of FRONT and REAR to -1</li><br>
+</ul>
+
+<img src="dsa/Queue-program-enqueue-dequeue.png" alt="">
+
+
+<h3>Queue <font color="#33b5e5">Implementations</font> in C++</h3>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Queue implementation in C++
+
+        #include <iostream>
+        #define SIZE 5
+        
+        using namespace std;
+        
+        class Queue {
+           private:
+          int items[SIZE], front, rear;
+        
+           public:
+          Queue() {
+            front = -1;
+            rear = -1;
+          }
+        
+          bool isFull() {
+            if (front == 0 && rear == SIZE - 1) {
+              return true;
+            }
+            return false;
+          }
+        
+          bool isEmpty() {
+            if (front == -1)
+              return true;
+            else
+              return false;
+          }
+        
+          void enQueue(int element) {
+            if (isFull()) {
+              cout << "Queue is full";
+            } else {
+              if (front == -1) front = 0;
+              rear++;
+              items[rear] = element;
+              cout << endl
+                 << "Inserted " << element << endl;
+            }
+          }
+        
+          int deQueue() {
+            int element;
+            if (isEmpty()) {
+              cout << "Queue is empty" << endl;
+              return (-1);
+            } else {
+              element = items[front];
+              if (front >= rear) {
+                front = -1;
+                rear = -1;
+              } /* Q has only one element, so we reset the queue after deleting it. */
+              else {
+                front++;
+              }
+              cout << endl
+                 << "Deleted -> " << element << endl;
+              return (element);
+            }
+          }
+        
+          void display() {
+            /* Function to display elements of Queue */
+            int i;
+            if (isEmpty()) {
+              cout << endl
+                 << "Empty Queue" << endl;
+            } else {
+              cout << endl
+                 << "Front index-> " << front;
+              cout << endl
+                 << "Items -> ";
+              for (i = front; i <= rear; i++)
+                cout << items[i] << "  ";
+              cout << endl
+                 << "Rear index-> " << rear << endl;
+            }
+          }
+        };
+        
+        int main() {
+          Queue q;
+        
+          //deQueue is not possible on empty queue
+          q.deQueue();
+        
+          //enQueue 5 elements
+          q.enQueue(1);
+          q.enQueue(2);
+          q.enQueue(3);
+          q.enQueue(4);
+          q.enQueue(5);
+        
+          // 6th element can't be added to because the queue is full
+          q.enQueue(6);
+        
+          q.display();
+        
+          //deQueue removes element entered first i.e. 1
+          q.deQueue();
+        
+          //Now we have just 4 elements
+          q.display();
+        
+          return 0;
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br>
+
+  <h3><font color="#33b5e5">Limitations</font> of Queue
+</h3>
+As you can see in the image below, after a bit of enqueuing and dequeuing, the size of the queue has been reduced. <br><br>
+
+<img src="dsa/why-circular-queue_0.png" alt="">
+
+And we can only add indexes 0 and 1 only when the queue is reset (when all the elements have been dequeued).
+<br><br>
+After REAR reaches the last index, if we can store extra elements in the empty spaces (0 and 1), we can make use of the empty spaces. This is implemented by a modified queue called the circular queue.
+<br><br>
+
+<h4><font color="#33b5e5">Complexity</font> Analysis
+</h4>
+The complexity of enqueue and dequeue operations in a queue using an array is O(1). If you use pop(N) in python code, then the complexity might be O(n) depending on the position of the item to be popped. <br><br>
+
+<h3><font color="#33b5e5">Applications</font> of Queue
+</h3>
+
+<ul>
+    <li>CPU scheduling, Disk Scheduling
+    </li><br>
+    <li>When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc</li><br>
+    <li>Handling of interrupts in real-time systems.
+    </li><br>
+    <li>Call Center phone systems use Queues to hold people calling them in order.</li><br>
+</ul>
+
+
+
+
+
+
+
+<h2 id="queue types"><font color="#33b5e5">Types</font> of Queues</h2>
+
+A queue is a useful data structure in programming. It is similar to the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.
+<br><br>
+There are four different types of queues: <br>
+
+<ul>
+    <li>Simple Queue
+    </li><br>
+    <li>Circular Queue</li><br>
+    <li>Priority Queue</li><br>
+    <li>Double Ended Queue</li><br>
+</ul>
+
+
+<h3>
+    <font color="#33b5e5">Simple</font> Queue
+</h3>
+
+In a simple queue, insertion takes place at the rear and removal occurs at the front. It strictly follows the FIFO (First in First out) rule.
+<img src="dsa/simple-queue_0.png" alt="">
+
+<h3><font color="#33b5e5">Circular </font>Queue</h3>
+In a circular queue, the last element points to the first element making a circular link. <br><br>
+<img src="dsa/circular-queue.png" alt=""><br>
+The main advantage of a circular queue over a simple queue is better memory utilization. If the last position is full and the first position is empty, we can insert an element in the first position. This action is not possible in a simple queue. <br><br>
+
+<h3><font color="#33b5e5">Priority</font> Queue</h3>
+
+A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. If elements with the same priority occur, they are served according to their order in the queue.
+
+ <br><br>
+
+ <img src="dsa/priority-queue.png" alt=""> <br>
+ Insertion occurs based on the arrival of the values and removal occurs based on priority. <br><br>
+
+ <h3><font color="#33b5e5">Deque</font> (Double Ended Queue)</h3>
+
+ In a double ended queue, insertion and removal of elements can be performed from either from the front or rear. Thus, it does not follow the FIFO (First In First Out) rule. <br> <br>
+  <img src="dsa/double-ended-queue.png" alt=""><br><br>
+
+
+  
+
+  <h2 id="circular queue"><font color="#33b5e5">Circular Queue</font> Data Structure</h2>
+
+  A circular queue is the extended version of a regular queue where the last element is connected to the first element. Thus forming a circle-like structure. <br><br>
+
+  <img src="dsa/circular-increment.png" alt=""><br><br>
+
+  The circular queue solves the major limitation of the normal queue. In a normal queue, after a bit of insertion and deletion, there will be non-usable empty space. <br><br>
+  <img src="dsa/why-circular-queue.png" alt=""><br><br>
+
+  Here, indexes 0 and 1 can only be used after resetting the queue (deletion of all elements). This reduces the actual size of the queue. <br><br>
+
+  <h3>How Circular Queue <font color="#33b5e5">Works</font></h3>
+  Circular Queue works by the process of circular increment i.e. when we try to increment the pointer and we reach the end of the queue, we start from the beginning of the queue.
+<br><br>
+  Here, the circular increment is performed by modulo division with the queue size. That is, <br><br>
+
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+      
+if REAR + 1 == 5 (overflow!), REAR = (REAR + 1)%5 = 0 (start of queue)
+
+
+// code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+  <h3>Circular Queue <font color="#33b5e5">Operations</font></h3>
+  The circular queue work as follows: <br>
+  <ul>
+    <li>two pointers FRONT and REAR</li><br>
+    <li>FRONT track the first element of the queue</li><br>
+    <li>REAR track the last elements of the queue</li><br>
+    <li>initially, set value of FRONT and REAR to -1</li><br>
+  </ul>
+
+  <h4>1. <font color="#33b5e5">Enqueue</font> Operation
+</h4>
+<ul>
+    <li>check if the queue is full</li><br>
+    <li>for the first element, set value of FRONT to 0
+    </li><br>
+    <li>circularly increase the REAR index by 1 (i.e. if the rear reaches the end, next it would be at the start of the queue)</li><br>
+    <li>add the new element in the position pointed to by REAR</li><br>
+</ul>
+
+<h4>2. <font color="#33b5e5">Dequeue</font> Operation</h4>
+<ul>
+    <li>check if the queue is empty</li><br>
+    <li>return the value pointed by FRONT</li><br>
+    <li>circularly increase the FRONT index by 1</li><br>
+    <li>for the last element, reset the values of FRONT and REAR to -1</li><br>
+
+</ul>
+
+However, the check for full queue has a new additional case: <br>
+
+<ul>
+    <li>Case 1: FRONT = 0 && REAR == SIZE - 1</li><br>
+    <li>Case 2: FRONT = REAR + 1</li><br>
+</ul>
+
+The second case happens when REAR starts from 0 due to circular increment and when its value is just 1 less than FRONT, the queue is full. <br><br>
+
+<img src="dsa/circular-queue-program.png" alt="">
+
+<h3>Circular Queue <font color="#33b5e5">Implementations</font> in C++</h3>
+
+The most common queue implementation is using arrays, but it can also be implemented using lists. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Circular Queue implementation in C++
+
+        #include <iostream>
+        #define SIZE 5 /* Size of Circular Queue */
+        
+        using namespace std;
+        
+        class Queue {
+           private:
+          int items[SIZE], front, rear;
+        
+           public:
+          Queue() {
+            front = -1;
+            rear = -1;
+          }
+          // Check if the queue is full
+          bool isFull() {
+            if (front == 0 && rear == SIZE - 1) {
+              return true;
+            }
+            if (front == rear + 1) {
+              return true;
+            }
+            return false;
+          }
+          // Check if the queue is empty
+          bool isEmpty() {
+            if (front == -1)
+              return true;
+            else
+              return false;
+          }
+          // Adding an element
+          void enQueue(int element) {
+            if (isFull()) {
+              cout << "Queue is full";
+            } else {
+              if (front == -1) front = 0;
+              rear = (rear + 1) % SIZE;
+              items[rear] = element;
+              cout << endl
+                 << "Inserted " << element << endl;
+            }
+          }
+          // Removing an element
+          int deQueue() {
+            int element;
+            if (isEmpty()) {
+              cout << "Queue is empty" << endl;
+              return (-1);
+            } else {
+              element = items[front];
+              if (front == rear) {
+                front = -1;
+                rear = -1;
+              }
+              // Q has only one element,
+              // so we reset the queue after deleting it.
+              else {
+                front = (front + 1) % SIZE;
+              }
+              return (element);
+            }
+          }
+        
+          void display() {
+            // Function to display status of Circular Queue
+            int i;
+            if (isEmpty()) {
+              cout << endl
+                 << "Empty Queue" << endl;
+            } else {
+              cout << "Front -> " << front;
+              cout << endl
+                 << "Items -> ";
+              for (i = front; i != rear; i = (i + 1) % SIZE)
+                cout << items[i];
+              cout << items[i];
+              cout << endl
+                 << "Rear -> " << rear;
+            }
+          }
+        };
+        
+        int main() {
+          Queue q;
+        
+          // Fails because front = -1
+          q.deQueue();
+        
+          q.enQueue(1);
+          q.enQueue(2);
+          q.enQueue(3);
+          q.enQueue(4);
+          q.enQueue(5);
+        
+          // Fails to enqueue because front == 0 && rear == SIZE - 1
+          q.enQueue(6);
+        
+          q.display();
+        
+          int elem = q.deQueue();
+        
+          if (elem != -1)
+            cout << endl
+               << "Deleted Element is " << elem;
+        
+          q.display();
+        
+          q.enQueue(7);
+        
+          q.display();
+        
+          // Fails to enqueue because front == rear + 1
+          q.enQueue(8);
+        
+          return 0;
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+  <h4>Circular Queue <font color="#33b5e5">Complexity Analysis</font></h4>
+
+  The complexity of the enqueue and dequeue operations of a circular queue is O(1) for (array implementations). <br>
+
+  <h3><font color="#33b5e5">Applications</font> of Circular Queue</h3>
+
+  <ul>
+    <li>CPU scheduling</li><br>
+    <li>Memory management</li><br>
+    <li>Traffic Management</li><br>
+  </ul>
+
+  
+
+<h2 id="priority q"><font color="#33b5e5">Priority</font> Queue</h2>
+
+A priority queue is a <b>special type of queue</b> in which each element is associated with a priority value. And, elements are served on the basis of their priority. That is, higher <b>priority</b> elements are served first.
+<br><br>
+However, if elements with the same priority occur, they are served according to their order in the queue. <br><br>
+
+<b>Assigning Priority Value
+
+</b>
+
+Generally, the value of the element itself is considered for assigning the priority. For example, <br><br>
+
+The element with the highest value is considered the highest priority element. However, in other cases, we can assume the element with the lowest value as the highest priority element.
+<br><br>
+We can also set priorities according to our needs. <br><br>
+
+<img src="dsa/Introduction.png" alt="">
+
+<br><br>
+
+<h4>Difference between <font color="#33b5e5">Priority Queue and Normal Queue</font></h4>
+
+In a queue, the first-in-first-out rule is implemented whereas, in a priority queue, the values are removed on the basis of priority. The element with the highest priority is removed first. <br><br>
+
+<h3><font color="#33b5e5">Implementation</font> of Priority Queue</h3>
+
+Priority queue can be implemented using an array, a linked list, a heap data structure, or a binary search tree. Among these data structures, heap data structure provides an efficient implementation of priority queues.
+<br><br>
+
+
+Hence, we will be using the heap data structure to implement the priority queue in this tutorial. A max-heap is implemented in the following operations. If you want to learn more about it, please visit max-heap and min-heap.
+<br><br>
+
+
+A comparative analysis of different implementations of priority queue is given below. <br><br>
+
+<img src="dsa/Screenshot (31).png.png" alt="">
+
+<h2>Priority Queue <font color="#33b5e5">Operations</font></h2>
+
+Basic operations of a priority queue are inserting, removing, and peeking elements. <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        Before studying the priority queue, please refer to the heap data structure for a better understanding of binary heap as it is used to implement the priority queue in this article.
+      </code>
+    </pre>
+  </div><br><br>
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br><br>
+
+  <h4>1. <font color="#33b5e5">Inserting an Element</font> into the Priority Queue</h4>
+
+  Inserting an element into a priority queue (max-heap) is done by the following steps. <br><br>
+
+  <ul>
+    <li>
+        Insert the new element at the end of the tree. <br><br>
+
+<img src="dsa/insert-1_0.png" alt=""><br>
+
+
+    </li><br>
+    <li>
+
+        Heapify the tree.  <br><br>
+
+        <img src="dsa/insert-2_0.png" alt=""><br>
+
+        Algorithm for insertion of an element into priority queue (max-heap) <br><br>
+        <div style="background-color: #f2f2f2; padding: 20px;">
+            <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+              <code>
+                If there is no node, 
+                create a newNode.
+              else (a node is already present)
+                insert the newNode at the end (last node from left to right.)
+                
+              heapify the array
+
+
+              // code submitted by HARSH 
+              </code>
+            </pre>
+          </div><br><br>
+          For Min Heap, the above algorithm is modified so that parentNode is always smaller than newNode. <br><br>
+
+
+
+    </li><br>
+  </ul>
+
+<h4>2. <font color="#33b5e5">Deleting an Element</font> from the Priority Queue</h4>
+
+Deleting an element from a priority queue (max-heap) is done as follows:
+<br><br>
+
+<ul>
+    <li>
+        Select the element to be deleted. <br><br>
+        <img src="dsa/delete-1_0.png" alt="">
+
+    </li><br>
+    <li>Swap it with the last element. <br><br>
+    <img src="dsa/delete-2_0.png" alt=""></li><br>
+    <li>Remove the last element. <br><br>
+    <img src="dsa/delete-3.png" alt=""></li><br>
+    <li>Heapify the tree. <br><br>
+    <img src="dsa/delete-4.png" alt=""></li><br>
+</ul>
+
+Algorithm for deletion of an element in the priority queue (max-heap) <br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        If nodeToBeDeleted is the leafNode
+        remove the node
+      Else swap nodeToBeDeleted with the lastLeafNode
+        remove noteToBeDeleted
+         
+      heapify the array
+      
+
+      // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  For Min Heap, the above algorithm is modified so that the both childNodes are smaller than currentNode. <br><br>
+
+  <h4>3.<font color="#33b5e5"> Peeking</font> from the Priority Queue (Find max/min)</h4>
+
+  Peek operation returns the maximum element from Max Heap or minimum element from Min Heap without deleting the node.
+<br><br>
+For both Max heap and Min Heap
+<br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        return rootNode
+      </code>
+    </pre>
+  </div><br><br>
+
+<h4>4. <font color="#33b5e5">Extract-Max/Min</font> from the Priority Queue</h4>
+
+Extract-Max returns the node with maximum value after removing it from a Max Heap whereas Extract-Min returns the node with minimum value after removing it from Min Heap. <br><br>
+
+<h2>
+    Priority Queue <font color="#33b5e5">Implementations</font> in C++
+
+</h2>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Priority Queue implementation in C++
+
+        #include <iostream>
+        #include <vector>
+        using namespace std;
+        
+        // Function to swap position of two elements
+        void swap(int *a, int *b) {
+          int temp = *b;
+          *b = *a;
+          *a = temp;
+        }
+        
+        // Function to heapify the tree
+        void heapify(vector<int> &hT, int i) {
+          int size = hT.size();
+          
+          // Find the largest among root, left child and right child
+          int largest = i;
+          int l = 2 * i + 1;
+          int r = 2 * i + 2;
+          if (l < size && hT[l] > hT[largest])
+            largest = l;
+          if (r < size && hT[r] > hT[largest])
+            largest = r;
+        
+          // Swap and continue heapifying if root is not largest
+          if (largest != i) {
+            swap(&hT[i], &hT[largest]);
+            heapify(hT, largest);
+          }
+        }
+        
+        // Function to insert an element into the tree
+        void insert(vector<int> &hT, int newNum) {
+          int size = hT.size();
+          if (size == 0) {
+            hT.push_back(newNum);
+          } else {
+            hT.push_back(newNum);
+            for (int i = size / 2 - 1; i >= 0; i--) {
+              heapify(hT, i);
+            }
+          }
+        }
+        
+        // Function to delete an element from the tree
+        void deleteNode(vector<int> &hT, int num) {
+          int size = hT.size();
+          int i;
+          for (i = 0; i < size; i++) {
+            if (num == hT[i])
+              break;
+          }
+          swap(&hT[i], &hT[size - 1]);
+        
+          hT.pop_back();
+          for (int i = size / 2 - 1; i >= 0; i--) {
+            heapify(hT, i);
+          }
+        }
+        
+        // Print the tree
+        void printArray(vector<int> &hT) {
+          for (int i = 0; i < hT.size(); ++i)
+            cout << hT[i] << " ";
+          cout << "\n";
+        }
+        
+        // Driver code
+        int main() {
+          vector<int> heapTree;
+        
+          insert(heapTree, 3);
+          insert(heapTree, 4);
+          insert(heapTree, 9);
+          insert(heapTree, 5);
+          insert(heapTree, 2);
+        
+          cout << "Max-Heap array: ";
+          printArray(heapTree);
+        
+          deleteNode(heapTree, 4);
+        
+          cout << "After deleting an element: ";
+        
+          printArray(heapTree);
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p> <br>
+
+  <h3>Priority Queue <font color="#33b5e5">Applications</font>
+</h3>
+
+Some of the applications of a priority queue are: <br>
+
+<ul>
+    <li>Dijkstra's algorithm</li><br>
+    <li>for implementing stack</li><br>
+    <li>for load balancing and interrupt handling in an operating system</li><br>
+    <li>for data compression in Huffman code</li><br>
+</ul>
+
+
+
+
+
+
+<h2 id="ll"><font color="#33b5e5">Linked list</font> Data Structure</h2>
+
+A linked list is a linear data structure that includes a series of connected nodes. Here, each node stores the data and the address of the next node. For example,  <br><br>
+
+<img src="dsaa/linked-list-concept.webp.png" alt=""><br><br>
+
+You have to start somewhere, so we give the address of the first node a special name called HEAD. Also, the last node in the linked list can be identified because its next portion points to NULL.
+<br><br>
+Linked lists can be of multiple types: singly, doubly, and circular linked list. In this article, we will focus on the singly linked list. To learn about other types, visit Types of Linked List.
+<br><br>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        Note: You might have played the game Treasure Hunt, where each clue includes the information about the next clue. That is how the linked list operates.
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Representation</font> of Linked List</h3>
+
+  Let's see how each node of the linked list is represented. Each node consists: <br>
+  <ul>
+    <li> A data item</li><br>
+    <li> An address of another node</li><br>
+  </ul>
+
+  We wrap both the data item and the next node reference in a struct as:
+<br><br>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node
+        {
+          int data;
+          struct node *next;
+        };
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  Understanding the structure of a linked list node is the key to having a grasp on it.
+<br><br>
+Each struct node has a data item and a pointer to another struct node. Let us create a simple Linked List with three items to understand how this works. <br><br>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        /* Initialize nodes */
+        struct node *head;
+        struct node *one = NULL;
+        struct node *two = NULL;
+        struct node *three = NULL;
+        
+        /* Allocate memory */
+        one = malloc(sizeof(struct node));
+        two = malloc(sizeof(struct node));
+        three = malloc(sizeof(struct node));
+        
+        /* Assign data values */
+        one->data = 1;
+        two->data = 2;
+        three->data=3;
+        
+        /* Connect nodes */
+        one->next = two;
+        two->next = three;
+        three->next = NULL;
+        
+        /* Save address of first node in head */
+        head = one;
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  If you didn't understand any of the lines above, all you need is a refresher on pointers and structs.
+ <br><br>
+In just a few steps, we have created a simple linked list with three nodes.
+<br><br>
+
+<img src="dsaa/linked-list-with-data.webp.png" alt=""><br><br>
+
+The power of a linked list comes from the ability to break the chain and rejoin it. E.g. if you wanted to put an element 4 between 1 and 2, the steps would be: <br>
+<ul>
+    <li> Add its data value as 4</li><br>
+    <li> Point its next pointer to the struct node containing 2 as the data value</li><br>
+    <li> Change the next pointer of "1" to the node we just created.</li><br>
+    <li> Create a new struct node and allocate memory to it.</li><br>
+</ul>
+
+Doing something similar in an array would have required shifting the positions of all the subsequent elements.
+
+<br><br>
+
+<h3>
+    Linked List <font color="#33b5e5">Utility</font>
+</h3>
+
+Lists are one of the most popular and efficient data structures, with implementation in every programming language like C, C++, Python, Java, and C#.
+<br><br>
+Apart from that, linked lists are a great way to learn how pointers work. By practicing how to manipulate linked lists, you can prepare yourself to learn more advanced data structures like graphs and trees.
+
+<br><br>
+
+<h2>Linked List <font color="#33b5e5">Implementations</font> in C++ Examples</h2>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Linked list implementation in C++
+
+        #include <bits/stdc++.h>
+        #include <iostream>
+        using namespace std;
+        
+        // Creating a node
+        class Node {
+           public:
+          int value;
+          Node* next;
+        };
+        
+        int main() {
+          Node* head;
+          Node* one = NULL;
+          Node* two = NULL;
+          Node* three = NULL;
+        
+          // allocate 3 nodes in the heap
+          one = new Node();
+          two = new Node();
+          three = new Node();
+        
+          // Assign value values
+          one->value = 1;
+          two->value = 2;
+          three->value = 3;
+        
+          // Connect nodes
+          one->next = two;
+          two->next = three;
+          three->next = NULL;
+        
+          // print the linked list value
+          head = one;
+          while (head != NULL) {
+            cout << head->value;
+            head = head->next;
+          }
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+<h4>Linked List <font color="#33b5e5">Complexity</font>
+</h4>
+
+<b>Time Complexity:
+
+</b><br><br>
+
+<img src="dsaa/Screenshot (5).png" alt=""><br><br>
+
+<b>Space Complexity: O(n)</b> <br><br>
+
+<h3>Linked List <font color="#33b5e5">Applications</font></h3>
+<ul>
+<li> Dynamic memory allocation</li><br>
+<li> Implemented in stack and queue</li><br>
+<li> In undo functionality of softwares</li><br>
+<li> Hash tables, Graphs</li><br>
+</ul>
+<p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+<h2 id="ll operation">Linked List Operations: <font color="#33b5e5">Traverse, Insert and Delete</font></h2>
+
+There are various linked list operations that allow us to perform different actions on linked lists. For example, the insertion operation adds a new element to the linked list.
+<br><br>
+Here's a list of basic linked list operations that we will cover in this article.
+<br>
+
+<ul>
+<li> Traversal - access each element of the linked list</li><br>
+<li> Insertion - adds a new element to the linked list</li><br>
+<li> Deletion - removes the existing elements</li><br>
+<li> Search - find a node in the linked list</li><br>
+<li> Sort - sort the nodes of the linked list</li><br>
+</ul>
+<h5>Before you learn about linked list operations in detail, make sure to know about Linked List first.</h5>
+
+<h4><font color="#33b5e5">Things to Remember </font>about Linked List</h4>
+
+<ul>
+<li> head points to the first node of the linked list</li><br>
+<li> next pointer of the last node is NULL, so if the next current node is NULL, we have reached the end of the linked list. </li><br>
+</ul>
+
+<b>In all of the examples, we will assume that the linked list has three nodes 1 --->2 --->3 with node structure as below:
+
+</b><br><br>
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node {
+            int data;
+            struct node *next;
+          };
+
+
+          // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Traverse</font> a Linked List</h3>
+
+  Displaying the contents of a linked list is very simple. We keep moving the temp node to the next one and display its contents.
+<br><br>
+When temp is NULL, we know that we have reached the end of the linked list so we get out of the while loop.
+<br><br>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node *temp = head;
+        printf("\n\nList elements are - \n");
+        while(temp != NULL) {
+          printf("%d --->",temp->data);
+          temp = temp->next;
+        }
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Insert Elements</font> to a Linked List</h3>
+
+  You can add elements to either the beginning, middle or end of the linked list. <br><br>
+
+  <h4>1. Insert at the <font color="#33b5e5">beginning</font></h4>
+
+<ul>
+    <li> Allocate memory for new node</li><br>
+
+<li> Store data</li><br>
+
+<li> Change next of new node to point to head</li><br>
+
+<li> Change head to point to recently created node</li><br>
+</ul>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node *newNode;
+        newNode = malloc(sizeof(struct node));
+        newNode->data = 4;
+        newNode->next = head;
+        head = newNode;
+      </code>
+    </pre>
+  </div><br><br>
+
+<h4>2. Insert at the <font color="#33b5e5">End</font></h4>
+
+<ul>
+<li> Allocate memory for new node</li><br>
+<li> Store data</li><br>
+<li> Traverse to last node</li><br>
+<li> Change next of last node to recently created node</li><br>
+</ul>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node *newNode;
+        newNode = malloc(sizeof(struct node));
+        newNode->data = 4;
+        newNode->next = NULL;
+        
+        struct node *temp = head;
+        while(temp->next != NULL){
+          temp = temp->next;
+        }
+        
+        temp->next = newNode;
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h4>3. Insert at the <font color="#33b5e5">Middle</font>
+</h4>
+<ul>
+<li> Allocate memory and store data for new node</li><br>
+<li> Traverse to node just before the required position of new node</li><br>
+<li> Change next pointers to include new node in between</li><br>
+</ul>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node *newNode;
+        newNode = malloc(sizeof(struct node));
+        newNode->data = 4;
+        
+        struct node *temp = head;
+        
+        for(int i=2; i < position; i++) {
+          if(temp->next != NULL) {
+            temp = temp->next;
+          }
+        }
+        newNode->next = temp->next;
+        temp->next = newNode;
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Delete</font> from a Linked List
+</h3>
+
+You can delete either from the beginning, end or from a particular position. <br><br>
+
+<h4>1. Delete from <font color="#33b5e5">beginning</font>
+</h4>
+<b>Point head to the second node</b>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        head = head->next;
+      </code>
+    </pre>
+  </div><br><br>
+  
+  <h4>2. Delete from <font color="#33b5e5">end</font></h4>  
+
+  <ul>
+    <li> Traverse to element before the element to be deleted</li><br>
+    <li> Change next pointers to exclude the node from the chain</li><br>
+  </ul>
+
+  
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        for(int i=2; i< position; i++) {
+            if(temp->next!=NULL) {
+              temp = temp->next;
+            }
+          }
+          
+          temp->next = temp->next->next;
+          
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Search an Element</font> on a Linked List
+</h3>
+
+You can search an element on a linked list using a loop using the following steps. We are finding item on a linked list. <br><br>
+
+<ul>
+<li> Make head as the current node.</li><br>
+<li> Run a loop until the current node is NULL because the last element points to NULL.</li><br>
+<li> In each iteration, check if the key of the node is equal to item. If it the key matches the item, return true otherwise return false.</li><br>
+</ul>
+
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Search a node
+        bool searchNode(struct Node** head_ref, int key) {
+          struct Node* current = *head_ref;
+        
+          while (current != NULL) {
+            if (current->data == key) return true;
+              current = current->next;
+          }
+          return false;
+        }
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Sort Elements</font> of a Linked List</h3>
+
+  We will use a simple sorting algorithm, Bubble Sort, to sort the elements of a linked list in ascending order below. <br>
+
+  <ol>
+<li> Make the head as the current node and create another node index for later use.</li><br>
+<li> If head is null, return.</li><br>
+<li> Else, run a loop till the last node (i.e. NULL).</li><br>
+<li> In each iteration, follow the following step 5-6.</li><br>
+<li> Store the next node of current in index.</li><br>
+<li> Check if the data of the current node is greater than the next node. If it is greater, swap current and index.</li><br>
+  </ol>
+
+  <b>Check the article on bubble sort for better understanding of its working.</b>
+
+  
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Sort the linked list
+        void sortLinkedList(struct Node** head_ref) {
+          struct Node *current = *head_ref, *index = NULL;
+          int temp;
+        
+          if (head_ref == NULL) {
+            return;
+          } else {
+            while (current != NULL) {
+              // index points to the node next to current
+              index = current->next;
+        
+              while (index != NULL) {
+                if (current->data > index->data) {
+                  temp = current->data;
+                  current->data = index->data;
+                  index->data = temp;
+                  }
+                  index = index->next;
+              }
+              current = current->next;
+            }
+          }
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h2>LinkedList <font color="#33b5e5">Operations</font> in C++</h2>
+
+  
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Linked list operations in C++
+
+        #include <stdlib.h>
+        
+        #include <iostream>
+        using namespace std;
+        
+        // Create a node
+        struct Node {
+          int data;
+          struct Node* next;
+        };
+        
+        void insertAtBeginning(struct Node** head_ref, int new_data) {
+          // Allocate memory to a node
+          struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+        
+          // insert the data
+          new_node->data = new_data;
+          new_node->next = (*head_ref);
+        
+          // Move head to new node
+          (*head_ref) = new_node;
+        }
+        
+        // Insert a node after a node
+        void insertAfter(struct Node* prev_node, int new_data) {
+          if (prev_node == NULL) {
+          cout << "the given previous node cannot be NULL";
+          return;
+          }
+        
+          struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+          new_node->data = new_data;
+          new_node->next = prev_node->next;
+          prev_node->next = new_node;
+        }
+        
+        // Insert at the end
+        void insertAtEnd(struct Node** head_ref, int new_data) {
+          struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+          struct Node* last = *head_ref; /* used in step 5*/
+        
+          new_node->data = new_data;
+          new_node->next = NULL;
+        
+          if (*head_ref == NULL) {
+          *head_ref = new_node;
+          return;
+          }
+        
+          while (last->next != NULL) last = last->next;
+        
+          last->next = new_node;
+          return;
+        }
+        
+        // Delete a node
+        void deleteNode(struct Node** head_ref, int key) {
+          struct Node *temp = *head_ref, *prev;
+        
+          if (temp != NULL && temp->data == key) {
+          *head_ref = temp->next;
+          free(temp);
+          return;
+          }
+          // Find the key to be deleted
+          while (temp != NULL && temp->data != key) {
+          prev = temp;
+          temp = temp->next;
+          }
+        
+          // If the key is not present
+          if (temp == NULL) return;
+        
+          // Remove the node
+          prev->next = temp->next;
+        
+          free(temp);
+        }
+        
+        // Search a node
+        bool searchNode(struct Node** head_ref, int key) {
+          struct Node* current = *head_ref;
+        
+          while (current != NULL) {
+          if (current->data == key) return true;
+          current = current->next;
+          }
+          return false;
+        }
+        
+        // Sort the linked list
+        void sortLinkedList(struct Node** head_ref) {
+          struct Node *current = *head_ref, *index = NULL;
+          int temp;
+        
+          if (head_ref == NULL) {
+          return;
+          } else {
+          while (current != NULL) {
+            // index points to the node next to current
+            index = current->next;
+        
+            while (index != NULL) {
+            if (current->data > index->data) {
+              temp = current->data;
+              current->data = index->data;
+              index->data = temp;
+            }
+            index = index->next;
+            }
+            current = current->next;
+          }
+          }
+        }
+        
+        // Print the linked list
+        void printList(struct Node* node) {
+          while (node != NULL) {
+          cout << node->data << " ";
+          node = node->next;
+          }
+        }
+        
+        // Driver program
+        int main() {
+          struct Node* head = NULL;
+        
+          insertAtEnd(&head, 1);
+          insertAtBeginning(&head, 2);
+          insertAtBeginning(&head, 3);
+          insertAtEnd(&head, 4);
+          insertAfter(head->next, 5);
+        
+          cout << "Linked list: ";
+          printList(head);
+        
+          cout << "\nAfter deleting an element: ";
+          deleteNode(&head, 3);
+          printList(head);
+        
+          int item_to_find = 3;
+          if (searchNode(&head, item_to_find)) {
+          cout << endl << item_to_find << " is found";
+          } else {
+          cout << endl << item_to_find << " is not found";
+          }
+        
+          sortLinkedList(&head);
+          cout << "\nSorted List: ";
+          printList(head);
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+  
+
+
+<h2 id="ll types"><font color="#33b5e5">Types </font>of Linked List - <font color="#33b5e5">Singly linked, doubly linked and circular</font></h2>
+
+In this tutorial, you will learn different types of linked list. Also, you will find implementation of linked list in C.
+<br><br>
+Before you learn about the type of the linked list, make sure you know about the LinkedList Data Structure.
+<br><br>
+There are three common types of Linked List.
+<br>
+<ol>
+<li> Singly Linked List</li><br>
+<li> Doubly Linked List</li><br>
+<li> Circular Linked List</li><br>
+</ol>
+
+<h3><font color="#33b5e5">Singly</font> Linked List</h3>
+
+It is the most common. Each node has data and a pointer to the next node. <br><br>
+
+<img src="dsaa/linked-list-concept_0.webp.png" alt=""> <br><br>
+
+<b>Node is represented as:</b> <br><br>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node {
+            int data;
+            struct node *next;
+        }
+      </code>
+    </pre>
+  </div><br><br>
+
+  <b>A three-member singly linked list can be created as:</b><br><br>
+
+  
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        /* Initialize nodes */
+        struct node *head;
+        struct node *one = NULL;
+        struct node *two = NULL;
+        struct node *three = NULL;
+        
+        /* Allocate memory */
+        one = malloc(sizeof(struct node));
+        two = malloc(sizeof(struct node));
+        three = malloc(sizeof(struct node));
+        
+        /* Assign data values */
+        one->data = 1;
+        two->data = 2;
+        three->data = 3;
+        
+        /* Connect nodes */
+        one->next = two;
+        two->next = three;
+        three->next = NULL;
+        
+        /* Save address of first node in head */
+        head = one;
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Doubly </font> Linked List
+</h3>
+
+We add a pointer to the previous node in a doubly-linked list. Thus, we can go in either direction: forward or backward. <br><br>
+
+<img src="dsaa/doubly-linked-list-concept.webp.png" alt="">
+
+<b>A node is represented as</b>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        struct node {
+            int data;
+            struct node *next;
+            struct node *prev;
+        }
+      </code>
+    </pre>
+  </div><br><br>
+
+  <b>A three-member doubly linked list can be created as</b>
+
+  
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        /* Initialize nodes */
+        struct node *head;
+        struct node *one = NULL;
+        struct node *two = NULL;
+        struct node *three = NULL;
+        
+        /* Allocate memory */
+        one = malloc(sizeof(struct node));
+        two = malloc(sizeof(struct node));
+        three = malloc(sizeof(struct node));
+        
+        /* Assign data values */
+        one->data = 1;
+        two->data = 2;
+        three->data = 3;
+        
+        /* Connect nodes */
+        one->next = two;
+        one->prev = NULL;
+        
+        two->next = three;
+        two->prev = one;
+        
+        three->next = NULL;
+        three->prev = two;
+        
+        /* Save address of first node in head */
+        head = one;
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h3><font color="#33b5e5">Circular</font> Linked List</h3>
+
+  A circular linked list is a variation of a linked list in which the last element is linked to the first element. This forms a circular loop. <br><br>
+
+  <img src="dsaa/circular-linked-list.webp11.png" alt="">
+
+  A circular linked list can be either singly linked or doubly linked. <br><br>
+
+  <ol>
+<li> for singly linked list, next pointer of last item points to the first item</li><br>
+<li> In the doubly linked list, prev pointer of the first item points to the last item as well.</li><br>
+  </ol>
+
+  <b>A three-member circular singly linked list can be created as:
+
+  </b>
+
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        /* Initialize nodes */
+        struct node *head;
+        struct node *one = NULL;
+        struct node *two = NULL;
+        struct node *three = NULL;
+        
+        /* Allocate memory */
+        one = malloc(sizeof(struct node));
+        two = malloc(sizeof(struct node));
+        three = malloc(sizeof(struct node));
+        
+        /* Assign data values */
+        one->data = 1;
+        two->data = 2;
+        three->data = 3;
+        
+        /* Connect nodes */
+        one->next = two;
+        two->next = three;
+        three->next = one;
+        
+        /* Save address of first node in head */
+        head = one;
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+
+<h3 id="hash"><font color="#33b5e5">Hash Table</font></h3>
+The Hash table data structure stores elements in key-value pairs where <br><br>
+<ul>
+<li> Key- unique integer that is used for indexing the values</li><br>
+<li> Value - data that are associated with keys.</li><br>
+</ul>
+
+<img src="dsaa/Hash-0.webp89.png" alt="">
+
+<h3><font color="#33b5e5">Hashing</font> (Hash Function)</h3>
+
+In a hash table, a new index is processed using the keys. And, the element corresponding to that key is stored in the index. This process is called hashing.
+<br><br>
+Let k be a key and h(x) be a hash function.
+<br><br>
+Here, h(k) will give us a new index to store the element linked with k.
+<br><br>
+
+<img src="dsaa/Hash-2_0.webp345.png" alt=""><br><br>
+
+<h3><font color="#33b5e5">Hash</font> Collision
+</h3>.
+
+When the hash function generates the same index for multiple keys, there will be a conflict (what value to be stored in that index). This is called a hash collision.
+<br><br>
+We can resolve the hash collision using one of the following techniques. <br><br>
+
+<ul>
+<li> When the hash function generates the same index for multiple keys, there will be a conflict (what value to be stored in that index). This is called a hash collision.</li><br>
+
+<li> We can resolve the hash collision using one of the following techniques.</li><br>
+</ul>
+
+<h4>1. <font color="#33b5e5">Collision </font>resolution by chaining
+</h4>
+
+In chaining, if a hash function produces the same index for multiple elements, these elements are stored in the same index by using a doubly-linked list.
+<br><br>
+If j is the slot for multiple elements, it contains a pointer to the head of the list of elements. If no element is present, j contains NIL.
+<br><br>
+
+<img src="dsaa/Hash-3_1.webp8900.png" alt=""><br><br>
+
+<b>Pseudocode for operations</b>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        chainedHashSearch(T, k)
+        return T[h(k)]
+      chainedHashInsert(T, x)
+        T[h(x.key)] = x //insert at the head
+      chainedHashDelete(T, x)
+        T[h(x.key)] = NIL
+      
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <h4>Unlike chaining, open addressing doesn't store multiple elements into the same slot. Here, each slot is either filled with a single key or left NIL. <br><br>
+
+    Different techniques used in open addressing are: <br><br></h4>
+
+    <h5>i. <font color="#33b5e5">Linear</font> Probing
+    </h5>
+
+    In linear probing, collision is resolved by checking the next slot. <br><br>
+    h(k, i) = (h′(k) + i) mod m <br><br>
+
+    where <br><br>
+
+    <ul>
+        <li> i = {0, 1, ….}</li><br>
+        <li> h'(k) is a new hash function</li><br>
+    </ul>
+    If a collision occurs at h(k, 0), then h(k, 1) is checked. In this way, the value of i is incremented linearly. <br><br>
+
+    The problem with linear probing is that a cluster of adjacent slots is filled. When inserting a new element, the entire cluster must be traversed. This adds to the time required to perform operations on the hash table. <br><br>
+
+    <h5>ii. <font color="#33b5e5">Quadratic</font> Probing</h5>
+
+    It works similar to linear probing but the spacing between the slots is increased (greater than one) by using the following relation.
+<br><br>
+h(k, i) = (h′(k) + c1i + c2i2) mod m
+<br><br>
+where, <br><br>
+
+<ul>
+    <li> c1 and c2 are positive auxiliary constants,</li><br>
+    <li> i = {0, 1, ….}</li><br>
+
+</ul>
+
+<h5>iii. <font color="#33b5e5">Double</font> hashing</h5>
+
+<p>
+    If a collision occurs after applying a hash function h(k), then another hash function is calculated for finding the next slot.
+<br><br>
+h(k, i) = (h1(k) + ih2(k)) mod m
+<br><br>
+</p>
+
+<h3>Good <font color="#33b5e5">Hash</font> Functions
+    
+</h3>
+
+<br>
+<p>A good hash function may not prevent the collisions completely however it can reduce the number of collisions.
+<br><br>
+    Here, we will look into different methods to find a good hash function</p>
+
+    <h4>1. <font color="#33b5e5">Division</font> Method</h4>
+
+    <p>
+        If k is a key and m is the size of the hash table, the hash function h() is calculated as:
+<br><br>
+h(k) = k mod m
+<br><br>
+For example, If the size of a hash table is 10 and k = 112 then h(k) = 112 mod 10 = 2. The value of m must not be the powers of 2. This is because the powers of 2 in binary format are 10, 100, 1000, …. When we find k mod m, we will always get the lower order p-bits. <br><br>
+
+    </p>
+
+    
+    <div style="background-color: #f2f2f2; padding: 20px;">
+        <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+          <code>
+            if m = 22, k = 17, then h(k) = 17 mod 22 = 10001 mod 100 = 01
+            if m = 23, k = 17, then h(k) = 17 mod 22 = 10001 mod 100 = 001
+            if m = 24, k = 17, then h(k) = 17 mod 22 = 10001 mod 100 = 0001
+            if m = 2p, then h(k) = p lower bits of m
+          </code>
+        </pre>
+      </div><br><br>
+
+      <h4>2. <font color="#33b5e5">Multiplication</font> Method</h4>
+
+      <p>
+        h(k) = ⌊m(kA mod 1)⌋
+<br><br>
+where, <br><br>
+
+<ul>
+<li> kA mod 1 gives the fractional part kA,</li><br>
+<li> ⌊ ⌋ gives the floor value</li><br>
+<li> A is any constant. The value of A lies between 0 and 1. But, an optimal choice will be ≈ (√5-1)/2 suggested by Knuth.</li><br>
+</ul>
+      </p>
+
+<h4>3. <font color="#33b5e5">Universal</font> Hashing</h4>
+
+<p>In Universal hashing, the hash function is chosen at random independent of keys. <br><br></p>
+
+<h2>C++ <font color="#33b5e5">Examples</font></h2>
+
+
+<div style="background-color: #f2f2f2; padding: 20px;">
+    <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+      <code>
+        // Implementing hash table in C++
+
+        #include <iostream>
+        #include <list>
+        using namespace std;
+        
+        class HashTable
+        {
+          int capacity;
+          list<int> *table;
+        
+        public:
+          HashTable(int V);
+          void insertItem(int key, int data);
+          void deleteItem(int key);
+        
+          int checkPrime(int n)
+          {
+          int i;
+          if (n == 1 || n == 0)
+          {
+            return 0;
+          }
+          for (i = 2; i < n / 2; i++)
+          {
+            if (n % i == 0)
+            {
+            return 0;
+            }
+          }
+          return 1;
+          }
+          int getPrime(int n)
+          {
+          if (n % 2 == 0)
+          {
+            n++;
+          }
+          while (!checkPrime(n))
+          {
+            n += 2;
+          }
+          return n;
+          }
+        
+          int hashFunction(int key)
+          {
+          return (key % capacity);
+          }
+          void displayHash();
+        };
+        HashTable::HashTable(int c)
+        {
+          int size = getPrime(c);
+          this->capacity = size;
+          table = new list<int>[capacity];
+        }
+        void HashTable::insertItem(int key, int data)
+        {
+          int index = hashFunction(key);
+          table[index].push_back(data);
+        }
+        
+        void HashTable::deleteItem(int key)
+        {
+          int index = hashFunction(key);
+        
+          list<int>::iterator i;
+          for (i = table[index].begin();
+           i != table[index].end(); i++)
+          {
+          if (*i == key)
+            break;
+          }
+        
+          if (i != table[index].end())
+          table[index].erase(i);
+        }
+        
+        void HashTable::displayHash()
+        {
+          for (int i = 0; i < capacity; i++)
+          {
+          cout << "table[" << i << "]";
+          for (auto x : table[i])
+            cout << " --> " << x;
+          cout << endl;
+          }
+        }
+        
+        int main()
+        {
+          int key[] = {231, 321, 212, 321, 433, 262};
+          int data[] = {123, 432, 523, 43, 423, 111};
+          int size = sizeof(key) / sizeof(key[0]);
+        
+          HashTable h(size);
+        
+          for (int i = 0; i < size; i++)
+          h.insertItem(key[i], data[i]);
+        
+          h.deleteItem(12);
+          h.displayHash();
+        }
+
+
+        // code submitted by HARSH 
+      </code>
+    </pre>
+  </div><br><br>
+
+  <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+
+  <h3><font color="#33b5e5">Applications</font> of Hash Table</h3>
+
+<p>  Hash tables are implemented where <br><br>
+
+  <ul>
+<li> constant time lookup and insertion is required</li>
+<li> cryptographic applications</li>
+<li> indexing data is required</li>
+  </ul></p>
+
+
+  
+<h2 id="tree"><font color="#33b5e5">Tree</font> Data Structure</h2>
+A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges. <br><br>
+
+<img src="dsaa/tree_0.webp" alt="">
+<p>
+<h3>Tree <font color="#33b5e5">Terminologies</font></h3>
+</p>
+<h4><font color="#33b5e5">Node
+</font></h4>
+<p>
+  A node is an entity that contains a key or value and pointers to its child nodes.
+<br><br>
+The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.
+<br><br>
+The node having at least a child node is called an internal node. <br><br>
+</p>
+
+<h4><font color="#33b5e5">Edge</font></h4>
+<p>
+  It is the link between any two nodes.
+</p>
+<img src="dsaa/nodes-edges_0.png" alt=""><br><br>
+
+<h4><font color="#33b5e5">Root</font></h4>
+<p>
+  It is the topmost node of a tree. <br><br>
+</p>
+
+<h4><font color="#33b5e5"></font></h4>
+
+<p>
+  The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node). <br><br>
+
+</p>
+
+<h4><font color="#33b5e5">Depth of a Node</font></h4>
+
+<p>
+  The depth of a node is the number of edges from the root to the node. <br><br>
+</p>
+<h4><font color="#33b5e5">Height of a Tree</font></h4>
+<p>
+  The height of a Tree is the height of the root node or the depth of the deepest node. <br><br>
+</p>
+
+<img src="dsaa/height-depth_1.png" alt="">
+
+<h4><font color="#33b5e5">Degree of a Node</font></h4>
+
+<p>
+  The degree of a node is the total number of branches of that node. <br><br>
+
+</p>
+
+<h4><font color="#33b5e5">Forest</font></h4>
+<p>
+  A collection of disjoint trees is called a forest. <br><br>
+</p>
+
+<img src="dsaa/forest_0.png" alt=""><br><br>
+
+<h3>Tree <font color="#33b5e5">Traversal</font>
+</h3>
+<p>
+  In order to perform any operation on a tree, you need to reach to the specific node. The tree traversal algorithm helps in visiting a required node in the tree. <br><br>
+
+</p>
+
+<h3>Tree <font color="#33b5e5">Applications</font></h3>
+
+<ul>
+<li> Binary Search Trees(BSTs) are used to quickly check whether an element is present in a set or not.</li><br>
+<li> Heap is a kind of tree that is used for heap sort.</li><br>
+<li> A modified version of a tree called Tries is used in modern routers to store routing information.</li><br>
+<li> Most popular databases use B-Trees and T-Trees, which are variants of the tree structure we learned above to store their data</li><br>
+<li> Compilers use a syntax tree to validate the syntax of every program you write.</li><br>
+</ul>
+
+
+<h2 id="b tree"><font color="#33b5e5">Binary </font>Tree</h2>
+A binary tree is a tree data structure in which each parent node can have at most two children. Each node of a binary tree consists of three items:
+<br><br>
+<ul>
+<li> data item</li><br>
+
+<li> address of left child</li><br>
+
+<li> address of right child</li><br>
+</ul>
+<img src="dsaa/binary_tree_1.png" alt=""><br><br>
+
+<h2><font color="#33b5e5">Types</font> of Binary Tree</h2>
+<h4>1. <font color="#33b5e5">Full Binary</font> Tree</h4>
+<p>
+  A full Binary tree is a special type of binary tree in which every parent node/internal node has either two or no children. <br><br>
+</p>
+<img src="dsaa/full-binary-tree_0.png" alt=""><br><br>
+
+<h4>2. <font color="#33b5e5">Perfect</font> Binary Tree</h4>
+
+A perfect binary tree is a type of binary tree in which every internal node has exactly two child nodes and all the leaf nodes are at the same level.
+<br><br>
+
+<img src="dsaa/perfect-binary-tree_0.png" alt="">
+
+<h4>3. <font color="#33b5e5">Complete</font> Binary Tree</h4>
+<p>
+  A complete binary tree is just like a full binary tree, but with two major differences
+
+<br><br>
+</p>
+
+<ul>
+<li> Every level must be completely filled</li><br>
+<li> All the leaf elements must lean towards the left.</li><br>
+<li> The last leaf element might not have a right sibling i.e. a complete binary tree doesn't have to be a full binary tree.</li><br>
+</ul>
+<img src="dsaa/complete-binary-tree_0.png" alt=""> <br><br>
+
+<h4>4. <font color="#33b5e5">Degenerate or Pathological</font> Tree</h4>
+<p>A degenerate or pathological tree is the tree having a single child either left or right. <br><br></p>
+<img src="dsaa/degenerate-binary-tree_0.png" alt=""><br><br>
+
+<h4>5. <font color="#33b5e5"> Skewed</font> Binary Tree</h4>
+<p>A skewed binary tree is a pathological/degenerate tree in which the tree is either dominated by the left nodes or the right nodes. Thus, there are two types of skewed binary tree: left-skewed binary tree and right-skewed binary tree.
+
+ <br><br></p>
+<img src="dsaa/skewed-binary-tree_0.png" alt=""><br><br>
+
+<h4>6. <font color="#33b5e5">Balanced</font> Binary Tree</h4>
+<p>
+  It is a type of binary tree in which the difference between the height of the left and the right subtree for each node is either 0 or 1.
+<br><br>
+
+</p>
+<img src="dsaa/height-balanced_1.png" alt=""><br><br>
+
+<h3>Binary Tree<font color="#33b5e5"> Representation
+</font></h3>
+<p>
+  A node of a binary tree is represented by a structure containing a data part and two pointers to other structures of the same type. <br><br>
+</p>
+<br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              struct node
+              {
+               int data;
+               struct node *left;
+               struct node *right;
+              };
+            </code>
+          </pre>
+        </div><br><br>
+
+<h3><font color="#33b5e5">C++ Examples</font></h3>
+
+<br>
+      <div style="background-color: #f2f2f2; padding: 20px;">
+          <pre style="background-color: #fff; border: 1px solid #ddd; padding: 10px; font-size: 16px;">
+            <code>
+              // Binary Tree in C++
+
+              #include <stdlib.h>
+              
+              #include <iostream>
+              
+              using namespace std;
+              
+              struct node {
+                int data;
+                struct node *left;
+                struct node *right;
+              };
+              
+              // New node creation
+              struct node *newNode(int data) {
+                struct node *node = (struct node *)malloc(sizeof(struct node));
+              
+                node->data = data;
+              
+                node->left = NULL;
+                node->right = NULL;
+                return (node);
+              }
+              
+              // Traverse Preorder
+              void traversePreOrder(struct node *temp) {
+                if (temp != NULL) {
+                  cout << " " << temp->data;
+                  traversePreOrder(temp->left);
+                  traversePreOrder(temp->right);
+                }
+              }
+              
+              // Traverse Inorder
+              void traverseInOrder(struct node *temp) {
+                if (temp != NULL) {
+                  traverseInOrder(temp->left);
+                  cout << " " << temp->data;
+                  traverseInOrder(temp->right);
+                }
+              }
+              
+              // Traverse Postorder
+              void traversePostOrder(struct node *temp) {
+                if (temp != NULL) {
+                  traversePostOrder(temp->left);
+                  traversePostOrder(temp->right);
+                  cout << " " << temp->data;
+                }
+              }
+              
+              int main() {
+                struct node *root = newNode(1);
+                root->left = newNode(2);
+                root->right = newNode(3);
+                root->left->left = newNode(4);
+              
+                cout << "preorder traversal: ";
+                traversePreOrder(root);
+                cout << "\nInorder traversal: ";
+                traverseInOrder(root);
+                cout << "\nPostorder traversal: ";
+                traversePostOrder(root);
+              }
+
+
+              // code submitted by HARSH 
+            </code>
+          </pre>
+        </div><br><br>
+
+        <p><h4><a href="https://www.onlinegdb.com/"><i>Try it Now</i></a></h4></p>
+
+        
+
+
+        <br><br><br>
+        <h3 id="END">Congratulations on <font color="#33b5e5">completing </font>DSA course!</h3>
+        <p>Thank you for choosing our website to learn C++. We hope you found the course informative and useful. With your new C++ skills, you are now ready to tackle exciting programming challenges. Keep practicing and never stop learning!</p>
+        <p>Best regards,</p>
+        <p>The team at Coding Classroom</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
